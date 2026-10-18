@@ -1,0 +1,240 @@
+{
+  "audit_id": "workflow-boundaries-20261015",
+  "observed_at": "2026-10-15T11:10:59.660Z",
+  "page_locator": "https://seko.sensetime.com/creation?id=2110205322326720513&canvasId=2110204684884787202",
+  "context": {
+    "login_observed": true,
+    "project_observed": true,
+    "health_evidence_ids": [
+      "ev-build-health"
+    ]
+  },
+  "modules": [
+    {
+      "id": "current-LoginContext-CFHyujin.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/LoginContext-CFHyujin.js",
+      "observed_at": "2026-10-15T11:10:59.392Z",
+      "http_status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "required_exports": [
+        "Y",
+        "g",
+        "k"
+      ],
+      "observed_exports": [],
+      "evidence_ids": [
+        "ev-build-http-0"
+      ],
+      "compatibility": "mismatched",
+      "reason": "本轮服务器返回404；旧缓存不能替代当前模块。"
+    },
+    {
+      "id": "current-canvas-BZat8bJg.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/canvas-BZat8bJg.js",
+      "observed_at": "2026-10-15T11:10:59.454Z",
+      "http_status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "required_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "observed_exports": [],
+      "evidence_ids": [
+        "ev-build-http-1"
+      ],
+      "compatibility": "mismatched",
+      "reason": "本轮服务器返回404；旧缓存不能替代当前模块。"
+    },
+    {
+      "id": "current-useOSSUploader-BaPQIV7u.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/useOSSUploader-BaPQIV7u.js",
+      "observed_at": "2026-10-15T11:10:59.494Z",
+      "http_status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "required_exports": [
+        "m"
+      ],
+      "observed_exports": [],
+      "evidence_ids": [
+        "ev-build-http-2"
+      ],
+      "compatibility": "mismatched",
+      "reason": "本轮服务器返回404；旧缓存不能替代当前模块。"
+    },
+    {
+      "id": "current-LoginContext-Dre9Pek8.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/LoginContext-Dre9Pek8.js",
+      "observed_at": "2026-10-15T11:10:59.498Z",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "body_sha256": "0d4ac2811f87ab7c6bfe4de6033b1f920eeecd0a194db9e4f1205489c6e069f5",
+      "required_exports": [
+        "Y",
+        "g",
+        "k"
+      ],
+      "observed_exports": [
+        "Y",
+        "g",
+        "k"
+      ],
+      "evidence_ids": [
+        "ev-build-http-3"
+      ],
+      "compatibility": "unknown",
+      "reason": "当前页面资源树观察到且所需符号存在；未证实与旧依赖的运行语义等价，不按文件名前缀自动替换。"
+    },
+    {
+      "id": "current-canvas-BLeYbv0U.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/canvas-BLeYbv0U.js",
+      "observed_at": "2026-10-15T11:10:59.659Z",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "body_sha256": "5d043cb36c2e88583b0c5a84d2adc845c24e976fdd0871d8a62a2994ab7f9054",
+      "required_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "observed_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "evidence_ids": [
+        "ev-build-http-4"
+      ],
+      "compatibility": "unknown",
+      "reason": "当前页面资源树观察到且所需符号存在；未证实与旧依赖的运行语义等价，不按文件名前缀自动替换。"
+    },
+    {
+      "id": "current-useOSSUploader-BWv-OPvK.js",
+      "origin_kind": "current",
+      "locator": "https://seko.sensetime.com/assets/useOSSUploader-BWv-OPvK.js",
+      "observed_at": "2026-10-15T11:10:59.660Z",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "body_sha256": "c53cd283dff7facdaec3f7694f03b4c3f978bc013812bc512cc10d3fdf5562b4",
+      "required_exports": [
+        "m"
+      ],
+      "observed_exports": [
+        "m"
+      ],
+      "evidence_ids": [
+        "ev-build-http-5"
+      ],
+      "compatibility": "unknown",
+      "reason": "当前页面资源树观察到且所需符号存在；未证实与旧依赖的运行语义等价，不按文件名前缀自动替换。"
+    },
+    {
+      "id": "cached-LoginContext-CFHyujin.js",
+      "origin_kind": "cached",
+      "locator": "https://seko.sensetime.com/assets/LoginContext-CFHyujin.js",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "http_status": null,
+      "content_type": "application/javascript",
+      "body_sha256": "cd326508601d230bec8d342962006da08ba652b538e351348b6465e9046fcd9c",
+      "required_exports": [
+        "Y",
+        "g",
+        "k"
+      ],
+      "observed_exports": [
+        "Y",
+        "g",
+        "k"
+      ],
+      "evidence_ids": [
+        "ev-build-cache-0"
+      ],
+      "compatibility": "unknown",
+      "reason": "旧标签已解析源码与符号仍在；未记录原始HTTP状态，不能判当前服务器兼容。"
+    },
+    {
+      "id": "cached-canvas-BZat8bJg.js",
+      "origin_kind": "cached",
+      "locator": "https://seko.sensetime.com/assets/canvas-BZat8bJg.js",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "http_status": null,
+      "content_type": "application/javascript",
+      "body_sha256": "95e89d9514194d7b67bb8752614658ef146e2c439b5105a8f53b1054d1e5d176",
+      "required_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "observed_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "evidence_ids": [
+        "ev-build-cache-1"
+      ],
+      "compatibility": "unknown",
+      "reason": "旧标签已解析源码与符号仍在；未记录原始HTTP状态，不能判当前服务器兼容。"
+    },
+    {
+      "id": "cached-useOSSUploader-BaPQIV7u.js",
+      "origin_kind": "cached",
+      "locator": "https://seko.sensetime.com/assets/useOSSUploader-BaPQIV7u.js",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "http_status": null,
+      "content_type": "application/javascript",
+      "body_sha256": "e65a420c0d30413822c754444ceaa9c7fcb4c3fd3c1c875cbbf2dd31c419261b",
+      "required_exports": [
+        "m"
+      ],
+      "observed_exports": [
+        "m"
+      ],
+      "evidence_ids": [
+        "ev-build-cache-2"
+      ],
+      "compatibility": "unknown",
+      "reason": "旧标签已解析源码与符号仍在；未记录原始HTTP状态，不能判当前服务器兼容。"
+    },
+    {
+      "id": "archived-canvas-BZat8bJg.js",
+      "origin_kind": "archived",
+      "locator": "output/seko-interface-audit-20261014/rea-input/canvas-BZat8bJg.js",
+      "observed_at": "2026-10-14",
+      "http_status": null,
+      "content_type": "application/javascript",
+      "body_sha256": "95e89d9514194d7b67bb8752614658ef146e2c439b5105a8f53b1054d1e5d176",
+      "required_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "observed_exports": [
+        "an",
+        "D",
+        "b"
+      ],
+      "evidence_ids": [
+        "ev-build-archive"
+      ],
+      "compatibility": "unknown",
+      "reason": "历史源码归档；另外两个依赖不在该sources清单。原HTTP状态未保存，不支持当次兼容。"
+    }
+  ],
+  "bridge": {
+    "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+    "status": "blocked",
+    "evidence_ids": [
+      "ev-build-page"
+    ],
+    "reason": "新标签实际动态导入失败；本机健康与站点登录均不能绕过三个旧模块404。旧标签缓存可读但未触发续跑或生成。"
+  }
+}

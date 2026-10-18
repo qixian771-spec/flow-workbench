@@ -1,0 +1,12 @@
+[
+  {
+    "segment_start": 0,
+    "ssim_excluding_watermark": 0.973826,
+    "passed": true
+  },
+  {
+    "segment_start": 8,
+    "ssim_excluding_watermark": 0.974343,
+    "passed": true
+  }
+]

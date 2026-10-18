@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "same_node_new_media",
+      "passed": true
+    },
+    {
+      "check": "completed_node",
+      "passed": true
+    },
+    {
+      "check": "same_shot_ids",
+      "passed": true
+    },
+    {
+      "check": "shot_timing_and_audio_flags_preserved",
+      "passed": true
+    },
+    {
+      "check": "all_affected_shots_updated",
+      "passed": true
+    },
+    {
+      "check": "no_stale_shot_media",
+      "passed": true
+    },
+    {
+      "check": "unrelated_shots_preserved",
+      "passed": true
+    },
+    {
+      "check": "completed_shots",
+      "passed": true
+    },
+    {
+      "check": "export_duration",
+      "passed": true,
+      "seconds": 16.041667
+    },
+    {
+      "check": "export_size",
+      "passed": true
+    },
+    {
+      "check": "export_has_audio",
+      "passed": true
+    },
+    {
+      "check": "export_full_decode",
+      "passed": true
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 4.0,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 12.0,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    }
+  ],
+  "limits": [
+    "No independent source-reference cache exposed in these snapshots",
+    "Audio flags are not a volume, voice or lip-sync verification"
+  ],
+  "export_sha256": "dcf44e7fc406940ac6b3951649c6fde3dd88068d85800d8ce8a7cd772ec14591"
+}

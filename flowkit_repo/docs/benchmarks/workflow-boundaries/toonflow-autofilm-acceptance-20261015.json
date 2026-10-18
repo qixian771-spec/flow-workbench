@@ -1,0 +1,434 @@
+{
+  "card": "LW-06",
+  "acceptedScope": "Configurable text API + real script-to-silent-two-shot local automation",
+  "status": "passed-with-content-limitations",
+  "taskId": "30c84f8e-4b6a-4bdd-bcf1-5e4699da241c",
+  "createdAt": "2026-10-15T20:27:55.742Z",
+  "completedAt": "2026-10-15T20:31:55.390Z",
+  "script": "《等候》：一个完全虚构的静音微短片，两个镜头，统一精致手绘二维动画背景风格。雨后的旧火车站候车室空无一人，木长椅上放着一本合着的无字红色硬皮书，旁边是一只闭合的黄铜怀表。第一镜：黄昏暖光照进空候车室，镜头缓慢向长椅推进；书和怀表始终静止，气氛安静，像有人刚刚离开。第二镜：切到长椅上红书和闭合怀表的近景，镜头轻轻向右横移，窗外雨滴沿玻璃滑落，以余晖中的静物收尾。没有人物、对白、旁白、字幕、音乐，也没有物品自行打开或变形。",
+  "textModel": {
+    "providerId": "localGemini",
+    "modelId": "gemini-3.8-flash-high",
+    "protocol": "openai-completions",
+    "baseUrl": "http://127.0.0.1:18080/v1",
+    "responseModel": "gemini-3.8-flash-n",
+    "maxOutputTokens": 8192,
+    "contextWindow": 1048576
+  },
+  "textReceipts": {
+    "storyboard": {
+      "id": "TTfRatD6I4WFz7IPhYXBIQ",
+      "model": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1623,
+        "total_tokens": 1986,
+        "prompt_tokens": 363,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1107
+        }
+      },
+      "receivedAt": "2026-10-15T20:28:11.524Z"
+    },
+    "shot1Image0Review": {
+      "id": "gTfRavLzH42ImtkPga-D-Ao",
+      "model": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 329,
+        "total_tokens": 1790,
+        "prompt_tokens": 1461,
+        "completion_tokens_details": {
+          "reasoning_tokens": 317
+        }
+      },
+      "receivedAt": "2026-10-15T20:28:56.382Z"
+    },
+    "shot1Video0Review": {
+      "id": "uDfRapDQM_vBz7IPs4O-MQ",
+      "model": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 548,
+        "total_tokens": 5323,
+        "prompt_tokens": 4775,
+        "completion_tokens_details": {
+          "reasoning_tokens": 536
+        }
+      },
+      "receivedAt": "2026-10-15T20:29:54.663Z"
+    },
+    "shot2Image0Review": {
+      "id": "5TfRao3-D_2uqtsPutHagAo",
+      "model": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 439,
+        "total_tokens": 1894,
+        "prompt_tokens": 1455,
+        "completion_tokens_details": {
+          "reasoning_tokens": 427
+        }
+      },
+      "receivedAt": "2026-10-15T20:30:36.965Z"
+    },
+    "shot2Video0Review": {
+      "id": "LDjRasaSEZPtz7IPx6CQKQ",
+      "model": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 802,
+        "total_tokens": 5571,
+        "prompt_tokens": 4769,
+        "completion_tokens_details": {
+          "reasoning_tokens": 790
+        }
+      },
+      "receivedAt": "2026-10-15T20:31:52.427Z"
+    }
+  },
+  "qualityReviews": {
+    "shot1Image0Review": {
+      "accepted": true,
+      "issues": [],
+      "correction": ""
+    },
+    "shot1Video0Review": {
+      "accepted": true,
+      "issues": [],
+      "correction": ""
+    },
+    "shot2Image0Review": {
+      "accepted": true,
+      "issues": [],
+      "correction": ""
+    },
+    "shot2Video0Review": {
+      "accepted": true,
+      "issues": [],
+      "correction": ""
+    }
+  },
+  "mediaReceipts": [
+    {
+      "stage": "shot1Image0",
+      "jobId": "e0f5c7e1-8366-6250-b9e2-05854b3ccfd7",
+      "kind": "image",
+      "requestId": "e551ae23-7e49-4720-91ab-a9a6982d135b",
+      "mediaId": "586a625f-774b-436b-ba2c-542402e56f67",
+      "sha256": "8d7cf2d07aa4ff49290caba0fb664f5a23c5d013dec105f68e79a1e94f0c8744",
+      "phase": "complete",
+      "route": {
+        "provider": "flow",
+        "model": "BELUGA",
+        "orientation": "HORIZONTAL"
+      },
+      "rootJobId": null,
+      "submitReceipt": null
+    },
+    {
+      "stage": "shot1Video0",
+      "jobId": "47ec90ad-fccd-d35a-1cc5-474dcd68ce4b",
+      "kind": "video",
+      "requestId": "e956a939-e897-4775-8672-c26ac29b518a",
+      "mediaId": "cf3505ff-ae00-42d7-be1a-57dc4e5b3c0f",
+      "sha256": "24dbf096ddf83a06ab484a44179a51557e4216f88e88a3bd569472d881cb4f1f",
+      "phase": "complete",
+      "route": {
+        "provider": "flow",
+        "model": "abra_i2v_8s",
+        "mode": "singleImage",
+        "duration_s": 8,
+        "resolution": "720p",
+        "orientation": "HORIZONTAL"
+      },
+      "rootJobId": "e0f5c7e1-8366-6250-b9e2-05854b3ccfd7",
+      "submitReceipt": {
+        "requestId": "e956a939-e897-4775-8672-c26ac29b518a",
+        "operationId": "b4f51023-5e25-4242-96c0-5c7cdfe63791",
+        "model": "abra_i2v_8s",
+        "duration_s": 8,
+        "resolution": "720p"
+      }
+    },
+    {
+      "stage": "shot2Image0",
+      "jobId": "a12b27ee-9a92-f160-6119-ddda45f2322a",
+      "kind": "image",
+      "requestId": "ffbe80b2-16b4-405a-8232-4433a0ab7044",
+      "mediaId": "5a411979-7885-491d-be56-7b96871b6f1a",
+      "sha256": "6175a23996e417831d2b331d18830a638dc8cda2bc37460d5f3995e074c9c4df",
+      "phase": "complete",
+      "route": {
+        "provider": "flow",
+        "model": "BELUGA",
+        "orientation": "HORIZONTAL"
+      },
+      "rootJobId": null,
+      "submitReceipt": null
+    },
+    {
+      "stage": "shot2Video0",
+      "jobId": "a1baa9fe-4356-9cf1-6ecc-5b570d4e3c3a",
+      "kind": "video",
+      "requestId": "59449f37-68f1-4477-ad69-1b79d5cd2309",
+      "mediaId": "856714df-445a-4b4c-ac96-1530485a9b5c",
+      "sha256": "e15cf9d49fabe19d24397b87a1a8dffdf9c78097715d65cf97e07ed85b9c7ede",
+      "phase": "complete",
+      "route": {
+        "provider": "flow",
+        "model": "abra_i2v_8s",
+        "mode": "singleImage",
+        "duration_s": 8,
+        "resolution": "720p",
+        "orientation": "HORIZONTAL"
+      },
+      "rootJobId": "a12b27ee-9a92-f160-6119-ddda45f2322a",
+      "submitReceipt": {
+        "requestId": "59449f37-68f1-4477-ad69-1b79d5cd2309",
+        "operationId": "63c35322-9f60-493b-9503-c1a54381fc03",
+        "model": "abra_i2v_8s",
+        "duration_s": 8,
+        "resolution": "720p"
+      }
+    }
+  ],
+  "requestCountsAfterRecovery": [
+    {
+      "projectId": "f1024ce5-e509-4e40-b44a-d9bce4a0a577",
+      "count": 2,
+      "requests": [
+        {
+          "id": "e956a939-e897-4775-8672-c26ac29b518a",
+          "type": "GENERATE_VIDEO",
+          "status": "COMPLETED",
+          "retryCount": 0
+        },
+        {
+          "id": "e551ae23-7e49-4720-91ab-a9a6982d135b",
+          "type": "GENERATE_IMAGE",
+          "status": "COMPLETED",
+          "retryCount": 0
+        }
+      ]
+    },
+    {
+      "projectId": "bfb5aab8-ebc7-46e2-ba95-90f319133b61",
+      "count": 2,
+      "requests": [
+        {
+          "id": "59449f37-68f1-4477-ad69-1b79d5cd2309",
+          "type": "GENERATE_VIDEO",
+          "status": "COMPLETED",
+          "retryCount": 0
+        },
+        {
+          "id": "ffbe80b2-16b4-405a-8232-4433a0ab7044",
+          "type": "GENERATE_IMAGE",
+          "status": "COMPLETED",
+          "retryCount": 0
+        }
+      ]
+    }
+  ],
+  "film": {
+    "exportId": "e344ddcf55d9fdfb4db4f87e3b8f45684b29a1a84c05dc2049648d7ab5362a8b",
+    "taskId": "30c84f8e-4b6a-4bdd-bcf1-5e4699da241c",
+    "input": {
+      "taskId": "30c84f8e-4b6a-4bdd-bcf1-5e4699da241c",
+      "workflow": true,
+      "canvas": "autoFilm30c84f8e-4b6a-4bdd-bcf1-5e4699da241c.json",
+      "shots": [
+        {
+          "nodeId": "2a203491-6514-431f-ad6d-7c9cc2759430",
+          "jobId": "47ec90ad-fccd-d35a-1cc5-474dcd68ce4b",
+          "sha256": "24dbf096ddf83a06ab484a44179a51557e4216f88e88a3bd569472d881cb4f1f",
+          "qualityAccepted": true
+        },
+        {
+          "nodeId": "006c446a-c90d-424a-bf52-ca60adb3de66",
+          "jobId": "a1baa9fe-4356-9cf1-6ecc-5b570d4e3c3a",
+          "sha256": "e15cf9d49fabe19d24397b87a1a8dffdf9c78097715d65cf97e07ed85b9c7ede",
+          "qualityAccepted": true
+        }
+      ]
+    },
+    "phase": "complete",
+    "path": "exports/flowe344ddcf55d9fdfb4db4/film.mp4",
+    "sha256": "f6d96d01643850d3dc61f6ad193ece1c425ee94196f8e25fcd730a4dfa7a6121",
+    "bytes": 6315770,
+    "duration": 16
+  },
+  "absoluteFilmPath": "/Users/niuniu/Desktop/flow cli/toonflow/data/workspaces/flowAcceptance/exports/flowe344ddcf55d9fdfb4db4/film.mp4",
+  "checks": [
+    {
+      "case": "shot-count",
+      "status": 400,
+      "message": "Parameter error"
+    },
+    {
+      "case": "unknown-field",
+      "status": 400,
+      "message": "Parameter error"
+    },
+    {
+      "case": "invalid-id",
+      "status": 400,
+      "message": "Parameter error"
+    },
+    {
+      "case": "unknown-provider",
+      "status": 400,
+      "message": "Please configure the model provider in settings first"
+    },
+    {
+      "case": "unknown-model",
+      "status": 400,
+      "message": "The selected model does not exist, please select again."
+    },
+    {
+      "case": "path-escape",
+      "status": 403,
+      "message": "Server deployment can only use server workspace"
+    },
+    {
+      "case": "duplicate-start",
+      "status": 200,
+      "sameTask": true
+    },
+    {
+      "case": "input-conflict",
+      "status": 409,
+      "sameTask": false
+    },
+    {
+      "case": "repeat-export",
+      "status": 200,
+      "message": "Success",
+      "unchangedFilm": true
+    },
+    {
+      "case": "wrong-order",
+      "status": 409,
+      "message": "镜头与自动任务的已审核清单不匹配",
+      "unchangedFilm": true
+    },
+    {
+      "case": "wrong-hash",
+      "status": 409,
+      "message": "镜头与自动任务的已审核清单不匹配",
+      "unchangedFilm": true
+    },
+    {
+      "case": "wrong-root",
+      "status": 404,
+      "message": "The file or folder cannot be found. It may have been moved, deleted, or the wrong location was selected.",
+      "unchangedFilm": true
+    },
+    {
+      "case": "config-changed",
+      "status": 200,
+      "phase": "paused",
+      "message": "文字模型配置已变化，原任务暂停",
+      "shotErrors": [
+        null,
+        null
+      ],
+      "unchangedFilm": true,
+      "kind": "manual durable-state fault injection, not actual paid outage"
+    },
+    {
+      "case": "unknown-text-receipt",
+      "status": 200,
+      "phase": "paused",
+      "message": "文字步骤 storyboard 已提交但回执不完整；保留现场，不自动重发",
+      "shotErrors": [
+        null,
+        null
+      ],
+      "unchangedFilm": true,
+      "kind": "manual durable-state fault injection, not actual paid outage"
+    },
+    {
+      "case": "unknown-media-receipt",
+      "status": 200,
+      "phase": "paused",
+      "message": "部分镜头暂停；独立镜头已继续，未导出最终片",
+      "shotErrors": [
+        "原 Flow 回执尚不可核实，禁止重新提交",
+        null
+      ],
+      "unchangedFilm": true,
+      "kind": "manual durable-state fault injection, not actual paid outage"
+    },
+    {
+      "case": "canvas-edited",
+      "status": 200,
+      "phase": "paused",
+      "message": "部分镜头暂停；独立镜头已继续，未导出最终片",
+      "shotErrors": [
+        "自动画布已被其他操作修改，暂停以保护编辑内容",
+        "自动画布已被其他操作修改，暂停以保护编辑内容"
+      ],
+      "unchangedFilm": true,
+      "kind": "manual durable-state fault injection, not actual paid outage"
+    },
+    {
+      "case": "resume-known-checkpoint",
+      "status": 200,
+      "phase": "complete",
+      "message": null,
+      "shotErrors": [
+        null,
+        null
+      ],
+      "unchangedFilm": true,
+      "kind": "manual durable-state fault injection, not actual paid outage"
+    },
+    {
+      "case": "restart-complete-resume",
+      "status": 200,
+      "sameFilm": true,
+      "unchangedFilm": true
+    },
+    {
+      "case": "realGeminiInvalidSchema",
+      "rejected": true,
+      "errorType": "ZodError",
+      "mediaSubmitted": false,
+      "method": "Actual relay response rejected by strict runtime schema"
+    }
+  ],
+  "builds": {
+    "serverTypecheck": "passed",
+    "serverBuild": "passed",
+    "webTypecheck": "passed",
+    "webBuild": "passed, existing chunk-size warning"
+  },
+  "ui": {
+    "entry": "Native Toonflow auto-film dialog",
+    "singleStart": true,
+    "canvasBackfill": "2 native image + 2 native video nodes",
+    "refresh": "same task; film readyState 4, duration16",
+    "newTab": "216966186 same task; film readyState4 duration16; tab closed after validation",
+    "playback": "observed 6/16s and paused=false",
+    "screenshot": "../flowkit_repo/output/toonflow-local-20261015/geminiAutoFilm.png",
+    "canvasScreenshot": "../flowkit_repo/output/toonflow-local-20261015/geminiAutoCanvas.png",
+    "sekoDependency": false
+  },
+  "independentVisualReview": {
+    "frames": [
+      1,
+      7,
+      9,
+      15
+    ],
+    "distinctShots": true,
+    "cameraMotion": "wide push-in then close lateral move",
+    "limitation": "Pocket-watch detail differs across shots; cross-shot identity NOT accepted. Gemini per-shot review passed but does not certify inter-shot consistency."
+  },
+  "limitations": [
+    "Silent 16-second integration acceptance, not dialogue/voice/lipsync or full episode acceptance",
+    "Automatic review samples 1/4/7 second frames; not exhaustive video/audio validation",
+    "Quality retry limit implemented (initial plus two); not triggered by this successful live run",
+    "Interrupted/changed-state cases are manual durable-state fault injection; not actual mid-payment power loss",
+    "App sends one text request, exact response model checked. Existing relay account-pool transport retries were not reconfigured."
+  ],
+  "dependenciesInstalledThisCard": false,
+  "implementationCommit": "3b7ae8a"
+}

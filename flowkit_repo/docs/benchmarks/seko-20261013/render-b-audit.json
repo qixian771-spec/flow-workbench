@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "export_duration",
+      "passed": true,
+      "seconds": 16.041667
+    },
+    {
+      "check": "export_size",
+      "passed": true
+    },
+    {
+      "check": "export_has_audio",
+      "passed": true
+    },
+    {
+      "check": "export_full_decode",
+      "passed": true
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 4,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 12,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    }
+  ],
+  "sha256": "dcf44e7fc406940ac6b3951649c6fde3dd88068d85800d8ce8a7cd772ec14591"
+}

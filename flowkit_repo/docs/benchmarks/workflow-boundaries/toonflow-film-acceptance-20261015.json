@@ -1,0 +1,90 @@
+{
+  "card": "LW-04",
+  "accepted": true,
+  "export": {
+    "exportId": "4903903135506bfc2afc896dc586243f4f6d10f99cd6eb83c06a64e0819e3ca9",
+    "taskId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+    "input": {
+      "taskId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+      "canvas": "画布1.json",
+      "shots": [
+        {
+          "nodeId": "dd680351-093a-4bf2-8d7b-e14e733111cc",
+          "jobId": "32fd7753-1ef7-d606-ac5a-79036af519b2",
+          "sha256": "20734e6cf0cdfedb4e67a853d09b6ee49697e3b4738ab21291d24d47c72321f8",
+          "qualityAccepted": true
+        },
+        {
+          "nodeId": "b722c4ed-2755-4e7d-9237-114b3baa6e04",
+          "jobId": "241491a1-b84c-9caf-1b9c-60339ee37949",
+          "sha256": "686d07c4089ceab2889839612297f2a7323226afcab198530b1ed9aee5d2e65e",
+          "qualityAccepted": true
+        }
+      ]
+    },
+    "phase": "complete",
+    "path": "exports/flow4903903135506bfc2afc/film.mp4",
+    "sha256": "b998eafed30030c7812c824e57333e4261840f84142fbec6b4edd49dc415bd3f",
+    "bytes": 6622560,
+    "duration": 16
+  },
+  "repeatResultUnchanged": true,
+  "repeatFileMtimeUnchanged": true,
+  "streams": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "30/1"
+    }
+  ],
+  "negativeChecks": [
+    {
+      "case": "missing-shot",
+      "status": 400
+    },
+    {
+      "case": "duplicate-shot",
+      "status": 409
+    },
+    {
+      "case": "quality-unaccepted",
+      "status": 400
+    },
+    {
+      "case": "wrong-hash",
+      "status": 409
+    },
+    {
+      "case": "foreign-job",
+      "status": 409
+    },
+    {
+      "case": "invalid-path",
+      "status": 400
+    },
+    {
+      "case": "missing-node",
+      "status": 409
+    },
+    {
+      "case": "persisted-rendering",
+      "status": 409,
+      "mode": "manual persisted-state fault injection"
+    },
+    {
+      "case": "persisted-needs-inspection",
+      "status": 409,
+      "mode": "manual persisted-state fault injection"
+    }
+  ],
+  "visualOrderVerifiedAtSeconds": [
+    0,
+    7,
+    8,
+    15
+  ],
+  "nativePlayerVerified": "Toonflow document view film.mp4 playing at 12/16 seconds",
+  "sekoOpenTabs": 0
+}

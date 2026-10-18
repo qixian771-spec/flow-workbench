@@ -1,0 +1,52 @@
+{
+  "nativeFinalSha256": "81a6266f2caf86d1a7c8b7c3010bee7b400d590dc2fa93647c2da3b6a03457d4",
+  "renderAudioSeconds": 20.181333333333335,
+  "shots": [
+    {
+      "shot": 1,
+      "sourceSha256": "3e3a69aa7466b41a6023588409d17a83dd44700696148f8c3933f8f40ca37bab",
+      "alignedStartSeconds": 0.042666666666666665,
+      "correlation": 0.999832,
+      "sourceSpeechAboveThresholdSeconds": [
+        1.0306,
+        1.9975
+      ],
+      "signalRetained": true
+    },
+    {
+      "shot": 2,
+      "sourceSha256": "ad682df19ff15f41579755b22b288b053b23ffc5e32c68b9eda464d45be0f994",
+      "alignedStartSeconds": 5.077333333333334,
+      "correlation": 0.999458,
+      "sourceSpeechAboveThresholdSeconds": [
+        1.0179,
+        1.7534
+      ],
+      "signalRetained": true
+    },
+    {
+      "shot": 3,
+      "sourceSha256": "2c51b94f682c9166a08944ce4fbffd964ecaf35a562d48808eba2669d66d04eb",
+      "alignedStartSeconds": 10.112,
+      "correlation": 0.999774,
+      "sourceSpeechAboveThresholdSeconds": [
+        0.9828,
+        2.5412
+      ],
+      "signalRetained": true
+    },
+    {
+      "shot": 4,
+      "sourceSha256": "ec5892675a3e5f7d021babe2148118ceb65b855e1e1a738c4070e8964c5e4143",
+      "alignedStartSeconds": 15.146666666666667,
+      "correlation": 0.998909,
+      "sourceSpeechAboveThresholdSeconds": [
+        1.0584,
+        2.8065
+      ],
+      "signalRetained": true
+    }
+  ],
+  "allSignalsRetained": true,
+  "scope": "Waveform retention only; no ASR, human listening or phoneme-level lip assessment claimed."
+}

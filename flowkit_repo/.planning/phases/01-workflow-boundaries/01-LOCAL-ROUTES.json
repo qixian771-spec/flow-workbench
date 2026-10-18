@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "local_two_distinct_shot_native_export_verified",
+  "decision": "D-16",
+  "selection_source": "user_explicit_choice",
+  "text": {
+    "provider": "codex-cli",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "effort_basis": "initial connectivity-tested setting; not a user quality preference",
+    "tasks": [
+      "script_reading",
+      "storyboard_planning",
+      "skill_step_decisions",
+      "prompt_adaptation_when_model_required"
+    ],
+    "automatic_switching": false,
+    "failure_action": "pause_with_reason"
+  },
+  "image": {
+    "provider": "flow",
+    "model_alias": "NANO_BANANA_2_1",
+    "model_key": "BELUGA"
+  },
+  "video": {
+    "provider": "flow",
+    "model_key": "abra_i2v_8s",
+    "mode": "frame_to_video",
+    "duration_s": 8,
+    "resolution": "720p",
+    "orientation": "HORIZONTAL"
+  },
+  "scheduler": {
+    "provider": "local_deterministic",
+    "model": null
+  },
+  "retained_services": [
+    "vendor_voice_pending_verification",
+    "vendor_lipsync_pending_verification",
+    "vendor_editing_two_shot_verified"
+  ],
+  "verified_scope": {
+    "text": [
+      "single_shot_proposal",
+      "same_run_after_verified_backfill",
+      "omni_timed_prompt_adaptation",
+      "same_run_video_to_edit_manifest",
+      "second_shot_lateral_dolly_prompt"
+    ],
+    "image": "new_flow_image_and_seko_backfill",
+    "video": "new_omni_8s_720p_same_first_frame_seko_byte_readback_same_run_continuation",
+    "voice_lipsync_editing": "voice_lipsync_not_verified; native_two_distinct_clip_editing_verified",
+    "silence": "not_verified_nonzero_original_audio",
+    "editing": "two_distinct_omni_clips_trim_1_to_5_then_2_to_6_native_hard_cut_export"
+  },
+  "editing": {
+    "provider": "seko-native",
+    "model": null,
+    "tasks": [
+      "isolated_canvas",
+      "native_timeline",
+      "native_trim",
+      "native_render",
+      "two_clip_ordered_timeline"
+    ],
+    "automatic_switching": false,
+    "multishot_contract": {
+      "input_clips": 2,
+      "distinct_media_required": true,
+      "source_ranges_s": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "transition": "hard-cut",
+      "output_duration_s": 8
+    }
+  }
+}

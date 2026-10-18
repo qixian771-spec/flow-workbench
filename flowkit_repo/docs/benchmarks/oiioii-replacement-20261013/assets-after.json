@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "type": "workspace_assets_list",
+  "data": {
+    "workspace_id": "64c6346a-561c-43f6-ac61-fc779baa5e4a",
+    "count": 3,
+    "assets": [
+      {
+        "assetUri": "hogi://asset/71fd09da-bdb1-45d1-a8b6-245093051112",
+        "uri": "hogi://video/mv751989_93167580f5d2533f.mp4",
+        "hash": "CiQ2rp67kJEH",
+        "type": "video",
+        "assetId": "71fd09da-bdb1-45d1-a8b6-245093051112",
+        "metadata": {
+          "ratio": "1280:720",
+          "title": "Flow-Omni-verified-8s",
+          "userUpload": "1",
+          "aspectRatio": "1280:720",
+          "generateType": "user_upload",
+          "videoHistoryUris": "[\"hogi://video/mv74gy32_843cbb1a46472537.mp4\",\"hogi://video/mv751989_93167580f5d2533f.mp4\"]",
+          "trackVideoHistory": "true"
+        }
+      },
+      {
+        "assetUri": "hogi://asset/8073a3cf-2824-4022-b260-4566a55c5107",
+        "uri": "hogi://image/mv74npcz_5338c0668403a800.jpg",
+        "hash": "js3Ir2mrQ-ca",
+        "type": "image",
+        "assetId": "8073a3cf-2824-4022-b260-4566a55c5107",
+        "metadata": {
+          "title": "Flow-NanoBanana-verified",
+          "generateType": "user_upload"
+        }
+      },
+      {
+        "assetUri": "hogi://asset/1edc4f53-408e-4875-a7d9-a62384970dd5",
+        "uri": "hogi://video/.cache/remotion-video/v2/14d6e44a596567a7/619530216689d620f5ccb7e3991092c4eeec8053baf133c19f81b27d54591422.mp4",
+        "hash": "YdEKgUwqyxYr",
+        "type": "video",
+        "assetId": "1edc4f53-408e-4875-a7d9-a62384970dd5",
+        "metadata": {
+          "title": "Flow-Omni-verified-8s视频剪辑"
+        }
+      }
+    ]
+  }
+}

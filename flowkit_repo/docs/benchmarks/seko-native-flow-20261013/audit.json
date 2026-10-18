@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "two_native_requests_captured",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_distinct_new_flow_media",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_distinct_prompts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_flow_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_native_prompt_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_upload_roundtrip_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_seko_moderation_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_automatic_backfill_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_persisted_new_media",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot1_original_timeline_preserved",
+      "passed": true,
+      "detail": [
+        "id",
+        "seq",
+        "seqValue",
+        "duration",
+        "shotVideoStartTime",
+        "shotVideoEndTime",
+        "bindAudioSync",
+        "linesAudioEnabledFlag"
+      ]
+    },
+    {
+      "name": "shot1_render_matches_source",
+      "passed": true,
+      "detail": {
+        "ssim": 0.987288,
+        "alignment_offset_frames": 1
+      }
+    },
+    {
+      "name": "shot2_flow_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_native_prompt_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_upload_roundtrip_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_seko_moderation_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_automatic_backfill_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_persisted_new_media",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shot2_original_timeline_preserved",
+      "passed": true,
+      "detail": [
+        "id",
+        "seq",
+        "seqValue",
+        "duration",
+        "shotVideoStartTime",
+        "shotVideoEndTime",
+        "bindAudioSync",
+        "linesAudioEnabledFlag"
+      ]
+    },
+    {
+      "name": "shot2_render_matches_source",
+      "passed": true,
+      "detail": {
+        "ssim": 0.990907,
+        "alignment_offset_frames": 1
+      }
+    },
+    {
+      "name": "no_seko_native_generation_http_requests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_render_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_render_720p_h264_aac",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_render_duration_tolerance",
+      "passed": true,
+      "detail": "16.041667"
+    },
+    {
+      "name": "session_hook_removed_after_test",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "renderId": "2110198756638892033",
+  "media": [
+    {
+      "file": "seko-native-flow-16s.mp4",
+      "sha256": "457ada37a6c9e0f44b35df573f1ea4c485ac8c4fe5cc78b6efc5311e0f8e2e7a",
+      "duration": "16.041667",
+      "streams": [
+        "video",
+        "audio"
+      ]
+    },
+    {
+      "file": "seko-roundtrip-1.mp4",
+      "sha256": "42f5599529d729aece7cfa3111295868a71677d272977fc98ce732d1b472484b",
+      "duration": "8.000000",
+      "streams": [
+        "video",
+        "audio"
+      ]
+    },
+    {
+      "file": "seko-roundtrip-2.mp4",
+      "sha256": "d58cc0076d9c5690cebc3e2069606caa9e617ba7bc9dd882297098b590954ea1",
+      "duration": "8.000000",
+      "streams": [
+        "video",
+        "audio"
+      ]
+    }
+  ],
+  "frameAlignment": [
+    {
+      "shot": 1,
+      "offset_frames": 0,
+      "ssim": 0.833755
+    },
+    {
+      "shot": 1,
+      "offset_frames": 1,
+      "ssim": 0.987288
+    },
+    {
+      "shot": 2,
+      "offset_frames": 0,
+      "ssim": 0.980627
+    },
+    {
+      "shot": 2,
+      "offset_frames": 1,
+      "ssim": 0.990907
+    }
+  ],
+  "limitations": [
+    "Session-scoped CUA bridge; no persistent provider registration",
+    "Only explicit eight-second 16:9 first-frame jobs mapped to one verified reference",
+    "Native render adds one frame; precise dialogue/lip sync not accepted",
+    "Two new scenery clips; not the six-shot dialogue script or a full episode"
+  ]
+}

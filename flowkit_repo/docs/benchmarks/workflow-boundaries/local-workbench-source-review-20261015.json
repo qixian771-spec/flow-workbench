@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-15T19:30:20.188827+00:00",
+  "status": "source_review_only_not_runtime_acceptance",
+  "new_installation": false,
+  "selected_architecture": "local_web_workbench",
+  "preferred_candidate_pending_runtime": "HBAI-Ltd/Toonflow-app",
+  "routes": {
+    "text": "gpt-6.1-sol via existing Codex CLI",
+    "image": "BELUGA via existing FlowKit",
+    "video": "abra_i2v_8s via existing FlowKit",
+    "editing": "local deterministic; existing ffmpeg; implementation pending"
+  },
+  "candidates": [
+    {
+      "repository": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "commit": "d2e94aca7b59659ff6b4ca15f03cf134ec7f0e1d",
+      "pushed_at": "2026-10-13T10:00:22Z",
+      "github_license": "MIT",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "e301150b3205cbb097e30c30e488f5a9ac9a70cbcfe819b8d486367812a53ef7"
+        },
+        {
+          "path": "apps/server/package.json",
+          "sha256": "2336c31780203635dca515098b151147a2ac5f59b6d5fe50b8852615f242319e"
+        },
+        {
+          "path": "apps/server/src/routes/ffmpeg/execute.ts",
+          "sha256": "712e4d68f005d2b61ce743827353a6381c5e04f8e2ae2abbf53ad96d8ad2c49c"
+        },
+        {
+          "path": "apps/server/src/utils/media/provider.ts",
+          "sha256": "d0184a658d68d33e9f2ed4c519818a6201ffd72f1f845742635068820d2aef79"
+        },
+        {
+          "path": "apps/web/package.json",
+          "sha256": "367a5862b35b9cf0d01a3e94370b5b5a46f377752852aac6e356b41321e6e22d"
+        },
+        {
+          "path": "package.json",
+          "sha256": "c726d5ad09a09b81c73fb99dfce1b68ca2ce94b44cdd34bf72c750daf3a54e34"
+        }
+      ],
+      "finding": "Separate web/server packages, custom generateImage/generateVideo provider loader, workspace ffmpeg route; MIT LICENSE at pinned revision. Runtime unverified."
+    },
+    {
+      "repository": "https://github.com/chatfire-AI/huobao-drama",
+      "commit": "26de7df59806588e98e103a21bd0bfd26d4a55a6",
+      "pushed_at": "2026-10-05T16:33:20Z",
+      "github_license": "NOASSERTION",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd"
+        },
+        {
+          "path": "backend/package.json",
+          "sha256": "cd945db26a0c144a3944603c10cb37f710d9fbe5098a75137215b8b9206539f2"
+        },
+        {
+          "path": "backend/src/services/adapters/registry.ts",
+          "sha256": "4f95ce0bad76534c2207d34c1b70d67fe8f077eb11c89d67c8b30564fc4599fb"
+        },
+        {
+          "path": "backend/src/services/adapters/types.ts",
+          "sha256": "b2717b48f12e87d1ef6e7077881072272e34cf71436985589195dbd3fa55f88d"
+        },
+        {
+          "path": "backend/src/services/ffmpeg-merge.ts",
+          "sha256": "f60beeb3c7e0e49fc063536a8e8996229447eb732c25e6a50861f063b0c3d3b4"
+        },
+        {
+          "path": "package.json",
+          "sha256": "26601a3e1f9da20086dfd8caa3fe86f58a19a065f623fc37be97535ec40d5872"
+        }
+      ],
+      "finding": "Image/video submit+poll adapter contracts and ffmpeg merge code present; LICENSE begins CC BY-NC-SA 4.0. Runtime unverified."
+    },
+    {
+      "repository": "https://github.com/LudwigKienle/ai-video-production-editor",
+      "commit": "cf3fdc97229b3a9fd3d1e569b1630e94e46a0f3d",
+      "pushed_at": "2026-10-15T16:30:30Z",
+      "github_license": "GPL-3.0",
+      "source_files": [
+        {
+          "path": "docs/model-providers.md",
+          "sha256": "85ad4a1cf03089251c44868288c263606e0452966ffb7918bfc95c5fbd39d136"
+        },
+        {
+          "path": "electron/ffmpeg-handler.js",
+          "sha256": "3d00d53bb30d060c80319147e0afab0f696d2b439e8384b6f495c4b1a902342b"
+        },
+        {
+          "path": "package.json",
+          "sha256": "609dee0c20335047911f5a3d4304459eec41fc13f1c26ead558b8c2cf5e98fae"
+        }
+      ],
+      "finding": "React/Electron; web build exists, FFmpeg implementation inspected in Electron handler. Browser-only export independence unverified. GPL-3.0-or-later package metadata."
+    }
+  ],
+  "existing_environment": {
+    "node": "24.15.0",
+    "bun": "1.3.13",
+    "ffmpeg": "8.1.1",
+    "flowkit_dashboard_node_modules": false
+  },
+  "limits": [
+    "Only selected source files inspected; no full app build/run",
+    "Toonflow declares packageManager bun@1.3.14; installed 1.3.13 compatibility unverified",
+    "No dependencies installed; dependency cache completeness unverified",
+    "Existing Seko exports are not evidence of local-only export"
+  ]
+}

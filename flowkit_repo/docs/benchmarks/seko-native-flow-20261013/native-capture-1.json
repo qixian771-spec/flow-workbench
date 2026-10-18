@@ -1,0 +1,34 @@
+{
+  "audit": [
+    {
+      "at": "2026-10-14T02:32:08.449Z",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "kind": "captured-native-request",
+      "route": "seko-canvas/v1/canvas-node/gen-video",
+      "upstreamSubmitted": false
+    }
+  ],
+  "canvasId": "2110113293747896321",
+  "jobs": [
+    {
+      "actualModelFamily": "omni_flash",
+      "actualProvider": "flow",
+      "canvasId": "2110113293747896321",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "nativeRequest": {
+        "canvasId": "2110113293747896321",
+        "firstFrameNodeId": "2110195605558804482",
+        "lastFrameNodeId": "",
+        "processedPrompt": "0-3s: The camera slowly pushes forward along the stream toward the stone bridge. 3-6s: A bright yellow paper boat floats from the lower left toward the bridge and turns gently with the current. 6-8s: The boat passes beneath the arch as the camera holds steady. Natural stream sounds. No speech, no music.",
+        "resolutionType": 1,
+        "selectedVideoDuration": 8,
+        "videoModel": "doubao-seedance-1-0-pro-fast-251015",
+        "videoPrompt": "0-3s: The camera slowly pushes forward along the stream toward the stone bridge. 3-6s: A bright yellow paper boat floats from the lower left toward the bridge and turns gently with the current. 6-8s: The boat passes beneath the arch as the camera holds steady. Natural stream sounds. No speech, no music.",
+        "visionRatioId": 1
+      },
+      "nativeRoute": "seko-canvas/v1/canvas-node/gen-video",
+      "state": "captured"
+    }
+  ],
+  "referenceNodeId": "2110195605558804482"
+}

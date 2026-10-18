@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/sekoplatform/seko-video-creation",
+  "commit": "f20eeb886c10cdd04e6f3bfef40a563bc9bd8628",
+  "files": {
+    "SKILL.md": "7047cf3a5b31e4ddb99396e0494ba947cf710feb1baca3400924fc7fa202cfe8",
+    "LICENSE": "4d0fd048bbbcb098d6e1d25e87aa33ba3ac9cc619a035c1291e137264217e3d4"
+  },
+  "usage": "Unmodified reference text, not installed as an agent skill. Local adapter replaces remote execution; not site skill 14 or 29."
+}

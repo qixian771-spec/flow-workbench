@@ -1,0 +1,84 @@
+{
+  "profile": "seko-omni-first-frame-silent-v1",
+  "source_provenance": "Previously captured Seko form input authored by the agent, not a vendor Skill output",
+  "project_id": "f10dbc3a-b621-4271-b671-5ea2b4cd22dd",
+  "video_id": "3807b07f-d9a6-48ef-99fb-3cc70c3704da",
+  "reference_media_id": "85966991-65ac-490e-a653-cf16b9a312cf",
+  "source_prompt": "0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.",
+  "adaptation": {
+    "profile": "seko-omni-first-frame-silent-v1",
+    "source_platform": "seko",
+    "source_model": "doubao-seedance-1-0-pro-fast-251015",
+    "source_prompt": "0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.",
+    "source_sha256": "97963408a1f41a0759dbe9f27c79464b06347db692276a5b341833e530e4df11",
+    "flow_prompt": "One continuous 8-second shot with no cuts. Use the supplied image as the first frame. Maintain its framing with a locked camera throughout.\n0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.",
+    "final_prompt": "One continuous 8-second shot with no cuts. Use the supplied image as the first frame. Maintain its framing with a locked camera throughout.\n0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.\nDo not add background music.\nUse only natural ambient sound; no speech, narration or voiceover.",
+    "target_family": "omni_flash",
+    "mode": "first_frame",
+    "duration_s": 8,
+    "resolution": "720p",
+    "aspect": "16:9",
+    "reference_media_ids": [
+      "85966991-65ac-490e-a653-cf16b9a312cf"
+    ],
+    "changes": [
+      "Make continuous-shot intent explicit for Omni",
+      "Bind framing and camera to the supplied first frame",
+      "Preserve every source character and action in original order"
+    ],
+    "limitations": [
+      "Silent timed locked-camera shots only; no arbitrary Skill translation",
+      "No voice reference binding; no claim of quality improvement"
+    ]
+  },
+  "variants": {
+    "original": {
+      "request_id": "cea1654b-6a7e-42bb-9d63-3df9e7826757",
+      "scene_id": "c4c1c1f4-778e-431f-ae20-118e486cc859",
+      "media_id": "2da17b3a-b2e5-4383-8fbb-a1f1294507c2",
+      "sha256": "16d365f0d97a76b36ed53507fc2a10c6ae6383dfad071ba1aebd6a2fe0110419",
+      "duration": "8.000000",
+      "prepared_payload": {
+        "start_image_media_id": "85966991-65ac-490e-a653-cf16b9a312cf",
+        "prompt": "0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.\nDo not add background music.\nUse only natural ambient sound; no speech, narration or voiceover.",
+        "project_id": "f10dbc3a-b621-4271-b671-5ea2b4cd22dd",
+        "scene_id": "c4c1c1f4-778e-431f-ae20-118e486cc859",
+        "duration_s": 8,
+        "resolution": "720p",
+        "aspect_ratio": "VIDEO_ASPECT_RATIO_LANDSCAPE",
+        "user_paygate_tier": "PAYGATE_TIER_TWO",
+        "end_image_media_id": null,
+        "model_family": "omni_flash"
+      },
+      "actual_prompt_matches_expected": true
+    },
+    "adapted": {
+      "request_id": "d0f1c6c1-4bf9-4b3b-87a0-41660e94a130",
+      "scene_id": "ff592229-cbe7-452d-86c4-66b0068689ed",
+      "media_id": "77a0a9aa-6059-4427-bb3b-b54279ae8dc8",
+      "sha256": "7c7d42218fc975a33f4bf5b31f08a5c44a327ec24645665f661ec2ce7a0ba272",
+      "duration": "8.000000",
+      "prepared_payload": {
+        "start_image_media_id": "85966991-65ac-490e-a653-cf16b9a312cf",
+        "prompt": "One continuous 8-second shot with no cuts. Use the supplied image as the first frame. Maintain its framing with a locked camera throughout.\n0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.\nDo not add background music.\nUse only natural ambient sound; no speech, narration or voiceover.",
+        "project_id": "f10dbc3a-b621-4271-b671-5ea2b4cd22dd",
+        "scene_id": "ff592229-cbe7-452d-86c4-66b0068689ed",
+        "duration_s": 8,
+        "resolution": "720p",
+        "aspect_ratio": "VIDEO_ASPECT_RATIO_LANDSCAPE",
+        "user_paygate_tier": "PAYGATE_TIER_TWO",
+        "end_image_media_id": null,
+        "model_family": "omni_flash"
+      },
+      "actual_prompt_matches_expected": true
+    }
+  },
+  "generation_count": 2,
+  "credit_cost": null,
+  "observations": {
+    "basis": "8 frames per clip at 1 fps; visual inspection, not phoneme or audio validation",
+    "original": "Identity and cafe retained; lowers gaze then raises it; no obvious cut in sampled frames.",
+    "adapted_v1": "Identity and cafe retained; no obvious cut in sampled frames; mouth open around 5 seconds. Not accepted as an improvement.",
+    "next": "Test an explicit throughout-shot closed-lips constraint for this silent reaction profile."
+  }
+}

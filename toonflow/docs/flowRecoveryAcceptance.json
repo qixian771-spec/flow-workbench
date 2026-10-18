@@ -1,0 +1,62 @@
+{
+  "card": "LW-05",
+  "accepted": true,
+  "offline": {
+    "flowPortOffline": true,
+    "toonflowResponded": true,
+    "generationRejected": true,
+    "jobCountUnchanged": 5,
+    "message": "本机 FlowKit 连接中断；未自动重发。请恢复服务并核查原任务 ff5441a3-2042-96b1-21ac-335a9c469ea3"
+  },
+  "newTabSameProject": true,
+  "offlinePlayback": {
+    "duration": 16,
+    "observedCurrentTime": 7.362554,
+    "paused": false
+  },
+  "flowServiceRestored": true,
+  "extensionConnected": true,
+  "toonflowRestarted": true,
+  "requestRowsUnchanged": [
+    {
+      "id": "4deb9df0-9cb4-40fe-8dcd-172fb7243423",
+      "status": "COMPLETED",
+      "type": "GENERATE_VIDEO",
+      "media_id": "1ff0f6a4-f8d5-4069-9f4d-babacc594e38",
+      "retry_count": 0
+    },
+    {
+      "id": "dbb4035e-e900-477b-9497-4c4ad3135320",
+      "status": "COMPLETED",
+      "type": "GENERATE_VIDEO",
+      "media_id": "fbb7c1ba-859f-4a01-b851-ed25764d8c84",
+      "retry_count": 0
+    },
+    {
+      "id": "3c842847-168e-4e27-bf99-9799d45a401d",
+      "status": "COMPLETED",
+      "type": "GENERATE_VIDEO",
+      "media_id": "78012145-97e0-4502-9cfb-e9297fb7d47a",
+      "retry_count": 0
+    },
+    {
+      "id": "35f6b667-2d8a-48bb-80e0-937102174668",
+      "status": "COMPLETED",
+      "type": "GENERATE_IMAGE",
+      "media_id": "89015662-0c95-4c65-8e86-fb93ac881f60",
+      "retry_count": 0
+    }
+  ],
+  "localAssetHashes": [
+    "d31a7625850265ac7627eb365386b2d01ad14743ad41e333c2a16c300b7e68ee",
+    "20734e6cf0cdfedb4e67a853d09b6ee49697e3b4738ab21291d24d47c72321f8",
+    "686d07c4089ceab2889839612297f2a7323226afcab198530b1ed9aee5d2e65e"
+  ],
+  "exportHash": "b998eafed30030c7812c824e57333e4261840f84142fbec6b4edd49dc415bd3f",
+  "exportMtimeUnchanged": true,
+  "testsPassed": 29,
+  "limits": [
+    "No forced power failure during a paid submit; unknown PROCESSING startup pause tested via unit test",
+    "Not an automatic text/quality/dialogue acceptance"
+  ]
+}

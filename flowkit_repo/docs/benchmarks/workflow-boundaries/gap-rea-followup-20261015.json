@@ -1,0 +1,280 @@
+{
+  "observed_at": "2026-10-15T14:03:18.550811Z",
+  "installed": false,
+  "tool": "existing rea-agents 6.4.0",
+  "scope_extension": "Latest user instruction explicitly requested further REA investigation beyond prior six-module pass. Ten directly observed relevant current resources were downloaded; seven source inputs analyzed across two batches plus an explicitly labeled two-method excerpt. No whole-site enumeration.",
+  "sources": [
+    {
+      "name": "canvas-BLeYbv0U.js",
+      "url": "https://seko.sensetime.com/assets/canvas-BLeYbv0U.js",
+      "bytes": 20458,
+      "sha256": "5d043cb36c2e88583b0c5a84d2adc845c24e976fdd0871d8a62a2994ab7f9054",
+      "observed_at": "2026-10-15T13:37:19.637932+00:00"
+    },
+    {
+      "name": "chat-hSCxsMFy.js",
+      "url": "https://seko.sensetime.com/assets/chat-hSCxsMFy.js",
+      "bytes": 200511,
+      "sha256": "08914464cbaee339f52e0ba50121fdd6c98bf7fdbac30fc716fd7f03ae9bbc5f",
+      "observed_at": "2026-10-15T13:37:19.898546+00:00"
+    },
+    {
+      "name": "useGuideTourStore-DXtUqXf5.js",
+      "url": "https://seko.sensetime.com/assets/useGuideTourStore-DXtUqXf5.js",
+      "bytes": 25359,
+      "sha256": "4b9ca1ccc6085342de5d02d818523fc92c186e9425b8cd1342178a4c067c5d9c",
+      "observed_at": "2026-10-15T13:37:20.067351+00:00"
+    },
+    {
+      "name": "shot-BLVxxKZl.js",
+      "url": "https://seko.sensetime.com/assets/shot-BLVxxKZl.js",
+      "bytes": 4072,
+      "sha256": "5a66b335144d313367c02491f3458068beff79f47171196764324293b7ef7f33",
+      "observed_at": "2026-10-15T13:37:20.259440+00:00"
+    },
+    {
+      "name": "skill-community-B7782ZfW.js",
+      "url": "https://seko.sensetime.com/assets/skill-community-B7782ZfW.js",
+      "bytes": 42845,
+      "sha256": "9100921af15d1ae86f4431918021b9cf779dcc12d517cdaa73a5bee56f9058c5",
+      "observed_at": "2026-10-15T13:37:20.454288+00:00"
+    },
+    {
+      "name": "canvas-node-replay-DgMnNsWt.js",
+      "url": "https://seko.sensetime.com/assets/canvas-node-replay-DgMnNsWt.js",
+      "bytes": 19543,
+      "sha256": "bef80940856d219bbb4d9ea68b99115371b747fdc96cfc286d8effdc2f551fb9",
+      "observed_at": "2026-10-15T13:37:20.681802+00:00"
+    },
+    {
+      "name": "canvas-data-mapper-DI196OBH.js",
+      "url": "https://seko.sensetime.com/assets/canvas-data-mapper-DI196OBH.js",
+      "bytes": 28789,
+      "sha256": "07275460a1d7a97e6262c84ffe2added31a897a015cf26d9c36919265379433a",
+      "observed_at": "2026-10-15T13:37:20.844418+00:00"
+    },
+    {
+      "name": "InfiniteCanvas-SX2z4b5R.js",
+      "url": "https://seko.sensetime.com/assets/InfiniteCanvas-SX2z4b5R.js",
+      "bytes": 1897130,
+      "sha256": "3ec45d46f125737c08ba960a4de0b566babfdd68afee70be7e4fb59725739276",
+      "observed_at": "2026-10-15T13:37:21.344136+00:00"
+    },
+    {
+      "name": "useOSSUploader-BWv-OPvK.js",
+      "url": "https://seko.sensetime.com/assets/useOSSUploader-BWv-OPvK.js",
+      "bytes": 7540,
+      "sha256": "c53cd283dff7facdaec3f7694f03b4c3f978bc013812bc512cc10d3fdf5562b4",
+      "observed_at": "2026-10-15T13:37:21.506659+00:00"
+    },
+    {
+      "name": "video-direct-helper-BaX8HFSZ.js",
+      "url": "https://seko.sensetime.com/assets/video-direct-helper-BaX8HFSZ.js",
+      "bytes": 3834,
+      "sha256": "b30d6e9b3e5a6dc9fc9448b7b6b5176326ec599b0b8f0a1ee66726a5baddd622",
+      "observed_at": "2026-10-15T13:37:21.734484+00:00"
+    }
+  ],
+  "runs": [
+    {
+      "artifact": "output/seko-rea-gap-20261015/rea-api.json",
+      "sha256": "67d79ad73dea034d43395b83eaff9775d433647d0f0e485bc8faad673f25a937",
+      "evidence_id": "ev_1d33dd4955d6d4e40818d00dce3ab4ca3ec3117fbf576c28dfedd75296ccb1d5",
+      "statistics": {
+        "relevant_files": 5,
+        "nested_asar_containers": 0,
+        "text_bytes_read": 61263,
+        "invalid_utf8_files": 0,
+        "parsed_javascript_files": 5,
+        "visited_ast_nodes": 16318,
+        "findings": 291,
+        "modules": 0,
+        "parse_failures": 0
+      },
+      "summary": null,
+      "status": null,
+      "coverage": null,
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/rea-agent.json",
+      "sha256": "ddb7285aded8cb7c28ef447518ff9804f777b7812c635ffe0670ee4bd45b9713",
+      "evidence_id": "ev_1fde1f5adc24a248ed4c8d6dd8865da8892938ea57cfd7a3caf92db4dbe5cbab",
+      "statistics": {
+        "relevant_files": 1,
+        "nested_asar_containers": 0,
+        "text_bytes_read": 1897130,
+        "invalid_utf8_files": 0,
+        "parsed_javascript_files": 1,
+        "visited_ast_nodes": 473280,
+        "findings": 898,
+        "modules": 0,
+        "parse_failures": 0
+      },
+      "summary": null,
+      "status": null,
+      "coverage": null,
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/trace-api.json",
+      "sha256": "29d5ce889af706f945d6c20aae9b3f501a149f11670f94e1617ca90ce7845050",
+      "evidence_id": "ev_5ae1260fa7d4dbd1a5ad0032f3e6aec717969d5559e44f86d4adaedfe8877f3b",
+      "statistics": null,
+      "summary": {
+        "matched_seeds": 2,
+        "traced_nodes": 236,
+        "traced_edges": 301,
+        "terminal_paths": 4,
+        "native_handoffs": 0,
+        "observed_facts": 208,
+        "inferred_facts": 548,
+        "unknown_facts": 0,
+        "unavailable_facts": 0
+      },
+      "status": null,
+      "coverage": "complete-within-source",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/trace-agent.json",
+      "sha256": "dad784251891f5f38abae6ea091a98ef4dcd2d5395e2b8735267f3fa7808d5c3",
+      "evidence_id": "ev_e4adb253c7eda67c43a24ba28cc40b1bb6e6f32660ca16b8eba67ced10781494",
+      "statistics": null,
+      "summary": {
+        "matched_seeds": 2,
+        "traced_nodes": 223,
+        "traced_edges": 900,
+        "terminal_paths": 30,
+        "native_handoffs": 0,
+        "observed_facts": 59,
+        "inferred_facts": 1753,
+        "unknown_facts": 0,
+        "unavailable_facts": 0
+      },
+      "status": null,
+      "coverage": "complete-within-source",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/trace-continue.json",
+      "sha256": "414cac76dea62779b3c4908dea1e733c7c4cf29766ef8089de74d4f610f13849",
+      "evidence_id": "ev_f04066f43770f35cafd9913acfec99822fd27793457b0f3d4316795b0d989dff",
+      "statistics": null,
+      "summary": {
+        "matched_seeds": 0,
+        "traced_nodes": 0,
+        "traced_edges": 0,
+        "terminal_paths": 0,
+        "native_handoffs": 0,
+        "observed_facts": 0,
+        "inferred_facts": 0,
+        "unknown_facts": 0,
+        "unavailable_facts": 0
+      },
+      "status": null,
+      "coverage": "no-match",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/trace-external.json",
+      "sha256": "e0645dc50cf524c9b6970fc65a6582e61315a609b490141bf452304089f0dde7",
+      "evidence_id": "ev_ccecba1c93fe8839bfd97604785a1dacf102a0fbe5cf3e62ba3f2fe46deac8e4",
+      "statistics": null,
+      "summary": {
+        "matched_seeds": 0,
+        "traced_nodes": 0,
+        "traced_edges": 0,
+        "terminal_paths": 0,
+        "native_handoffs": 0,
+        "observed_facts": 0,
+        "inferred_facts": 0,
+        "unknown_facts": 0,
+        "unavailable_facts": 0
+      },
+      "status": null,
+      "coverage": "no-match",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/semantic-external.json",
+      "sha256": "1fae761c30bb5ef48b8438cf52ac5e639455c4783f2270ca591a4e0c05ab486f",
+      "evidence_id": "ev_7342a385cd7790fc137528bae51246cb0d1f80a4bac18544b2c0d4b6468b49be",
+      "statistics": null,
+      "summary": {
+        "total_seed_matches": 0,
+        "traversed_nodes": 0,
+        "traversed_relations": 0,
+        "traversed_functions": 0,
+        "traversed_modules": 0,
+        "relevant_unknowns": 50852
+      },
+      "status": "partial",
+      "coverage": "partial",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/semantic-inputs.json",
+      "sha256": "1ef1781c9cdc717ba10d279bf41d45884429281f490ba70cf5579fb0786360cd",
+      "evidence_id": "ev_53ec90ed10dba64e78e0bdc2270b802ae56ec74bc2713978cacc1bc1d34a5d70",
+      "statistics": null,
+      "summary": {
+        "total_seed_matches": 0,
+        "traversed_nodes": 0,
+        "traversed_relations": 0,
+        "traversed_functions": 0,
+        "traversed_modules": 0,
+        "relevant_unknowns": 50852
+      },
+      "status": "partial",
+      "coverage": "partial",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/rea-transport-excerpt.json",
+      "sha256": "0ac16a21942eb474fc914ef034266b4d02bb8b6e2e94b5f735e80e8b69be77ab",
+      "evidence_id": "ev_68728e3222645a035e22664fd6e9b3f3f1b2058b6589a2ca77e6807a52b8c2d8",
+      "statistics": {
+        "relevant_files": 1,
+        "nested_asar_containers": 0,
+        "text_bytes_read": 835,
+        "invalid_utf8_files": 0,
+        "parsed_javascript_files": 1,
+        "visited_ast_nodes": 188,
+        "findings": 0,
+        "modules": 0,
+        "parse_failures": 0
+      },
+      "summary": null,
+      "status": null,
+      "coverage": null,
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    },
+    {
+      "artifact": "output/seko-rea-gap-20261015/semantic-transport.json",
+      "sha256": "6f39d302395a0dd6b57a3b56a26365e6345350bbe24b4134f482f4051e723353",
+      "evidence_id": "ev_446fc51679383c505f67baee32ca35a9c6e60760aea27da023cc7db84f8814eb",
+      "statistics": null,
+      "summary": {
+        "total_seed_matches": 0,
+        "traversed_nodes": 0,
+        "traversed_relations": 0,
+        "traversed_functions": 0,
+        "traversed_modules": 0,
+        "relevant_unknowns": 0
+      },
+      "status": "partial",
+      "coverage": "partial",
+      "limitation": "Static results only; no-match/partial cannot prove absence or runtime reachability."
+    }
+  ],
+  "transport_excerpt": {
+    "source": "InfiniteCanvas-SX2z4b5R.js",
+    "original_sha256": "3ec45d46f125737c08ba960a4de0b566babfdd68afee70be7e4fb59725739276",
+    "character_start": 1564904,
+    "character_end_exclusive": 1565712,
+    "wrapper": "class ExtractedTransport{...}",
+    "limitation": "Only exact two-method source excerpt, synthetic class wrapper; dependencies unresolved; not whole application or runtime proof."
+  },
+  "runtime_evidence": "gap-live-roundtrip-20261015.json"
+}

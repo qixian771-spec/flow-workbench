@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "accepted_at": "2026-10-15T16:23:17.282687+00:00",
+  "verdict": "pass_local_image_tracer",
+  "card": "01-04-01",
+  "job_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+  "step_id": "generate_image:1",
+  "flow_request_id": "315a918c-3051-4da0-b814-5a2179a1d817",
+  "flow_scene_id": "0c2889d9-12bd-4dc9-9e37-5e42df13a047",
+  "flow_media_id": "b587a425-a9dc-4759-921b-6c3eadba7e55",
+  "seko_node_id": "2110766758585061377",
+  "seko_node_gen_id": "2110766758589255682",
+  "sha256": "3cc1893ebeb640f98e09ce665a44371d17ff09254d4b5c388a9a310d3d085fc0",
+  "bytes": 793116,
+  "dimensions": [
+    1376,
+    768
+  ],
+  "mime": "image/jpeg",
+  "source": {
+    "repository": "https://github.com/sekoplatform/seko-video-creation",
+    "commit": "f20eeb886c10cdd04e6f3bfef40a563bc9bd8628",
+    "files": {
+      "SKILL.md": "7047cf3a5b31e4ddb99396e0494ba947cf710feb1baca3400924fc7fa202cfe8",
+      "LICENSE": "4d0fd048bbbcb098d6e1d25e87aa33ba3ac9cc619a035c1291e137264217e3d4"
+    },
+    "usage": "Unmodified reference text, not installed as an agent skill. Local adapter replaces remote execution; not site skill 14 or 29."
+  },
+  "text_model": "gpt-6.1-sol",
+  "image_model": "BELUGA",
+  "image_model_ui": "Nano Banana 2.1",
+  "text_calls": {
+    "proposal": {
+      "input_tokens": 20747,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 626,
+      "reasoning_output_tokens": 0
+    },
+    "continue": {
+      "input_tokens": 16722,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 414,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "history": [
+    {
+      "phase": "planning",
+      "at": "2026-10-15T16:13:26.559189+00:00"
+    },
+    {
+      "phase": "creating-video",
+      "at": "2026-10-15T16:13:55.888341+00:00"
+    },
+    {
+      "phase": "creating-scene",
+      "at": "2026-10-15T16:13:55.893959+00:00"
+    },
+    {
+      "phase": "submitting",
+      "at": "2026-10-15T16:13:55.899218+00:00"
+    },
+    {
+      "phase": "submitted",
+      "at": "2026-10-15T16:13:55.904540+00:00"
+    },
+    {
+      "phase": "needs-inspection",
+      "at": "2026-10-15T16:14:26.970837+00:00"
+    },
+    {
+      "phase": "submitted",
+      "at": "2026-10-15T16:16:21.519362+00:00"
+    },
+    {
+      "phase": "ready",
+      "at": "2026-10-15T16:16:23.973809+00:00"
+    },
+    {
+      "phase": "uploading",
+      "at": "2026-10-15T16:16:24.398186+00:00"
+    },
+    {
+      "phase": "uploaded",
+      "at": "2026-10-15T16:16:25.029101+00:00"
+    },
+    {
+      "phase": "creating-node",
+      "at": "2026-10-15T16:16:25.495572+00:00"
+    },
+    {
+      "phase": "backfilled",
+      "at": "2026-10-15T16:16:25.993528+00:00"
+    },
+    {
+      "phase": "continuing",
+      "at": "2026-10-15T16:16:25.995519+00:00"
+    },
+    {
+      "phase": "complete",
+      "at": "2026-10-15T16:16:45.499095+00:00"
+    }
+  ],
+  "inspections": [
+    {
+      "at": "2026-10-15T16:16:21.519349+00:00",
+      "error": "Expected PNG output for first image tracer",
+      "action": "re-read completed original media; generation is not resubmitted"
+    }
+  ],
+  "local_task_continued": true,
+  "next_step": {
+    "run_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+    "consumed_node_id": "2110766758585061377",
+    "consumed_media_id": "b587a425-a9dc-4759-921b-6c3eadba7e55",
+    "next_step": "video_ready_gate",
+    "video_prompt": "后续使用 Flow Omni，以已验证媒体 b587a425-a9dc-4759-921b-6c3eadba7e55 为首帧。横屏16:9，总长8秒，静音，单个连续环境建立镜头，写实文戏氛围；阴雨天自然散射光，灰蓝环境映衬温润木色，景深自然。0-3s：严格从首帧构图开始，摄影机极缓慢向窗边木桌推进；合拢的蓝色雨伞保持在左侧，白色茶杯保持在其右侧，杯口淡淡水汽缓缓上升，窗外细雨落在湿润的灰色石板小路上。3-6s：沿同一轴线保持极缓慢推进，水汽自然舒展消散，窗外积水中的细小雨水涟漪持续变化；雨伞、茶杯与桌面的位置、比例和形态保持稳定。6-8s：摄影机推进逐渐放缓至静止，最终构图完整保留雨伞、茶杯及窗外延伸的小路，水汽与细雨继续轻微运动。全程无人，无人物倒影、文字、字幕、标识或新增物件；不切镜、不转场，无对白、旁白、音乐及环境音。当前仅完成镜头策划，停在 video_ready_gate，不执行视频生成。"
+  },
+  "next_route": {
+    "provider": "flow",
+    "model": "abra_i2v_8s",
+    "mode": "frame_to_video",
+    "duration_s": 8,
+    "resolution": "720p",
+    "orientation": "HORIZONTAL",
+    "dispatched": false
+  },
+  "flow_requests_for_scene": 1,
+  "vendor_generation_writes": 0,
+  "seko_writes": [
+    {
+      "window": "network.json",
+      "method": "POST",
+      "path": "/guodong-api/animo-support/content-detection/v1/image-moderation"
+    },
+    {
+      "window": "network.json",
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas-node"
+    }
+  ],
+  "reopened_task_same": true,
+  "cloud_run_resumed": false,
+  "full_film_verified": false,
+  "persistent_page_worker_verified": false
+}

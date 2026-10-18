@@ -1,0 +1,54 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "check": "same_asset_id_new_uri",
+      "passed": true,
+      "asset_id": "71fd09da-bdb1-45d1-a8b6-245093051112",
+      "old_uri": "hogi://video/mv74gy32_843cbb1a46472537.mp4",
+      "new_uri": "hogi://video/mv751989_93167580f5d2533f.mp4"
+    },
+    {
+      "check": "same_timeline",
+      "passed": true
+    },
+    {
+      "check": "same_clip_ids",
+      "passed": true
+    },
+    {
+      "check": "timing_and_audio_preserved",
+      "passed": true
+    },
+    {
+      "check": "duration_and_aspect_preserved",
+      "passed": true
+    },
+    {
+      "check": "affected_clips_updated",
+      "passed": false,
+      "affected_clip_ids": [
+        "3d6b202d-b3c7-48a8-a633-d80a963cc50b",
+        "f592e48c-00f0-4878-95d8-0d7ff7f815b6"
+      ]
+    },
+    {
+      "check": "unaffected_clips_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_stale_clip_uri",
+      "passed": false
+    },
+    {
+      "check": "no_stale_source_reference",
+      "passed": false
+    },
+    {
+      "check": "roundtrip_sha256",
+      "passed": true,
+      "source_sha256": "d08227f1b338194a3bd9aacc0fe6d881df315b186494c66ccd4c93334eb20157",
+      "roundtrip_sha256": "d08227f1b338194a3bd9aacc0fe6d881df315b186494c66ccd4c93334eb20157"
+    }
+  ]
+}

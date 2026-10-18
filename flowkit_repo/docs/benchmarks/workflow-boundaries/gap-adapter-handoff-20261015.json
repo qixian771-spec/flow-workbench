@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "audit_id": "seko-adapter-handoff-20261015",
+  "recorded_at": "2026-10-15T14:34:55.814050Z",
+  "task": "01-04-01",
+  "acceptance": "not_passed",
+  "commit_created": false,
+  "scope": "isolated built-in image diagnostic; not official14/creator29 candidate comparison",
+  "authorization": "Latest user explicitly allowed adapter changes; no production manifest registration, installation, model config change, or fallback.",
+  "user_choices": {
+    "original_run": "236484960534499330",
+    "status": 10,
+    "outcome": "User completed questionnaire; text outline only, preserved."
+  },
+  "pre_arm_counterexample": {
+    "run_id": "236491385000267776",
+    "tool_call_id": "call_888730",
+    "native_continue_request": "37716.1025",
+    "http_status": 200,
+    "model": "z-image",
+    "node_id": "2110736351703138305",
+    "points_before": 80,
+    "points_after": 79,
+    "accepted_as_flow": false,
+    "cause": "Native confirmation reached server before diagnostic adapter armed; initiator not attributed."
+  },
+  "captured": {
+    "capture": {
+      "args": {
+        "count": 1,
+        "image_model": "volc_seedream_v50_pro",
+        "image_quality": 2,
+        "node_label": "雨天茶肆木桌与雨伞",
+        "prompt": "雨天茶肆，古色古香的木桌上静静放着一把合拢的蓝色雨伞，背景是模糊的雨景，清新宁静的氛围，写实风格，精细质感。",
+        "ref_node_ids": [],
+        "resolution_type": 2,
+        "vision_ratio_id": 1
+      },
+      "capturedAt": "2026-10-15T14:24:12.978Z",
+      "nativeRequest": {
+        "canvas_id": "2110204684884787202",
+        "model_id": "gmlm-3-flash",
+        "session_id": "236494259887718401",
+        "user_inputs": {
+          "c102ce4c-d52b-4728-a14d-371effb35480": {
+            "count": 1,
+            "image_model": "volc_seedream_v50_pro",
+            "image_quality": 2,
+            "node_label": "雨天茶肆木桌与雨伞",
+            "prompt": "雨天茶肆，古色古香的木桌上静静放着一把合拢的蓝色雨伞，背景是模糊的雨景，清新宁静的氛围，写实风格，精细质感。",
+            "ref_node_ids": [],
+            "resolution_type": 2,
+            "vision_ratio_id": 1
+          }
+        }
+      },
+      "route": {
+        "model": "NANO_BANANA_2_1",
+        "orientation": "HORIZONTAL",
+        "provider": "flow",
+        "resolvedModel": "BELUGA",
+        "task": "GENERATE_IMAGE"
+      }
+    },
+    "phase": "captured",
+    "requirementId": "c102ce4c-d52b-4728-a14d-371effb35480",
+    "runId": "236494255546613761",
+    "sessionId": "236494259887718401",
+    "toolCallId": "call_1339172"
+  },
+  "server_after_backfill": {
+    "events": [
+      {
+        "data": {
+          "created_at": 1792074230,
+          "event": "ToolCallStarted",
+          "phase": "started",
+          "tool": {
+            "created_at": 1792074230,
+            "tool_args": {
+              "skill_label": "图片模型规格",
+              "skill_name": "seko-image-model-spec"
+            },
+            "tool_call_id": "call_1337628",
+            "tool_label": "技能说明读取",
+            "tool_name": "get_skill_instructions"
+          },
+          "tool_args": {
+            "skill_label": "图片模型规格",
+            "skill_name": "seko-image-model-spec"
+          },
+          "tool_call_id": "call_1337628",
+          "tool_label": "技能说明读取",
+          "tool_name": "get_skill_instructions"
+        },
+        "event": "tool"
+      },
+      {
+        "data": {
+          "created_at": 1792074230,
+          "event": "ToolCallCompleted",
+          "phase": "completed",
+          "tool": {
+            "created_at": 1792074230,
+            "tool_args": {
+              "skill_label": "图片模型规格",
+              "skill_name": "seko-image-model-spec"
+            },
+            "tool_call_error": false,
+            "tool_call_id": "call_1337628",
+            "tool_label": "技能说明读取",
+            "tool_name": "get_skill_instructions"
+          },
+          "tool_args": {
+            "skill_label": "图片模型规格",
+            "skill_name": "seko-image-model-spec"
+          },
+          "tool_call_id": "call_1337628",
+          "tool_label": "技能说明读取",
+          "tool_name": "get_skill_instructions"
+        },
+        "event": "tool"
+      },
+      {
+        "data": {
+          "content": "已为您准备好“雨天茶肆”意境图的生成参数，请确认：\n\n"
+        },
+        "event": "delta"
+      },
+      {
+        "data": {
+          "content": "已为您准备好“雨天茶肆”意境图的生成参数，请确认：\n\n",
+          "event": "RunPaused",
+          "phase": "paused",
+          "requirements": [
+            {
+              "created_at": "2026-10-15T14:23:53.412589+00:00",
+              "id": "c102ce4c-d52b-4728-a14d-371effb35480",
+              "tool": {
+                "created_at": 1792074233,
+                "requires_user_input": true,
+                "tool_args": {
+                  "count": 1,
+                  "image_model": "volc_seedream_v50_pro",
+                  "node_label": "雨天茶肆木桌与雨伞",
+                  "prompt": "雨天茶肆，古色古香的木桌上静静放着一把合拢的蓝色雨伞，背景是模糊的雨景，清新宁静的氛围，写实风格，精细质感。",
+                  "resolution_type": "2",
+                  "vision_ratio_id": "1"
+                },
+                "tool_call_id": "call_1339172",
+                "tool_label": "图片生成",
+                "tool_name": "generate_image"
+              },
+              "user_input_schema": [
+                {
+                  "description": "要生成图片的文本描述。",
+                  "field_type": "str",
+                  "name": "prompt"
+                },
+                {
+                  "description": "下游图片生成模型枚举，直接透传为 imageModel。",
+                  "field_type": "ImageModel",
+                  "name": "image_model"
+                },
+                {
+                  "description": "下游画面比例 ID，1=16:9、2=9:16、3=4:3、4=3:4、5=21:9、6=1:1。",
+                  "field_type": "VisionRatio",
+                  "name": "vision_ratio_id"
+                },
+                {
+                  "description": "下游分辨率枚举，6=480P、1=720P、2=1080P（图片为1K）、3=2K、4=3K（图片）、5=4K。",
+                  "field_type": "ResolutionType",
+                  "name": "resolution_type"
+                },
+                {
+                  "description": "必填的节点展示名称；用户明确指定节点名时使用该名称，否则根据内容生成简短名称。不要填模型、分辨率、画幅、数量、风格、完整 prompt、素材描述或其他生成参数。",
+                  "field_type": "str",
+                  "name": "node_label"
+                },
+                {
+                  "description": "可选的图片质量 ID，1=low、2=medium、3=high；默认不传。",
+                  "field_type": "Optional",
+                  "name": "image_quality"
+                },
+                {
+                  "description": "可选的参考素材节点 ID 列表，支持引用画布中的 Image/Video/Audio/Text Node；不要传素材 path 或节点内容。",
+                  "field_type": "Optional",
+                  "name": "ref_node_ids"
+                },
+                {
+                  "description": "当前节点的候选图片数量，只能为 1、2 或 4；默认 1。只有用户明确要求抽卡或在参数确认中选择 2/4 时才生成多张候选图。极致美学系列固定为 4。",
+                  "field_type": "Optional",
+                  "name": "count"
+                }
+              ]
+            }
+          ],
+          "run_id": "236494255546613761",
+          "session_id": "236494259887718401"
+        },
+        "event": "paused"
+      }
+    ],
+    "run_id": "236494255546613761",
+    "run_status": 30
+  },
+  "native_continue_network": {
+    "start": 90,
+    "end": 142,
+    "truncated": false,
+    "hasMore": false,
+    "events": [
+      {
+        "sequence": 92,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.366",
+        "path": "/log/ocpcagl"
+      },
+      {
+        "sequence": 93,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.367",
+        "path": "/v2/8539273bfa333d53/web/action"
+      },
+      {
+        "sequence": 94,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.368",
+        "path": "/guodong-api/guodong-point-fusion/v1/points/view/check"
+      },
+      {
+        "sequence": 98,
+        "method": "Network.responseReceived",
+        "requestId": "49914.366",
+        "path": "/log/ocpcagl",
+        "status": 200
+      },
+      {
+        "sequence": 101,
+        "method": "Network.responseReceived",
+        "requestId": "49914.368",
+        "path": "/guodong-api/guodong-point-fusion/v1/points/view/check",
+        "status": 200
+      },
+      {
+        "sequence": 105,
+        "method": "Network.responseReceived",
+        "requestId": "49914.367",
+        "path": "/v2/8539273bfa333d53/web/action",
+        "status": 200
+      },
+      {
+        "sequence": 107,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.369",
+        "path": "/guodong-api/guodong-point-fusion/v1/points/view/current"
+      },
+      {
+        "sequence": 110,
+        "method": "Network.responseReceived",
+        "requestId": "49914.369",
+        "path": "/guodong-api/guodong-point-fusion/v1/points/view/current",
+        "status": 200
+      },
+      {
+        "sequence": 115,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.370",
+        "path": "/rcfg.js"
+      },
+      {
+        "sequence": 116,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.371",
+        "path": "/web_logs"
+      },
+      {
+        "sequence": 119,
+        "method": "Network.responseReceived",
+        "requestId": "49914.370",
+        "path": "/rcfg.js",
+        "status": 200
+      },
+      {
+        "sequence": 123,
+        "method": "Network.responseReceived",
+        "requestId": "49914.371",
+        "path": "/web_logs",
+        "status": 200
+      },
+      {
+        "sequence": 126,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.372",
+        "path": "/p/conversions/c/u"
+      },
+      {
+        "sequence": 129,
+        "method": "Network.responseReceived",
+        "requestId": "49914.372",
+        "path": "/p/conversions/c/u",
+        "status": 204
+      },
+      {
+        "sequence": 131,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.373",
+        "path": "/rcfg.js"
+      },
+      {
+        "sequence": 132,
+        "method": "Network.requestWillBeSent",
+        "requestId": "49914.374",
+        "path": "/web_logs"
+      },
+      {
+        "sequence": 137,
+        "method": "Network.responseReceived",
+        "requestId": "49914.373",
+        "path": "/rcfg.js",
+        "status": 200
+      },
+      {
+        "sequence": 140,
+        "method": "Network.responseReceived",
+        "requestId": "49914.374",
+        "path": "/web_logs",
+        "status": 200
+      }
+    ]
+  },
+  "flow": {
+    "project_id": "e881c2c9-b697-4a72-a2a5-084e167d3e8f",
+    "video_id": "44c0ea79-5f7d-4ad1-81c3-ad1682a42df9",
+    "scene_id": "3e240468-b3e7-4e56-a69e-65720932f828",
+    "request_id": "e5f57fdb-a096-45d4-ae65-4b088ff88f0a",
+    "provider": "flow",
+    "model_alias": "NANO_BANANA_2_1",
+    "resolved_config": "BELUGA",
+    "native_ui_model_label": "Nano Banana 2.1 16:9",
+    "media_id": "fd0757b6-7303-43a7-ac6a-96fe6d4a62fd",
+    "status": "COMPLETED",
+    "retry_count": 0,
+    "created_at": "2026-10-15T14:25:48Z",
+    "completed_at": "2026-10-15T14:26:14Z",
+    "submission_mode": "Assistant submitted the captured arguments through existing batch API; no automatic capture-to-batch bridge yet."
+  },
+  "native_upload": {
+    "node": {
+      "genStatus": "GENERATING_COMPLETED",
+      "id": "2110739812897325058",
+      "nodeType": "IMAGE"
+    },
+    "phase": "persisted",
+    "receipt": {
+      "nodeGenId": "2110739812905713666",
+      "nodeGenIds": null,
+      "nodeId": "2110739812897325058"
+    },
+    "runRemainsPaused": true,
+    "sourceSha256": "889397b365ad9c2bb5643b10681de7500f25e9194e4818c2a9259ab3ac8acd34"
+  },
+  "byte_verification": {
+    "source_sha256": "889397b365ad9c2bb5643b10681de7500f25e9194e4818c2a9259ab3ac8acd34",
+    "downloaded_node_sha256": "889397b365ad9c2bb5643b10681de7500f25e9194e4818c2a9259ab3ac8acd34",
+    "byte_identical": true,
+    "node_id": "2110739812897325058",
+    "generation_id": "2110739812905713666",
+    "width": null,
+    "height": null,
+    "status": "GENERATING_COMPLETED"
+  },
+  "server_contract": {
+    "client_supports": "user_input only",
+    "guard_removal_drops": [
+      "toolCallId",
+      "result"
+    ],
+    "empty_user_inputs_http_status": 422,
+    "validation": "body.user_inputs too_short; minimum dictionary length 1",
+    "external_result_acceptance": "unproven; no external result sent into user_inputs",
+    "same_tool_completed": false,
+    "next_gate": false
+  },
+  "video_route": {
+    "provider": "flow",
+    "model": "abra_i2v_8s",
+    "mode": "frame_to_video",
+    "duration": 8,
+    "resolution": "720p",
+    "orientation": "landscape",
+    "invoked_this_round": false
+  },
+  "tests": {
+    "node_probe": {
+      "count": 3,
+      "passed": 3
+    },
+    "python_evidence": {
+      "count": 77,
+      "passed": 77
+    },
+    "existing_gate": {
+      "contract_valid": true,
+      "tracer_complete": false,
+      "control_gate_complete": false,
+      "channel_ready": false
+    }
+  },
+  "limitations": [
+    "Current native continue barrier is tab-scoped and disappears on refresh.",
+    "Uploaded node is a real new Flow artifact, but not accepted as the pending tool result.",
+    "Original production bridge still imports missing asset modules.",
+    "Browser no-continue window and server paused history do not prove all candidate execution paths are controllable.",
+    "REA semantic query partial/no matches does not prove server support absent."
+  ],
+  "artifacts": [
+    {
+      "path": "output/seko-adapter-gap-20261015/adapter-guard-experiment.json",
+      "sha256": "01966d40fb5d325eec52b1144a5e27dd9992878654aa0864f399035b411c7761"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/guarded-image-tool-paused.sse",
+      "sha256": "9649608a50a2fdc2a203447fa0f7a2191ae235b14f9f3fbb03ef90fa3ffa9170"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/captured-pending-image.json",
+      "sha256": "86c7c789164b40eb22dd39870128e7ed232a109b15663fdef1505409d4f38573"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/captured-server-still-paused.json",
+      "sha256": "ad2cbb82b4d0f9f21c7ceddb5dc660d239a09bb21d89c6d395d722bcfcc6bd6e"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/captured-browser-network.json",
+      "sha256": "8c96976169222072f48891e9a35ec6aa0496c60d06b6c3506a8bcfd99054e36c"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/pre-arm-native-continue.sse",
+      "sha256": "7630a896d8f483570ed71ca10a32b02e4fb69437a654cc6964038b39678ee7c9"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/guard-removal-validation-detail.json",
+      "sha256": "de0567b18412425e8bf009ffcd9ef8f713f3850c79812460c1db12e54ea6f9e6"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/flow-captured-prompt.png",
+      "sha256": "889397b365ad9c2bb5643b10681de7500f25e9194e4818c2a9259ab3ac8acd34"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/fresh-flow-node-receipt.json",
+      "sha256": "209641903a9fbb9150d965726b4d98b5b1fa77cec976a7a803e270eaef649377"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/flow-backfill-byte-verification.json",
+      "sha256": "3c04fcb00cc4283e2af25750b6e2fd13512ccc0602dbbf94822f996cb4b6a5ec"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/after-flow-backfill-run-status.json",
+      "sha256": "ad2cbb82b4d0f9f21c7ceddb5dc660d239a09bb21d89c6d395d722bcfcc6bd6e"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/flow-native-model-proof.png",
+      "sha256": "a399c02b7ebd1fdff0534c65140766f809cfc188acf26f7ca58c31f19542f0b1"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/seko-flow-node-pending-run.png",
+      "sha256": "0d39e79748d3819bcea86e0588f42022226a212952a7a67191a2240358faae3e"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/rea-adapter.json",
+      "sha256": "dd8b7b00391eeacb7c5afdfb3acd3236aa52748e63190287b97533d0b4d23d6c"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/trace-adapter.json",
+      "sha256": "f2518f26cb3485426cb19efe93d0bff50def391c47c25173ac8819337fe221d2"
+    },
+    {
+      "path": "output/seko-adapter-gap-20261015/seko-new-flow-image-visible.png",
+      "sha256": "c6307645abe1cf88c9a1aaa42ac90cba4bf3e327e07bbedebb92ca0d6c7b5ac4"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "6.4.0",
+  "evidenceId": "ev_f3e058034f48cc6fb11661e3aad702ee61d92a97229e1f736f9ec63f39057557",
+  "statistics": {
+    "relevant_files": 3,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 32070,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 3,
+    "visited_ast_nodes": 8436,
+    "findings": 198,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "coverage": {
+    "status": "complete",
+    "truncated": false,
+    "omitted_count": 0,
+    "limits": []
+  },
+  "traceSummary": {
+    "matched_seeds": 2,
+    "traced_nodes": 172,
+    "traced_edges": 204,
+    "terminal_paths": 1,
+    "native_handoffs": 0,
+    "observed_facts": 158,
+    "inferred_facts": 376,
+    "unknown_facts": 0,
+    "unavailable_facts": 0
+  },
+  "traceCoverage": {
+    "status": "complete-within-source",
+    "source_graph_status": "complete",
+    "total_seed_matches": 2
+  },
+  "inputs": [
+    {
+      "name": "shot-BflClSjB.js",
+      "sha256": "cff774ee47405a66a0fe1ffa9579fbedcef446e040f9e13181c6053c8cb26375"
+    },
+    {
+      "name": "useOSSUploader-BaPQIV7u.js",
+      "sha256": "e65a420c0d30413822c754444ceaa9c7fcb4c3fd3c1c875cbbf2dd31c419261b"
+    },
+    {
+      "name": "canvas-BZat8bJg.js",
+      "sha256": "95e89d9514194d7b67bb8752614658ef146e2c439b5105a8f53b1054d1e5d176"
+    }
+  ]
+}

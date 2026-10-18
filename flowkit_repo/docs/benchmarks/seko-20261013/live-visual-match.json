@@ -1,0 +1,38 @@
+{
+  "unaligned": [
+    {
+      "start_seconds": 0,
+      "ssim": 0.73091
+    },
+    {
+      "start_seconds": 8,
+      "ssim": 0.727498
+    }
+  ],
+  "aligned": [
+    {
+      "segment_start_frame": 0,
+      "skip_frames": 1,
+      "ssim": 0.986589
+    },
+    {
+      "segment_start_frame": 192,
+      "skip_frames": 1,
+      "ssim": 0.987162
+    },
+    {
+      "segment_start_frame": 0,
+      "skip_frames": 2,
+      "ssim": 0.727807
+    },
+    {
+      "segment_start_frame": 192,
+      "skip_frames": 2,
+      "ssim": 0.731014
+    }
+  ],
+  "source_frames": 192,
+  "export_frames": 385,
+  "fps": 24,
+  "interpretation": "Export has one extra frame; offset by one frame aligns both source repetitions above 0.986 SSIM. Not a dialogue timing acceptance."
+}

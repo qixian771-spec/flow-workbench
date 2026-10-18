@@ -1,0 +1,54 @@
+{
+  "card": "LW-02",
+  "accepted": true,
+  "job": {
+    "jobId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+    "input": {
+      "model": "BELUGA",
+      "prompt": "A wide cinematic still of a quiet Chinese tea house on a rainy afternoon. A closed blue umbrella rests diagonally on an empty wooden table beside a steaming white teacup. Warm amber lantern light, cool rain beyond the window, delicate hand-painted animation background, clean composition, no people, no lettering, 16:9 landscape.",
+      "ratio": "16:9"
+    },
+    "inputHash": "c80aa9cd72b06dffba4807e93398bf59cfcbc58057be130447892bbc63c521e2",
+    "kind": "image",
+    "route": {
+      "provider": "flow",
+      "model": "BELUGA",
+      "orientation": "HORIZONTAL"
+    },
+    "createdAt": "2026-10-15T19:48:44.986550+00:00",
+    "phase": "complete",
+    "updatedAt": "2026-10-15T19:49:14.310273+00:00",
+    "projectId": "bd5dc9b5-5825-420d-81c0-b6302e144ef5",
+    "videoId": "c311b3f5-3cd1-4bea-96bd-8b99db61bf1a",
+    "sceneId": "59156c21-8f02-44ac-a570-ef0a25f69e2f",
+    "requestId": "35f6b667-2d8a-48bb-80e0-937102174668",
+    "mediaId": "89015662-0c95-4c65-8e86-fb93ac881f60",
+    "sha256": "d31a7625850265ac7627eb365386b2d01ad14743ad41e333c2a16c300b7e68ee",
+    "mimeType": "image/jpeg",
+    "bytes": 866954,
+    "flowRequestId": null
+  },
+  "workspace": "data/workspaces/flowAcceptance",
+  "canvas": "画布1.json",
+  "nodeId": "b1a8bac3-4150-4c04-a09c-cc8091dfb53e",
+  "asset": "assets/b1a8bac3-4150-4c04-a09c-cc8091dfb53e/imagee2a5c7bf-f689-4896-ae2f-e6b694687554.jpg",
+  "dimensions": [
+    1376,
+    768
+  ],
+  "sekoOpenTabs": 0,
+  "requestsAfterRefreshAndDuplicate": 1,
+  "textProvider": null,
+  "tests": {
+    "unittestPassed": 28,
+    "serverTypecheck": "pass",
+    "webTypecheck": "pass",
+    "serverBuild": "pass",
+    "webBuild": "pass",
+    "extraPytestSuite": "Not run: existing Python environments split pytest/aiosqlite dependencies; installed nothing"
+  },
+  "limits": [
+    "text-to-image only",
+    "text provider unset; not script-to-film acceptance"
+  ]
+}

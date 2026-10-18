@@ -1,0 +1,3448 @@
+{
+  "schema_version": 1,
+  "audit": {
+    "id": "workflow-boundaries-20261015",
+    "started_at": "2026-10-15T10:54:05Z",
+    "code_rev": "b006a3d83d0ffae0ea11c34bde28ef396c16e577"
+  },
+  "evidence": [
+    {
+      "id": "ev-seko-stale-shot",
+      "platform": "seko",
+      "surface": "canvas",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "0b1b4846abe13cc240c043764a9a9f6ffe3e0b4f",
+      "source_locator": "docs/benchmarks/seko-20261013/node-update-probe.json#/shots/1/shotVideoUrl",
+      "artifact_path": "docs/benchmarks/seko-20261013/node-update-probe.json",
+      "sample": null,
+      "sha256": "e12038d2b90b68d66f3c012328b201776204bfaea8a9ab120785c782566d59e2",
+      "supported_capabilities": [
+        "node_update_leaves_stale_shot"
+      ],
+      "limitations": [
+        "已跟踪的真实脱敏历史快照；观察日期由 SEKO-FLOW-LIVE-RESULT.md 确定，仅精确到本机日期，不伪造 UTC 采集时刻。",
+        "节点媒体为 B，第二镜 shotVideoUrl 仍为 A；不证明当前网站状态、完整替换或 Agent 接管。"
+      ]
+    },
+    {
+      "id": "ev-libtv-canvas",
+      "platform": "libtv",
+      "surface": "canvas",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "18579c6edb9dcb8f75d0446a28a0cffec7fb3b31",
+      "source_locator": "docs/benchmarks/libtv-20261013/acceptance.json",
+      "artifact_path": "docs/benchmarks/libtv-20261013/acceptance.json",
+      "sample": null,
+      "sha256": "a8d2653a8c8f1116c87afca1105ec879bab90cd0ef7362fe9b6bb2f44e711c33",
+      "supported_capabilities": [
+        "external_flow_backfill"
+      ],
+      "limitations": [
+        "外部调度 Flow 真生成并同节点回填；原站生成按钮未拦截。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-libtv-editor",
+      "platform": "libtv",
+      "surface": "editor",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "18579c6edb9dcb8f75d0446a28a0cffec7fb3b31",
+      "source_locator": "docs/benchmarks/libtv-20261013/replacement-audit.json",
+      "artifact_path": "docs/benchmarks/libtv-20261013/replacement-audit.json",
+      "sample": null,
+      "sha256": "8264fe84caaccb9e405413ce0c0e57cc6eff01f1434b2aba321d8f25197d2b6d",
+      "supported_capabilities": [
+        "explicit_cache_refresh_and_render"
+      ],
+      "limitations": [
+        "显式刷新连线后 15 项通过；16 秒成片、两段蓝条、解码和音轨通过。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-libtv-editor-cache",
+      "platform": "libtv",
+      "surface": "editor",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "18579c6edb9dcb8f75d0446a28a0cffec7fb3b31",
+      "source_locator": "docs/benchmarks/libtv-20261013/stale-audit.json",
+      "artifact_path": "docs/benchmarks/libtv-20261013/stale-audit.json",
+      "sample": null,
+      "sha256": "81dc3b61e7d48442983c06ab936029e5d65d5a8f31528a60391d85cab564b37f",
+      "supported_capabilities": [
+        "render_updated_source_cache_stale"
+      ],
+      "limitations": [
+        "渲染读取新节点，但 no_stale_source_reference=false；成片正确不证明全部引用一致。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-libtv-agent-skill",
+      "platform": "libtv",
+      "surface": "agent_skill",
+      "kind": "source",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "18579c6edb9dcb8f75d0446a28a0cffec7fb3b31",
+      "source_locator": "docs/LIBTV-FLOW-LIVE-RESULT.md",
+      "artifact_path": "docs/LIBTV-FLOW-LIVE-RESULT.md",
+      "sample": null,
+      "sha256": "d6fef0292aebdc096cda788c2012d89e4b475f7c5d72ed0ac213138346e1738d",
+      "supported_capabilities": [
+        "native_agent_takeover_not_implemented"
+      ],
+      "limitations": [
+        "历史报告明确 TV Director 自动任务接管未验证、网页按钮未改写；不能推导平台永远不支持。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-oiioii-canvas",
+      "platform": "oiioii",
+      "surface": "canvas",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "f6780a14f598b2d5e85e8a30cdedc4b6b52be27a",
+      "source_locator": "docs/benchmarks/oiioii-replacement-20261013/render-audit.json",
+      "artifact_path": "docs/benchmarks/oiioii-replacement-20261013/render-audit.json",
+      "sample": null,
+      "sha256": "fd34afece489e6d291164aa19ce91166d819fb65b3d79b7b6d1376a2e8f148e7",
+      "supported_capabilities": [
+        "same_asset_replacement"
+      ],
+      "limitations": [
+        "asset ID 保留、URI 更新、回下载哈希匹配；不证明自动传播或本轮 Flow 新生成调度。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-oiioii-editor",
+      "platform": "oiioii",
+      "surface": "editor",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "f6780a14f598b2d5e85e8a30cdedc4b6b52be27a",
+      "source_locator": "docs/benchmarks/oiioii-replacement-20261013/render-audit.json",
+      "artifact_path": "docs/benchmarks/oiioii-replacement-20261013/render-audit.json",
+      "sample": null,
+      "sha256": "fd34afece489e6d291164aa19ce91166d819fb65b3d79b7b6d1376a2e8f148e7",
+      "supported_capabilities": [
+        "clips_updated_source_reference_stale"
+      ],
+      "limitations": [
+        "显式更新片段后 ID/时序/音量保留；sourceReferences 仍旧，严格 16 项仅 15 通过，整体失败。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-oiioii-agent-skill",
+      "platform": "oiioii",
+      "surface": "agent_skill",
+      "kind": "source",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "bc9023bb224ba1f1c760989bd5f8da651a49cf29",
+      "source_locator": "docs/REA-INVESTIGATION.md",
+      "artifact_path": "docs/REA-INVESTIGATION.md",
+      "sample": null,
+      "sha256": "94cdd8a9309df34bac9284ef48dcbe058fd4a84cfe05cb1db037a90ffc22afc0",
+      "supported_capabilities": [
+        "agent_mcp_channel_discovered"
+      ],
+      "limitations": [
+        "仅记录静态 IPC/MCP 通道；核心范围命中纠正全量 no-match，未证明 Agent 能调用自有 Flow、没有原生生成接管。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-seko-canvas-native",
+      "platform": "seko",
+      "surface": "canvas",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "bc9023bb224ba1f1c760989bd5f8da651a49cf29",
+      "source_locator": "docs/benchmarks/seko-native-flow-20261013/audit.json",
+      "artifact_path": "docs/benchmarks/seko-native-flow-20261013/audit.json",
+      "sample": null,
+      "sha256": "8e6676767169b180570de5e5f96ff53176adf235e429e611f70a259c4fa24caf",
+      "supported_capabilities": [
+        "scoped_native_button_takeover"
+      ],
+      "limitations": [
+        "两次指定工程原生按钮触发、两份不同新 Flow 视频及回填；观察窗原站生成请求 0。只限当时首帧 8 秒横屏测试，非整个 Agent。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-seko-editor",
+      "platform": "seko",
+      "surface": "editor",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "0b1b4846abe13cc240c043764a9a9f6ffe3e0b4f",
+      "source_locator": "docs/benchmarks/seko-20261013/replacement-audit.json",
+      "artifact_path": "docs/benchmarks/seko-20261013/replacement-audit.json",
+      "sample": null,
+      "sha256": "428dbbc2c55842921a94e775a3603d8115e97483799dff497132e89f2d0a32a9",
+      "supported_capabilities": [
+        "explicit_shot_replace_and_render"
+      ],
+      "limitations": [
+        "指定原 shotId 的 REPLACE 后 14 项通过；16.041667 秒多一帧，无独立同构来源缓存字段，不能虚构缓存/精确口型通过。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。"
+      ]
+    },
+    {
+      "id": "ev-seko-editor-discovery",
+      "platform": "seko",
+      "surface": "editor",
+      "kind": "static",
+      "observed_at": "2026-10-14",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "b006a3d83d0ffae0ea11c34bde28ef396c16e577",
+      "source_locator": "output/seko-interface-audit-20261014/rea-input/shot-BflClSjB.js",
+      "artifact_path": "output/seko-interface-audit-20261014/rea-input/shot-BflClSjB.js",
+      "sample": null,
+      "sha256": "cff774ee47405a66a0fe1ffa9579fbedcef446e040f9e13181c6053c8cb26375",
+      "supported_capabilities": [
+        "editor_generation_routes_discovered"
+      ],
+      "limitations": [
+        "只读归档确认独立 guodong-studio/v1/shots/{id}/gen-video 与 gen-image；仅发现接口，不证明已接管。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。",
+        "本机私有归档只读，不随 Git 分发；缺失时审计明确失败，不转成采样或成功。"
+      ]
+    },
+    {
+      "id": "ev-seko-agent-skill",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "static",
+      "observed_at": "2026-10-14",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "b006a3d83d0ffae0ea11c34bde28ef396c16e577",
+      "source_locator": "output/seko-interface-audit-20261014/rea-analysis.json",
+      "artifact_path": "output/seko-interface-audit-20261014/rea-analysis.json",
+      "sample": null,
+      "sha256": "c4170cee7d42723d7759238b0192dba9239678a338d7b317e6edaf3037154144",
+      "supported_capabilities": [
+        "agent_skill_routes_partial_graph"
+      ],
+      "limitations": [
+        "7 模块/7 解析/0 失败、672 findings、443 节点/687 边；chat 语义图超预算，整体不完整。事件流和 Skill 元数据不能证明生成前控制。",
+        "历史日期来自对应审计记录/归档日期，精度为本机日；code_rev 为归档文件版本或本次审计基线，未声称是当时线上运行版本。",
+        "本机私有归档只读，不随 Git 分发；缺失时审计明确失败，不转成采样或成功。"
+      ]
+    },
+    {
+      "id": "ev-seko-canvas-current",
+      "platform": "seko",
+      "surface": "canvas",
+      "kind": "source",
+      "observed_at": "2026-10-15T11:01:28Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "105bfda425def2397a85632eb09795c03acabb98",
+      "source_locator": "extension/seko_page.js",
+      "artifact_path": "extension/seko_page.js",
+      "sample": null,
+      "sha256": "e89676a5fa3b01827c2e4f5d660d17c4fd96de2c3556f677710bda5e9dae4f40",
+      "supported_capabilities": [
+        "current_canvas_compatibility_unknown"
+      ],
+      "limitations": [
+        "本地源码仅定向转交 canvas-node/gen-video，硬编码模块尚待 01-02 当次线上验证；旧刷新成功不能证明当前兼容。",
+        "observed_at 是本次读取源码时间；code_rev 为被读取文件最近提交，非线上部署版本。"
+      ]
+    },
+    {
+      "id": "ev-seko-editor-current",
+      "platform": "seko",
+      "surface": "editor",
+      "kind": "source",
+      "observed_at": "2026-10-15T11:01:28Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "105bfda425def2397a85632eb09795c03acabb98",
+      "source_locator": "extension/seko_page.js",
+      "artifact_path": "extension/seko_page.js",
+      "sample": null,
+      "sha256": "e89676a5fa3b01827c2e4f5d660d17c4fd96de2c3556f677710bda5e9dae4f40",
+      "supported_capabilities": [
+        "editor_generation_forwarding_absent"
+      ],
+      "limitations": [
+        "在已检查页面桥范围内没有编辑器转交分支；宽泛视频 fetch 阻止不能算 Flow 接管，不能推断所有站点路径。",
+        "observed_at 是本次读取源码时间；code_rev 为被读取文件最近提交，非线上部署版本。"
+      ]
+    },
+    {
+      "id": "ev-seko-agent-current",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "source",
+      "observed_at": "2026-10-15T11:01:28Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "105bfda425def2397a85632eb09795c03acabb98",
+      "source_locator": "extension/seko_page.js",
+      "artifact_path": "extension/seko_page.js",
+      "sample": null,
+      "sha256": "e89676a5fa3b01827c2e4f5d660d17c4fd96de2c3556f677710bda5e9dae4f40",
+      "supported_capabilities": [
+        "agent_pre_generation_control_unproven"
+      ],
+      "limitations": [
+        "本地转交仅画布首帧路径；Agent 服务端生成前控制未建立。属于 contract_unproven，不是技术不可行，也不是登录失败。",
+        "observed_at 是本次读取源码时间；code_rev 为被读取文件最近提交，非线上部署版本。"
+      ]
+    },
+    {
+      "id": "ev-build-http-0",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.392Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/LoginContext-CFHyujin.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/LoginContext-CFHyujin.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 404,
+        "content_type": "text/plain; charset=utf-8",
+        "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+        "bytes": 9,
+        "observed_exports": [],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "4c85e19be1ed8cf98b621d674dee6c8be14ffcb6baf5cc146000a61651ebad32",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-http-1",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.454Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/canvas-BZat8bJg.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/canvas-BZat8bJg.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 404,
+        "content_type": "text/plain; charset=utf-8",
+        "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+        "bytes": 9,
+        "observed_exports": [],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "e146a6e3a0dbfffa1f21eaa534b0af010706a0c0ca73d915b23f7903a00a8481",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-http-2",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.494Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/useOSSUploader-BaPQIV7u.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/useOSSUploader-BaPQIV7u.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 404,
+        "content_type": "text/plain; charset=utf-8",
+        "body_sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+        "bytes": 9,
+        "observed_exports": [],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "c696c1990688ff90b092ea25c64c8d4f96ba44c11eac1f783a0cde87cdc45967",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-http-3",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.498Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/LoginContext-Dre9Pek8.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/LoginContext-Dre9Pek8.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "body_sha256": "0d4ac2811f87ab7c6bfe4de6033b1f920eeecd0a194db9e4f1205489c6e069f5",
+        "bytes": 443596,
+        "observed_exports": [
+          "Y",
+          "g",
+          "k"
+        ],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "91044687f5c58aa2f9eeaa0c013fa1c06d19c5625acb5a3514628ae2fd716ea6",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-http-4",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.659Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/canvas-BLeYbv0U.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/canvas-BLeYbv0U.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "body_sha256": "5d043cb36c2e88583b0c5a84d2adc845c24e976fdd0871d8a62a2994ab7f9054",
+        "bytes": 20458,
+        "observed_exports": [
+          "an",
+          "D",
+          "b"
+        ],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "47c23c6dcea36d1aa1ee24524aa85799a161b2302cb5b98547f6028757add461",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-http-5",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:10:59.660Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/assets/useOSSUploader-BWv-OPvK.js",
+      "artifact_path": null,
+      "sample": {
+        "locator": "https://seko.sensetime.com/assets/useOSSUploader-BWv-OPvK.js",
+        "method": "Chrome CDP Runtime.evaluate: same-origin GET; cache=no-store; credentials=omit",
+        "http_status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "body_sha256": "c53cd283dff7facdaec3f7694f03b4c3f978bc013812bc512cc10d3fdf5562b4",
+        "bytes": 7540,
+        "observed_exports": [
+          "m"
+        ],
+        "export_scope": "Only required symbols recorded; static export clause, not runtime API compatibility"
+      },
+      "sha256": "df89bc0e8b36173ae0e3dffa6a9bfd60fce084f43dbc903daf0f84c8e75e0053",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-cache-0",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "Chrome retained tab /creation; Debugger.getScriptSource LoginContext-CFHyujin.js",
+      "artifact_path": null,
+      "sample": {
+        "method": "Debugger.scriptParsed + getScriptSource; no reload",
+        "body_sha256": "cd326508601d230bec8d342962006da08ba652b538e351348b6465e9046fcd9c",
+        "observed_exports": [
+          "Y",
+          "g",
+          "k"
+        ],
+        "http_status": null,
+        "origin_kind": "cached"
+      },
+      "sha256": "df87e98d802886face6896b4333ba7ee7543bba146d273fee3e044a4ad5c7a8f",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-cache-1",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "Chrome retained tab /creation; Debugger.getScriptSource canvas-BZat8bJg.js",
+      "artifact_path": null,
+      "sample": {
+        "method": "Debugger.scriptParsed + getScriptSource; no reload",
+        "body_sha256": "95e89d9514194d7b67bb8752614658ef146e2c439b5105a8f53b1054d1e5d176",
+        "observed_exports": [
+          "an",
+          "D",
+          "b"
+        ],
+        "http_status": null,
+        "origin_kind": "cached"
+      },
+      "sha256": "3ef442811a4578cdf76071175b14248d22cb9c936503c9b918ec98ad7790d202",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-cache-2",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:12:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "Chrome retained tab /creation; Debugger.getScriptSource useOSSUploader-BaPQIV7u.js",
+      "artifact_path": null,
+      "sample": {
+        "method": "Debugger.scriptParsed + getScriptSource; no reload",
+        "body_sha256": "e65a420c0d30413822c754444ceaa9c7fcb4c3fd3c1c875cbbf2dd31c419261b",
+        "observed_exports": [
+          "m"
+        ],
+        "http_status": null,
+        "origin_kind": "cached"
+      },
+      "sha256": "6265a35067f9707b35836032a48577c6c60936450311ea03558e17d1af16fe63",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-archive",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-14",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "output/seko-interface-audit-20261014/sources.json",
+      "artifact_path": null,
+      "sample": {
+        "method": "Read-only local sources.json + rea-input/canvas-BZat8bJg.js",
+        "body_sha256": "95e89d9514194d7b67bb8752614658ef146e2c439b5105a8f53b1054d1e5d176",
+        "observed_exports": [
+          "an",
+          "D",
+          "b"
+        ],
+        "archive_scope": "sources lists seven modules; LoginContext and uploader absent from this manifest"
+      },
+      "sha256": "b6645b1647529bebf93091d04d7207ff7f4f5c968f0e185535644f152bc02b38",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "module_contract"
+      ]
+    },
+    {
+      "id": "ev-build-health",
+      "platform": "local",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:07:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "http://127.0.0.1:8100/health",
+      "artifact_path": null,
+      "sample": {
+        "status": "ok",
+        "version": "1.3.1",
+        "extension_connected": true,
+        "ws": {
+          "connected": true,
+          "active_connections": 1,
+          "authenticated_connections": 0,
+          "extension_versions": [
+            "0.5.2"
+          ],
+          "flow_url_supported": true
+        },
+        "interpretation": "Flow transport health only; not Seko site login or bridge readiness"
+      },
+      "sha256": "56304af1a4270a4b5a8282fdd050b94ba194271fcc58fcc351803a5933dd3684",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "local_health"
+      ]
+    },
+    {
+      "id": "ev-build-page",
+      "platform": "seko",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:08:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "c8daf83d7c07f84df2c2a8d5451c0e0113787a37",
+      "source_locator": "https://seko.sensetime.com/creation?id=2110205322326720513&canvasId=2110204684884787202",
+      "artifact_path": null,
+      "sample": {
+        "method": "CUA accessibility snapshots; retained old tab + independent new tab",
+        "login_observed": true,
+        "project_observed": true,
+        "bridge_phase": "failed",
+        "bridge_message": "Failed to fetch dynamically imported module: https://seko.sensetime.com/assets/canvas-BZat8bJg.js",
+        "old_page_status": "Flow 常驻接管 · 5 个完成 · 1 个待检查",
+        "old_page_update_notice": true,
+        "unknown_write_action": "Preserved old tab; no refresh, no retry, no generation",
+        "bridge_auth": "Startup reached module imports after config GET per source; credential not read or exported"
+      },
+      "sha256": "4cb55dfd0fec60e33dd3661a00a44a79b897de192dc793d6801b8a18d1e9bfb9",
+      "limitations": [
+        "只读采样；哈希绑定记录，不证明生成接管或整条工作流通过。"
+      ],
+      "supported_capabilities": [
+        "bridge_startup"
+      ]
+    },
+    {
+      "id": "ev-skill-official-14",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:17:46.732Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "https://seko.sensetime.com/skill-community → BJD古偶甜宠剧详情; GET /guodong-api/guodong-studio/v1/skills/14 (200)",
+      "artifact_path": null,
+      "sample": {
+        "origin": "official",
+        "author": "Seko官方",
+        "publisher": "Seko官方",
+        "skill_id": 14,
+        "name": "BJD古偶甜宠剧",
+        "input": "选择男女主、偏爱原因、甜度等参数",
+        "advertised_stages": [
+          "故事大纲",
+          "分集规划",
+          "单集剧本",
+          "分镜表",
+          "生图与生视频提示词",
+          "视频素材"
+        ],
+        "advertised_manual_actions": "逐步确认大纲、脚本和视觉资产；菜单式创作与阶段确认",
+        "observed_stages": [],
+        "manual_actions_observed": [],
+        "observed_access": "登录会话实际详情与作者可见；未点使用",
+        "model_key_current": null
+      },
+      "sha256": "488b1df7db87606413748e9ab25d2b163e6f3e539afba7bc99223ffe5135e112",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "candidate_source"
+      ]
+    },
+    {
+      "id": "ev-skill-creator-29",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:17:36.663Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "https://seko.sensetime.com/skill-community → 复古梦核情绪短片【你翔哥哥】详情; GET /guodong-api/guodong-studio/v1/skills/29 (200)",
+      "artifact_path": null,
+      "sample": {
+        "origin": "community",
+        "author": "你翔哥哥",
+        "publisher": "Seko官方",
+        "creator_attribution": "原站详情明确介绍商汤Seko AI签约超创“你翔哥哥”，候选名称署名同人；归为创作者合作，不要求独立于厂家。",
+        "skill_id": 29,
+        "name": "复古梦核情绪短片【你翔哥哥】",
+        "social_locator": "https://www.xiaohongshu.com/user/profile/5b3a40386b58b7598a17a947",
+        "social_visit": "去掉查询参数后打开作者页跳到小红书登录；未进行外站登录，不影响原站明确署名来源，未额外认证外站身份。",
+        "input": "输入一个主题、意象、人物或剧情灵感",
+        "advertised_stages": [
+          "完整剧本",
+          "结构化大纲",
+          "角色/场景/道具静态资产图",
+          "包含旁白与音色参考的分镜故事板",
+          "视频片段",
+          "180秒内成片闭环"
+        ],
+        "observed_stages": [],
+        "manual_actions_observed": [],
+        "model_key_current": null
+      },
+      "sha256": "e2a50108d1f4c713b967fd5356e32d268b84a43adc2f24ae32ef38e8567cd19a",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "candidate_source"
+      ]
+    },
+    {
+      "id": "ev-skill-use-contract",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:17:36.707Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "https://seko.sensetime.com/assets/skill-community-B7782ZfW.js",
+      "artifact_path": null,
+      "sample": {
+        "body_sha256": "9100921af15d1ae86f4431918021b9cf779dcc12d517cdaa73a5bee56f9058c5",
+        "http_status": 200,
+        "method": "Page.getResourceContent source inspection + no-store GET digest",
+        "read_routes": [
+          "GET guodong-studio/v1/skills/categories",
+          "GET guodong-studio/v1/skills",
+          "GET guodong-studio/v1/skills/{id}"
+        ],
+        "write_route": "PUT guodong-studio/v1/skills/{id}/use with canvasId",
+        "handoff_fields": [
+          "canvasId",
+          "text",
+          "skills",
+          "ref_skill_ids",
+          "attachments",
+          "referencedNodeIds"
+        ],
+        "behavior": "使用路径创建/复用画布并携带handoff；可能在打开画布后自动启动Agent。未调用。",
+        "author_field_rule": "userProfile.userName；未提供时前端显示官方作者默认文案，所以publisher栏不是独立作者认证。",
+        "network_capture_limit": "仅筛选候选详情响应；部分旧事件truncated，不宣称全窗口0生成。"
+      },
+      "sha256": "02a9ffa1c2ec7a090e685865c6fe0fa28f804d5d2741d6bdb777c47174358e26",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "skill_entry_contract"
+      ]
+    },
+    {
+      "id": "ev-skill-search-scope",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:17:46.732Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "https://seko.sensetime.com/skill-community",
+      "artifact_path": null,
+      "sample": {
+        "visited": [
+          "原工程选择Skill面板",
+          "主页技能社区",
+          "官方精选20项",
+          "成片工作流16项",
+          "详情14、23、29"
+        ],
+        "excluded_candidate": {
+          "id": 23,
+          "name": "幽默反讽家庭剧【阿松的奋斗】",
+          "reason": "真实创作者冠名且有介绍，但本轮仅选择29与14做同稿深入对比，不扩大调研。"
+        },
+        "actions": "仅详情/分类/导航；未点使用、点赞、创作或生成。",
+        "counts_scope": "目录项目数是可见DOM范围，不证明网站全量目录。"
+      },
+      "sha256": "00b68aa6788fdf3fb00f67acdee0a104825c2256d4c2ed4913ff1428bae173e4",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "candidate_discovery"
+      ]
+    },
+    {
+      "id": "ev-model-flow-catalog",
+      "platform": "local",
+      "surface": "bridge",
+      "kind": "current_runtime",
+      "observed_at": "2026-10-15T11:19:11Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "http://127.0.0.1:8100/api/models (GET); agent/models.json; agent/services/flow_batch.py",
+      "artifact_path": null,
+      "sample": {
+        "default_image_model": "NANO_BANANA_2_1",
+        "image_models": {
+          "NANO_BANANA_PRO": "GEM_PIX_2",
+          "NANO_BANANA_2": "NARWHAL",
+          "NANO_BANANA_2_LITE": "HARBOR_SEAL",
+          "NANO_BANANA_2_1": "BELUGA"
+        },
+        "omni_flash_models": {
+          "frame_to_video": {
+            "4": "abra_i2v_4s",
+            "6": "abra_i2v_6s",
+            "8": "abra_i2v_8s",
+            "10": "abra_i2v_10s"
+          },
+          "start_end_frame_to_video": {
+            "4": "abra_i2v_4s",
+            "6": "abra_i2v_6s",
+            "8": "abra_i2v_8s",
+            "10": "abra_i2v_10s"
+          },
+          "reference_to_video": {
+            "4": "abra_r2v_4s",
+            "6": "abra_r2v_6s",
+            "8": "abra_r2v_8s",
+            "10": "abra_r2v_10s"
+          }
+        },
+        "observed_level": "current_local_configuration_only",
+        "actual_request": false,
+        "alias_source": "models.json matches GET; flow_batch IMAGE_MODEL_BY_NICKNAME confirms NANO_BANANA_2_1=BELUGA",
+        "warning": "配置目录不是当前Seko完整路由证明，不保证远端账号可调用；本轮未改配置、未提交请求。"
+      },
+      "sha256": "d70275cc9c9194aa0052ae4ff01172f3029f95cd83f1be422a6784ce6ee23c09",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "model_catalog"
+      ]
+    },
+    {
+      "id": "ev-model-seko-metadata",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "kind": "historical_runtime",
+      "observed_at": "2026-10-14",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "dbe5b93d69e8173857a9af5393a6eeab2ca1155c",
+      "source_locator": "output/seko-interface-audit-20261014/skill-14-public-metadata.json",
+      "artifact_path": null,
+      "sample": {
+        "skill_id": 14,
+        "name": "bjd-historical-sweet-drama-writer",
+        "preferModel": "gmlm-3-flash",
+        "observed_level": "historical_metadata_only",
+        "actual_request": false,
+        "current_ui_display": "GMLM 3 Flash (在本轮页面见到，未证明是29运行模型)",
+        "media_models": "未知；未观察Skill实际图视频请求"
+      },
+      "sha256": "c3928600e2195f83aa9fc4550b7f2b941c00f074e2ff9346b3852e097cde3119",
+      "limitations": [
+        "只读来源与元数据；未执行Skill，未提交生图/视频，不证明完整运行或实际人工成本。"
+      ],
+      "supported_capabilities": [
+        "model_metadata"
+      ]
+    }
+  ,
+    {
+      "id": "ev-boundary-visible-ui",
+      "kind": "current_runtime",
+      "surface": "agent_skill",
+      "source_locator": "CUA DOM /creation (existing dialogue project; not refreshed)",
+      "sample": {
+        "observed_at": "2026-10-15T11:28:00Z",
+        "model_display": "GMLM 3 Flash",
+        "bridge_display": "5 个完成 · 1 个待检查",
+        "update_notice": true,
+        "skill_execution_observed": false,
+        "limitation": "Current display of cached page and historic jobs, not current generation or current module proof"
+      },
+      "platform": "seko",
+      "observed_at": "2026-10-15T11:28:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "a263ab72f94c7e2b55d5588c345c35695585def1",
+      "artifact_path": null,
+      "sha256": "aa419a539d88b805d39d8795ef9a00b755650778ae3912328b56d4a155bb184b",
+      "limitations": [
+        "Current display of cached page and historic jobs, not current generation or current module proof"
+      ],
+      "supported_capabilities": [
+        "independent_boundary_observation"
+      ]
+    },
+    {
+      "id": "ev-boundary-dialogue",
+      "kind": "historical_runtime",
+      "surface": "editor",
+      "source_locator": "docs/SEKO-PERSISTENT-DIALOGUE-TASKS.md; docs/benchmarks/seko-dialogue-20261013/evidence.json; tts-inputs.json",
+      "sample": {
+        "observed_date": "2026-10-13",
+        "voice_service": "MINIMAX (historical report)",
+        "voice_model_key": "unknown",
+        "toneIds": [
+          42,
+          30
+        ],
+        "speedRatio": 1,
+        "lip_service": "SekoTalk",
+        "lip_service_selector": "sensetime",
+        "lip_model_key": "unknown",
+        "lip_parameters": {
+          "resolutionType": 1,
+          "mode": "SINGLE"
+        },
+        "lip_source": "Flow first frame + uploaded exact speech; regenerated video, Flow motion not preserved",
+        "render_status": "GENERATING_COMPLETED",
+        "current_candidate_execution": false,
+        "limitation": "Historical experiment, not candidate14/29 execution"
+      },
+      "platform": "seko",
+      "observed_at": "2026-10-13",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "a263ab72f94c7e2b55d5588c345c35695585def1",
+      "artifact_path": null,
+      "sha256": "1aee46b8ddef9497c8c5b4da7483711b5ff98566aafd8f285e130e9b4b61b646",
+      "limitations": [
+        "Historical experiment, not candidate14/29 execution"
+      ],
+      "supported_capabilities": [
+        "independent_boundary_observation"
+      ]
+    },
+    {
+      "id": "ev-boundary-review-config",
+      "kind": "source",
+      "surface": "media",
+      "source_locator": "agent/providers.json; agent/services/video_reviewer.py:683-711",
+      "sample": {
+        "role": "video_review",
+        "provider": "claude",
+        "model": null,
+        "effort": null,
+        "execution_level": "local_configuration_only",
+        "invoked": false,
+        "native_seko_review": "unknown",
+        "limitation": "Null model means CLI default not resolved; no external cross-AI invoked"
+      },
+      "platform": "seko",
+      "observed_at": "2026-10-15T11:28:00Z",
+      "audit_id": "workflow-boundaries-20261015",
+      "code_rev": "a263ab72f94c7e2b55d5588c345c35695585def1",
+      "artifact_path": null,
+      "sha256": "3e2a1bca9a43e7c4b12b21b9e8b2e0c7568e888a7b56887533a6124d903050f6",
+      "limitations": [
+        "Null model means CLI default not resolved; no external cross-AI invoked"
+      ],
+      "supported_capabilities": [
+        "independent_boundary_observation"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "seko-canvas-stale-shot",
+      "platform": "seko",
+      "surface": "canvas",
+      "capability": "node_update_leaves_stale_shot",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-seko-stale-shot"
+      ],
+      "limitations": [
+        "tested 表示反例被实际观察到：节点替换没有自动传播到所有既有镜头；不是完整替换通过。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "libtv-canvas",
+      "platform": "libtv",
+      "surface": "canvas",
+      "capability": "external_flow_backfill",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-libtv-canvas"
+      ],
+      "limitations": [
+        "外部调度 Flow 真生成并同节点回填；原站生成按钮未拦截。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "libtv-editor",
+      "platform": "libtv",
+      "surface": "editor",
+      "capability": "explicit_cache_refresh_and_render",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-libtv-editor"
+      ],
+      "limitations": [
+        "显式刷新连线后 15 项通过；16 秒成片、两段蓝条、解码和音轨通过。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "libtv-editor-cache",
+      "platform": "libtv",
+      "surface": "editor",
+      "capability": "render_updated_source_cache_stale",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-libtv-editor-cache"
+      ],
+      "limitations": [
+        "渲染读取新节点，但 no_stale_source_reference=false；成片正确不证明全部引用一致。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "libtv-agent-skill",
+      "platform": "libtv",
+      "surface": "agent_skill",
+      "capability": "native_agent_takeover_not_implemented",
+      "status": "unimplemented",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-libtv-agent-skill"
+      ],
+      "limitations": [
+        "历史报告明确 TV Director 自动任务接管未验证、网页按钮未改写；不能推导平台永远不支持。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "oiioii-canvas",
+      "platform": "oiioii",
+      "surface": "canvas",
+      "capability": "same_asset_replacement",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-oiioii-canvas"
+      ],
+      "limitations": [
+        "asset ID 保留、URI 更新、回下载哈希匹配；不证明自动传播或本轮 Flow 新生成调度。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "oiioii-editor",
+      "platform": "oiioii",
+      "surface": "editor",
+      "capability": "clips_updated_source_reference_stale",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-oiioii-editor"
+      ],
+      "limitations": [
+        "显式更新片段后 ID/时序/音量保留；sourceReferences 仍旧，严格 16 项仅 15 通过，整体失败。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "oiioii-agent-skill",
+      "platform": "oiioii",
+      "surface": "agent_skill",
+      "capability": "agent_mcp_channel_discovered",
+      "status": "discovered",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-oiioii-agent-skill"
+      ],
+      "limitations": [
+        "仅记录静态 IPC/MCP 通道；核心范围命中纠正全量 no-match，未证明 Agent 能调用自有 Flow、没有原生生成接管。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-canvas-native",
+      "platform": "seko",
+      "surface": "canvas",
+      "capability": "scoped_native_button_takeover",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-seko-canvas-native"
+      ],
+      "limitations": [
+        "两次指定工程原生按钮触发、两份不同新 Flow 视频及回填；观察窗原站生成请求 0。只限当时首帧 8 秒横屏测试，非整个 Agent。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-editor",
+      "platform": "seko",
+      "surface": "editor",
+      "capability": "explicit_shot_replace_and_render",
+      "status": "tested",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-seko-editor"
+      ],
+      "limitations": [
+        "指定原 shotId 的 REPLACE 后 14 项通过；16.041667 秒多一帧，无独立同构来源缓存字段，不能虚构缓存/精确口型通过。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-editor-discovery",
+      "platform": "seko",
+      "surface": "editor",
+      "capability": "editor_generation_routes_discovered",
+      "status": "discovered",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-seko-editor-discovery"
+      ],
+      "limitations": [
+        "只读归档确认独立 guodong-studio/v1/shots/{id}/gen-video 与 gen-image；仅发现接口，不证明已接管。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-agent-skill",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "capability": "agent_skill_routes_partial_graph",
+      "status": "discovered",
+      "temporal_scope": "historical",
+      "evidence_ids": [
+        "ev-seko-agent-skill"
+      ],
+      "limitations": [
+        "7 模块/7 解析/0 失败、672 findings、443 节点/687 边；chat 语义图超预算，整体不完整。事件流和 Skill 元数据不能证明生成前控制。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-canvas-current",
+      "platform": "seko",
+      "surface": "canvas",
+      "capability": "current_canvas_compatibility_unknown",
+      "status": "unknown",
+      "temporal_scope": "current",
+      "evidence_ids": [
+        "ev-seko-canvas-current"
+      ],
+      "limitations": [
+        "本地源码仅定向转交 canvas-node/gen-video，硬编码模块尚待 01-02 当次线上验证；旧刷新成功不能证明当前兼容。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-editor-current",
+      "platform": "seko",
+      "surface": "editor",
+      "capability": "editor_generation_forwarding_absent",
+      "status": "unimplemented",
+      "temporal_scope": "current",
+      "evidence_ids": [
+        "ev-seko-editor-current"
+      ],
+      "limitations": [
+        "在已检查页面桥范围内没有编辑器转交分支；宽泛视频 fetch 阻止不能算 Flow 接管，不能推断所有站点路径。"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "seko-agent-current",
+      "platform": "seko",
+      "surface": "agent_skill",
+      "capability": "agent_pre_generation_control_unproven",
+      "status": "blocked",
+      "temporal_scope": "current",
+      "evidence_ids": [
+        "ev-seko-agent-current"
+      ],
+      "limitations": [
+        "本地转交仅画布首帧路径；Agent 服务端生成前控制未建立。属于 contract_unproven，不是技术不可行，也不是登录失败。"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "尚无 Agent 服务端生成前暂停/外部结果恢复契约证据。",
+        "evidence_ids": [
+          "ev-seko-agent-current"
+        ],
+        "attempted": [
+          "读取现有页面桥实际转交分支并与历史静态入口范围对照"
+        ],
+        "next_action": "01-02/01-03 获取当前候选及真正执行层证据；不得把看到事件流视作前置控制。"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "official-14",
+      "origin": "official",
+      "author": "Seko官方",
+      "publisher": "Seko官方",
+      "source_locator": "https://seko.sensetime.com/skill-community (详情14)",
+      "source_evidence_ids": [
+        "ev-skill-official-14"
+      ],
+      "accessible": true,
+      "input_contract": "菜单需男女主、偏爱原因、甜度；统一稿未给后两者，不能替它补全再比较人工成本。",
+      "output_stages": [
+        {
+          "stage": "故事大纲",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "分集规划",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "单集剧本",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "分镜表",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "生图与生视频提示词",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "视频素材",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "stage": "剧本到成片",
+          "action": "确认",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "剧本到成片",
+          "action": "编辑",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "stage": "剧本到成片",
+          "action": "素材搬运",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        }
+      ],
+      "generation_entrypoints": "只读详情已观察；使用入口PUT /skills/{id}/use，Agent handoff字段已静态发现，实际图视频服务端派发点未知。",
+      "assembly_path": "文案列出视频素材，未明确声音/口型/最终合成；实际衔接未知。",
+      "observations": [
+        {
+          "kind": "observed",
+          "detail": "本轮已登录原站详情可读，作者来源及同稿字段对照完成；并非执行输出。",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        },
+        {
+          "kind": "advertised",
+          "detail": "声称菜单式创作、阶段确认及多图参考一致性。",
+          "evidence_ids": [
+            "ev-skill-official-14"
+          ]
+        }
+      ],
+      "limitations": [
+        "未运行统一稿；实际确认/编辑/搬运次数未知，不使用0。",
+        "厂家生成前控制未证明；未触发使用、生成或素材写入。",
+        "完整声音、口型、最终合成覆盖缺证据。"
+      ],
+      "test_input_id": "original-dialogue-station-v1"
+    },
+    {
+      "id": "creator-29",
+      "origin": "community",
+      "author": "你翔哥哥",
+      "publisher": "Seko官方",
+      "source_locator": "https://seko.sensetime.com/skill-community (详情29)",
+      "source_evidence_ids": [
+        "ev-skill-creator-29"
+      ],
+      "accessible": true,
+      "input_contract": "接受主题/意象/人物/剧情灵感；统一稿作为剧情灵感可对照，实际输入消费尚未运行。",
+      "output_stages": [
+        {
+          "stage": "完整剧本",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "结构化大纲",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "角色/场景/道具静态资产图",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "包含旁白与音色参考的分镜故事板",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "视频片段",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "180秒内成片闭环",
+          "kind": "advertised",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "stage": "剧本到成片",
+          "action": "确认",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "剧本到成片",
+          "action": "编辑",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "stage": "剧本到成片",
+          "action": "素材搬运",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        }
+      ],
+      "generation_entrypoints": "只读详情已观察；使用入口PUT /skills/{id}/use，Agent handoff字段已静态发现，实际图视频服务端派发点未知。",
+      "assembly_path": "文案声称180秒内成片闭环；没有合成任务或成片输出运行证据。",
+      "observations": [
+        {
+          "kind": "observed",
+          "detail": "本轮已登录原站详情可读，作者来源及同稿字段对照完成；并非执行输出。",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        },
+        {
+          "kind": "advertised",
+          "detail": "声称剧本、资产图、旁白音色分镜和视频到180秒成片闭环。",
+          "evidence_ids": [
+            "ev-skill-creator-29"
+          ]
+        }
+      ],
+      "limitations": [
+        "未运行统一稿；实际确认/编辑/搬运次数未知，不使用0。",
+        "厂家生成前控制未证明；未触发使用、生成或素材写入。",
+        "原站创作者合作署名；发布栏官方，外部社媒页要求登录，未额外认证该页。"
+      ],
+      "test_input_id": "original-dialogue-station-v1"
+    }
+  ],
+  "selection": {
+    "status": "blocked",
+    "candidate_id": null,
+    "compared_ids": [
+      "official-14",
+      "creator-29"
+    ],
+    "test_input": {
+      "id": "original-dialogue-station-v1",
+      "text": "原创短文戏《最后一班车》：雨后的车站，两位成年朋友林夏和陈舟站在屋檐下。林夏拿着一封没寄出的信，问：“你明天还会回来吗？”陈舟把车票收进口袋，说：“如果你愿意等，我就回来。”广播提醒末班车即将进站。林夏把信递给他：“那就带着它，别再把话留到以后。”陈舟接过信，点头，两人安静地望向路口。只提供这个故事梗概，不预先补全分镜、画风或声音配置。",
+      "sha256": "e12ba3f620b89f1fc50ff01d0900b56d990bb1baaa9ab25e558ba0afb9d4a5bc",
+      "purpose": "统一原创输入用于两候选字段/宣传流程同条件对照；未提交原站，不是产品输入格式或生产画风限制。"
+    },
+    "rationale": [
+      "优先比较实际可验证完整流程，再比较确认/编辑/搬运次数；仅介绍不能证明完整执行。",
+      "29宣传的静态资产、旁白音色及合成覆盖更广；14明确菜单式阶段确认。两者真实质量、人工成本和可控性均未运行核实，不能据此选定。"
+    ],
+    "blockers": [
+      "双方目前仅元数据与只读详情；完整执行输出及确认/编辑/搬运次数未观察，全部计null，不能称最少人工。",
+      "当前桥因旧模块404阻断；Skill handoff会进入Agent，厂家图视频生成前的暂停/替换控制点未证明，不安全盲跑以补数据。"
+    ]
+  },
+  "steps": [
+    {
+      "id": "investigate-writing",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-model-seko-metadata","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "编剧候选执行待证；独立事实不是选中流程",
+      "stage": "writing",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-model-seko-metadata",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-model-seko-metadata",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-model-seko-metadata",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-model-seko-metadata",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-seko-metadata",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-storyboard",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-skill-official-14","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "拆镜候选执行待证；独立事实不是选中流程",
+      "stage": "storyboard",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-skill-official-14",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-skill-official-14",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-skill-official-14",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-skill-official-14",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-skill-official-14",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-image",
+      "candidate_id": "official-14",
+      "name": "图片候选执行待证；独立事实不是选中流程",
+      "stage": "image",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-model-flow-catalog",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-model-flow-catalog",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-video",
+      "candidate_id": "official-14",
+      "name": "视频候选执行待证；独立事实不是选中流程",
+      "stage": "video",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "POST",
+        "path": "seko-canvas/v1/canvas-node/gen-video",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-seko-canvas-current",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-seko-canvas-current",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-voice",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-boundary-dialogue","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "TTS配音候选执行待证；独立事实不是选中流程",
+      "stage": "voice",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-lipsync",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未知；历史SekoTalk首帧重生成，Flow动作不保留","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-boundary-dialogue","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "口型候选执行待证；独立事实不是选中流程",
+      "stage": "lipsync",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-edit",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-boundary-dialogue","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "剪辑候选执行待证；独立事实不是选中流程",
+      "stage": "edit",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-export",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-boundary-dialogue","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "导出候选执行待证；独立事实不是选中流程",
+      "stage": "export",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-boundary-dialogue",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "investigate-review",
+      "retained_media": {"status":"unknown","media_source_effect":"当前候选未观察","protection_impact":"当前候选未观察；全局fetch规则仅为静态风险线索","evidence_ids":["ev-boundary-review-config","ev-skill-use-contract","ev-seko-canvas-current"]},
+      "candidate_id": "official-14",
+      "name": "质检候选执行待证；独立事实不是选中流程",
+      "stage": "review",
+      "required": false,
+      "inputs": [
+        {
+          "name": "候选实际输入",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "候选实际输出",
+          "source": "unknown",
+          "fields": [
+            "unknown"
+          ],
+          "media_identity": "unknown",
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "trigger": {
+        "method": "unknown",
+        "path": "unknown",
+        "event": "unknown",
+        "evidence_ids": [
+          "ev-boundary-review-config",
+          "ev-skill-use-contract"
+        ]
+      },
+      "initiator": "unknown",
+      "executor": "unknown",
+      "states": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "failure_semantics": [
+        {
+          "value": "unknown",
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "manual_actions": [
+        {
+          "action": "候选实际确认/编辑/搬运未观察",
+          "count": null,
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        }
+      ],
+      "depends_on": [],
+      "evidence_ids": [
+        "ev-boundary-review-config",
+        "ev-skill-use-contract"
+      ],
+      "build_module_ids": [
+        "current-canvas-BLeYbv0U.js"
+      ],
+      "control": {
+        "status": "unproven",
+        "timing": "unknown",
+        "mechanism": "未观察候选实际执行层；静态和历史不升级当前证明",
+        "evidence_ids": [
+          "ev-boundary-review-config",
+          "ev-skill-use-contract"
+        ],
+        "dispatch_observation": {
+          "state": "unknown",
+          "evidence_ids": [
+            "ev-boundary-review-config",
+            "ev-skill-use-contract"
+          ]
+        },
+        "input_contract": "unknown",
+        "output_contract": "unknown",
+        "resume_contract": "unknown"
+      },
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-review-config",
+          "ev-skill-use-contract"
+        ]
+      }
+    }
+  ],
+  "model_routes": [
+    {
+      "id": "route-writing",
+      "step_id": "investigate-writing",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "writing",
+      "current_provider": "Seko 编排（候选实际执行未证）",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {},
+      "execution_level": "historical_metadata/current_ui_only",
+      "evidence_ids": [
+        "ev-model-seko-metadata",
+        "ev-boundary-visible-ui"
+      ],
+      "automatic_substitution": false,
+      "notes": "仅官方14历史preferModel=gmlm-3-flash；当前UI显示GMLM 3 Flash，不是候选29运行证明或图视频模型"
+    },
+    {
+      "id": "route-storyboard",
+      "step_id": "investigate-storyboard",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "storyboard",
+      "current_provider": "Seko 候选实际未证",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {},
+      "execution_level": "advertised",
+      "evidence_ids": [
+        "ev-skill-official-14",
+        "ev-skill-creator-29"
+      ],
+      "automatic_substitution": false,
+      "notes": "编排LLM偏好不能推导每个拆镜调用型号"
+    },
+    {
+      "id": "route-image",
+      "step_id": "investigate-image",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "image",
+      "current_provider": "Seko 候选实际未证",
+      "current_model_key": "unknown",
+      "target_provider": "Flow",
+      "target_model_key": "BELUGA",
+      "parameters": {
+        "configured_name": "NANO_BANANA_2_1"
+      },
+      "execution_level": "current_local_configuration_only",
+      "evidence_ids": [
+        "ev-model-flow-catalog"
+      ],
+      "automatic_substitution": false,
+      "notes": "用户Nano Banana 2.1；目录不是接管/运行证明"
+    },
+    {
+      "id": "route-video",
+      "step_id": "investigate-video",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "video",
+      "current_provider": "Seko 候选实际未证",
+      "current_model_key": "unknown",
+      "target_provider": "Flow",
+      "target_model_key": "abra_i2v_8s",
+      "parameters": {
+        "family": "Omni Flash",
+        "mode": "frame_to_video",
+        "duration_seconds": 8,
+        "resolution": "720p",
+        "orientation": "horizontal"
+      },
+      "execution_level": "configuration_and_existing_bridge_source",
+      "evidence_ids": [
+        "ev-model-flow-catalog",
+        "ev-seko-canvas-current"
+      ],
+      "automatic_substitution": false,
+      "notes": "仅已映射画布首帧路径；编辑器/Agent未接管；其他时长/模式需显式匹配目录，不自动改"
+    },
+    {
+      "id": "route-voice",
+      "step_id": "investigate-voice",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "voice",
+      "current_provider": "Seko；历史MINIMAX服务",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {
+        "historical_toneIds": [
+          42,
+          30
+        ],
+        "historical_speedRatio": 1
+      },
+      "execution_level": "historical_runtime",
+      "evidence_ids": [
+        "ev-boundary-dialogue"
+      ],
+      "automatic_substitution": false,
+      "notes": "42/30是音色ID，不是模型名称；候选当前参数未知"
+    },
+    {
+      "id": "route-lipsync",
+      "step_id": "investigate-lipsync",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "lipsync",
+      "current_provider": "SekoTalk（历史）",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {
+        "historical_service_selector": "sensetime",
+        "historical_resolutionType": 1,
+        "historical_mode": "SINGLE"
+      },
+      "execution_level": "historical_runtime",
+      "evidence_ids": [
+        "ev-boundary-dialogue"
+      ],
+      "automatic_substitution": false,
+      "notes": "sensetime是服务选择码，不是底层精确型号；首帧重生成不保留Flow视频动作"
+    },
+    {
+      "id": "route-edit",
+      "step_id": "investigate-edit",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "edit",
+      "current_provider": "Seko 原站（历史）",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {},
+      "execution_level": "historical_runtime",
+      "evidence_ids": [
+        "ev-boundary-dialogue"
+      ],
+      "automatic_substitution": false,
+      "notes": "当前候选剪辑算法/模型未暴露；不能推测生成模型"
+    },
+    {
+      "id": "route-export",
+      "step_id": "investigate-export",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "export",
+      "current_provider": "Seko 原站合成（历史）",
+      "current_model_key": "unknown",
+      "target_provider": "Seko 保留",
+      "target_model_key": "unknown",
+      "parameters": {
+        "historical_captionOption": 1,
+        "historical_splitOption": 0,
+        "historical_watermarkOption": 1
+      },
+      "execution_level": "historical_runtime",
+      "evidence_ids": [
+        "ev-boundary-dialogue"
+      ],
+      "automatic_substitution": false,
+      "notes": "合成服务不等于生成模型；当前候选实际调用未证"
+    },
+    {
+      "id": "route-review",
+      "step_id": "investigate-review",
+      "candidate_ids": [
+        "official-14",
+        "creator-29"
+      ],
+      "task_type": "review",
+      "current_provider": "本地 video_review 配置 claude；Seko原生未知",
+      "current_model_key": "unknown",
+      "target_provider": "未决；用户要求自动质量检查",
+      "target_model_key": "unknown",
+      "parameters": {
+        "configured_provider": "claude",
+        "configured_model": null,
+        "configured_effort": null
+      },
+      "execution_level": "local_configuration_only",
+      "evidence_ids": [
+        "ev-boundary-review-config"
+      ],
+      "automatic_substitution": false,
+      "notes": "现有质检配置未运行，未调用外部cross-AI；Phase2明确实际质检责任与型号"
+    }
+  ],
+  "integration_items": [
+    {
+      "id": "int-writing",
+      "step_id": "investigate-writing",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-model-seko-metadata",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-seko-metadata",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-storyboard",
+      "step_id": "investigate-storyboard",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-skill-official-14",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-skill-official-14",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-image",
+      "step_id": "investigate-image",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-model-flow-catalog",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-video",
+      "step_id": "investigate-video",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-seko-canvas-current",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-voice",
+      "step_id": "investigate-voice",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-lipsync",
+      "step_id": "investigate-lipsync",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-edit",
+      "step_id": "investigate-edit",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-export",
+      "step_id": "investigate-export",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "int-review",
+      "step_id": "investigate-review",
+      "owner_phase": 1,
+      "disposition": "observe",
+      "inputs": [
+        "候选实际输入原字段待证"
+      ],
+      "outputs": [
+        "执行方/派发/输入输出/恢复合同调查记录"
+      ],
+      "depends_on": [],
+      "acceptance": [
+        "实际来源逐字段核验；缺证据保持unassessed；不盲跑厂家生成"
+      ],
+      "evidence_ids": [
+        "ev-boundary-review-config",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-review-config",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "adapt-image",
+      "step_id": "investigate-image",
+      "owner_phase": 2,
+      "disposition": "replace_generation",
+      "inputs": [
+        "真实源请求、显式参考映射、同模型转换参数"
+      ],
+      "outputs": [
+        "Flow真实媒体ID与提供方任务/状态"
+      ],
+      "depends_on": [
+        "int-image"
+      ],
+      "acceptance": [
+        "生成前控制成立后实施；目标model key与实际请求一致；首次外同模型最多2次质量重做；未知提交先核对"
+      ],
+      "evidence_ids": [
+        "ev-model-flow-catalog",
+        "ev-seko-canvas-current"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "backfill-image",
+      "step_id": "investigate-image",
+      "owner_phase": 3,
+      "disposition": "backfill",
+      "inputs": [
+        "真实Flow媒体、任务状态、原生步骤身份"
+      ],
+      "outputs": [
+        "正确素材/镜头/时间线引用和原流程继续状态"
+      ],
+      "depends_on": [
+        "adapt-image"
+      ],
+      "acceptance": [
+        "实际引用核验；不得以旧素材替代；失败镜头及依赖暂停、独立继续"
+      ],
+      "evidence_ids": [
+        "ev-seko-stale-shot",
+        "ev-seko-canvas-current"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-flow-catalog",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "adapt-video",
+      "step_id": "investigate-video",
+      "owner_phase": 2,
+      "disposition": "replace_generation",
+      "inputs": [
+        "真实源请求、显式参考映射、同模型转换参数"
+      ],
+      "outputs": [
+        "Flow真实媒体ID与提供方任务/状态"
+      ],
+      "depends_on": [
+        "int-video"
+      ],
+      "acceptance": [
+        "生成前控制成立后实施；目标model key与实际请求一致；首次外同模型最多2次质量重做；未知提交先核对"
+      ],
+      "evidence_ids": [
+        "ev-model-flow-catalog",
+        "ev-seko-canvas-current"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "backfill-video",
+      "step_id": "investigate-video",
+      "owner_phase": 3,
+      "disposition": "backfill",
+      "inputs": [
+        "真实Flow媒体、任务状态、原生步骤身份"
+      ],
+      "outputs": [
+        "正确素材/镜头/时间线引用和原流程继续状态"
+      ],
+      "depends_on": [
+        "adapt-video"
+      ],
+      "acceptance": [
+        "实际引用核验；不得以旧素材替代；失败镜头及依赖暂停、独立继续"
+      ],
+      "evidence_ids": [
+        "ev-seko-stale-shot",
+        "ev-seko-canvas-current"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-seko-canvas-current",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-writing",
+      "step_id": "investigate-writing",
+      "owner_phase": 3,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-writing"
+      ],
+      "acceptance": [
+        "保留用户明确厂家分工；实际输出与误伤独立复核"
+      ],
+      "evidence_ids": [
+        "ev-model-seko-metadata",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-model-seko-metadata",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-storyboard",
+      "step_id": "investigate-storyboard",
+      "owner_phase": 3,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-storyboard"
+      ],
+      "acceptance": [
+        "保留用户明确厂家分工；实际输出与误伤独立复核"
+      ],
+      "evidence_ids": [
+        "ev-skill-official-14",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-skill-official-14",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-voice",
+      "step_id": "investigate-voice",
+      "owner_phase": 5,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-voice"
+      ],
+      "acceptance": [
+        "固定音色、精确对白独立验收"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-lipsync",
+      "step_id": "investigate-lipsync",
+      "owner_phase": 5,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-lipsync"
+      ],
+      "acceptance": [
+        "独立检查嘴部时序与最终媒体来源；披露首帧重生成是否保留Flow动作"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-edit",
+      "step_id": "investigate-edit",
+      "owner_phase": 3,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-edit"
+      ],
+      "acceptance": [
+        "保留用户明确厂家分工；实际输出与误伤独立复核"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    },
+    {
+      "id": "retain-export",
+      "step_id": "investigate-export",
+      "owner_phase": 3,
+      "disposition": "retain_vendor",
+      "inputs": [
+        "原站真实服务输入；当前候选待证"
+      ],
+      "outputs": [
+        "厂家输出及媒体来源记录"
+      ],
+      "depends_on": [
+        "int-export"
+      ],
+      "acceptance": [
+        "全部镜头合格才出最终片；保留真实引用及解码证据"
+      ],
+      "evidence_ids": [
+        "ev-boundary-dialogue",
+        "ev-skill-use-contract"
+      ],
+      "blocker": {
+        "kind": "contract_unproven",
+        "reason": "selection=blocked；官方14和创作者29实际步骤及生成前控制未观察。本记录只把独立事实定位到官方候选待证类别，不表示该候选有此实际步骤。",
+        "attempted": [
+          "当前原站可见状态",
+          "候选详情与use合同",
+          "本地桥/配置/历史对白证据"
+        ],
+        "next_action": "先取得可安全暂停派发的真实协议，再比较双方同稿实际步骤与人工次数",
+        "evidence_ids": [
+          "ev-boundary-dialogue",
+          "ev-skill-use-contract"
+        ]
+      }
+    }
+  ],
+  "handoff": {
+    "decision_ids": [
+      "D-02",
+      "D-03",
+      "D-04",
+      "D-09",
+      "D-10",
+      "D-11",
+      "D-12",
+      "D-14"
+    ],
+    "quality_retry_limit": 2,
+    "retry_model_policy": "same_model",
+    "unknown_submit_policy": "reconcile_before_resubmit",
+    "pause_policy": "failed_scene_and_dependents",
+    "independent_policy": "continue",
+    "final_export_policy": "all_scenes_passed",
+    "owner_phases": {
+      "generation": [
+        2
+      ],
+      "backfill": [
+        3
+      ],
+      "scheduling": [
+        3,
+        4
+      ],
+      "voice_acceptance": [
+        5
+      ],
+      "overall_acceptance": [
+        6
+      ]
+    },
+    "feasibility": "unassessed",
+    "evidence_complete": false,
+    "comparison_complete": false,
+    "unresolved": [
+      "官方14/创作者29同稿实际输出与人工次数未观察，selection=blocked",
+      "当前桥硬编码模块失配；新模块语义等价未证",
+      "Agent/Skill派发前控制和外部结果恢复契约未证",
+      "厂家保留服务当前媒体变化和保护误伤未知；模型精确key多数未暴露"
+    ],
+    "scope_decision": {
+      "status": "pending_evidence",
+      "affected_scope": [
+        "Seko成熟Skill完整图视频接管",
+        "BASE-02/BASE-04",
+        "Phase2依赖门槛"
+      ],
+      "required_evidence": [
+        "可在厂家派发前挂起的执行层真实协议及未建任务证明",
+        "安全同稿比较两候选的实际输入输出/人工次数",
+        "当前构建与输入输出/恢复契约核验"
+      ],
+      "candidate_adjustments": [
+        "取得真实技术阻断后才提出范围调整；当前证据不足不要求用户代选实现",
+        "如出现产品范围选择，按D-12一次一道可点击题并接受自由说明；不自动替换厂家或模型"
+      ]
+    }
+  }
+}

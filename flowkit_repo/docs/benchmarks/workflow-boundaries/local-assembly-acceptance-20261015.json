@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "accepted_at": "2026-10-15T17:07:30.513649+00:00",
+  "card": "01-05-01",
+  "verdict": "pass_local_native_trim_export",
+  "job_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+  "route": {
+    "provider": "seko-native",
+    "model": null,
+    "in_s": 1,
+    "out_s": 7,
+    "duration_s": 6,
+    "resolution": "720p",
+    "orientation": "HORIZONTAL",
+    "render_options": {
+      "captionOption": 1,
+      "splitOption": 0,
+      "watermarkOption": 1
+    }
+  },
+  "source_media_id": "f74d2a35-cac2-42f7-b1fe-c7473a140f78",
+  "source_node_id": "2110773269367160833",
+  "source_sha256": "5199cbdc78c0e98444f7d9cf627a2c0860b98f9ac8711df949b3b1de102c1188",
+  "target_canvas_id": "2110777325225975810",
+  "target_node_id": "2110777325234364417",
+  "target_story_id": "2110777326528253954",
+  "shot_id": "2110777326549225474",
+  "render_id": "2110777328639942657",
+  "export_sha256": "8d90b33e59384f90e965e3c929b14946fae3f66b329701b2e431c46c5e06c7d1",
+  "bytes": 2813157,
+  "duration_s": 6.041667,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "source_in_s": 1,
+  "source_out_s": 7,
+  "ssim": [
+    {
+      "export_offset_frames": 0,
+      "ssim": 0.949935
+    },
+    {
+      "export_offset_frames": 1,
+      "ssim": 0.987754
+    }
+  ],
+  "full_decode": true,
+  "history": [
+    {
+      "phase": "reserved",
+      "at": "2026-10-15T16:58:24.557333+00:00"
+    },
+    {
+      "phase": "creating-canvas",
+      "at": "2026-10-15T16:58:24.823382+00:00"
+    },
+    {
+      "phase": "canvas-ready",
+      "at": "2026-10-15T16:58:25.078267+00:00"
+    },
+    {
+      "phase": "adding",
+      "at": "2026-10-15T16:58:25.134788+00:00"
+    },
+    {
+      "phase": "timeline-ready",
+      "at": "2026-10-15T16:58:25.308077+00:00"
+    },
+    {
+      "phase": "trimming",
+      "at": "2026-10-15T16:58:25.380769+00:00"
+    },
+    {
+      "phase": "trimmed",
+      "at": "2026-10-15T16:58:25.578779+00:00"
+    },
+    {
+      "phase": "rendering",
+      "at": "2026-10-15T16:58:25.640185+00:00"
+    },
+    {
+      "phase": "render-submitted",
+      "at": "2026-10-15T16:58:25.709238+00:00"
+    },
+    {
+      "phase": "render-ready",
+      "at": "2026-10-15T16:58:30.835991+00:00"
+    },
+    {
+      "phase": "collecting",
+      "at": "2026-10-15T16:58:30.855449+00:00"
+    },
+    {
+      "phase": "complete",
+      "at": "2026-10-15T16:58:32.642089+00:00"
+    }
+  ],
+  "same_local_task_continued": true,
+  "reopen_idempotent": true,
+  "source_timeline_unchanged": true,
+  "native_writes": [
+    {
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas"
+    },
+    {
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas-node/add-to-editor"
+    },
+    {
+      "method": "PUT",
+      "path": "/guodong-api/guodong-studio/v1/shots/2110777326549225474/trim"
+    },
+    {
+      "method": "POST",
+      "path": "/guodong-api/guodong-studio/v1/stories/2110777326528253954/render"
+    }
+  ],
+  "new_image_requests": 0,
+  "new_video_requests": 0,
+  "new_text_calls": 0,
+  "native_render_count": 1,
+  "watermark": "Seko original watermark preserved",
+  "next_step": {
+    "run_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+    "next_step": "export_complete",
+    "render_id": "2110777328639942657",
+    "story_id": "2110777326528253954",
+    "source_media_id": "f74d2a35-cac2-42f7-b1fe-c7473a140f78",
+    "source_node_id": "2110773269367160833",
+    "in_s": 1,
+    "out_s": 7,
+    "export_sha256": "8d90b33e59384f90e965e3c929b14946fae3f66b329701b2e431c46c5e06c7d1",
+    "exported": true
+  },
+  "full_episode_verified": false,
+  "silence_verified": false,
+  "persistent_injection_verified": false
+}

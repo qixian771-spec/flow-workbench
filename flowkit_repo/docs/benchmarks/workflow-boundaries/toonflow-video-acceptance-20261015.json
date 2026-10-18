@@ -1,0 +1,128 @@
+{
+  "card": "LW-03",
+  "accepted": true,
+  "rootJobId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+  "acceptedShots": [
+    {
+      "job": {
+        "jobId": "32fd7753-1ef7-d606-ac5a-79036af519b2",
+        "kind": "video",
+        "rootJobId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+        "input": {
+          "model": "abra_i2v_8s",
+          "prompt": "Use the supplied first frame as the exact visual starting point. Preserve the scene, objects, lighting and art style. One continuous 8-second shot. 0-3s: A very slow, subtle dolly forward through the quiet tea house toward the table. The blue umbrella is tightly FOLDED CLOSED and lying flat horizontally on the tabletop exactly as in the first frame. Its wrapped canopy remains a narrow bundle throughout the entire shot. 3-6s: Continue the subtle forward dolly; only rain outside and the gentle steam from the white tea cup move. Every solid object stays rigid and completely still. 6-8s: Ease to a stop before reaching a close-up. The umbrella remains tightly folded shut and flat on the table at the identical angle; it never opens, unfolds, lifts, rolls, rotates or changes shape. No people, no hands, no object animation. Silent, no speech, no music, no added text.",
+          "ratio": "16:9",
+          "duration": 8,
+          "resolution": "720p",
+          "source_image_sha256": "d31a7625850265ac7627eb365386b2d01ad14743ad41e333c2a16c300b7e68ee"
+        },
+        "inputHash": "49873425c7e6d3f6f1ac2f10bbd4b3c0c781082d2a64952050b5cb84f2fd181e",
+        "route": {
+          "provider": "flow",
+          "model": "abra_i2v_8s",
+          "mode": "singleImage",
+          "duration_s": 8,
+          "resolution": "720p",
+          "orientation": "HORIZONTAL"
+        },
+        "projectId": "bd5dc9b5-5825-420d-81c0-b6302e144ef5",
+        "videoId": "c311b3f5-3cd1-4bea-96bd-8b99db61bf1a",
+        "sourceImageMediaId": "89015662-0c95-4c65-8e86-fb93ac881f60",
+        "phase": "complete",
+        "updatedAt": "2026-10-15T20:01:38.698380+00:00",
+        "sceneId": "ee99186b-63b2-4982-8314-99d1b0f801e0",
+        "requestId": "4deb9df0-9cb4-40fe-8dcd-172fb7243423",
+        "submitReceipt": {
+          "requestId": "4deb9df0-9cb4-40fe-8dcd-172fb7243423",
+          "operationId": "185c3c21-d8e7-45e8-aca9-0fbe45bc9cb0",
+          "model": "abra_i2v_8s",
+          "duration_s": 8,
+          "resolution": "720p"
+        },
+        "mediaId": "1ff0f6a4-f8d5-4069-9f4d-babacc594e38",
+        "sha256": "20734e6cf0cdfedb4e67a853d09b6ee49697e3b4738ab21291d24d47c72321f8",
+        "bytes": 3436053,
+        "mimeType": "video/mp4",
+        "duration": 8.0,
+        "width": 1280,
+        "height": 720,
+        "flowRequestId": "185c3c21-d8e7-45e8-aca9-0fbe45bc9cb0"
+      },
+      "nodeId": "dd680351-093a-4bf2-8d7b-e14e733111cc",
+      "asset": "assets/dd680351-093a-4bf2-8d7b-e14e733111cc/video3ac95a7a-306d-449d-8c91-b9d871a28d69.mp4",
+      "duplicateRequests": 1
+    },
+    {
+      "job": {
+        "jobId": "241491a1-b84c-9caf-1b9c-60339ee37949",
+        "kind": "video",
+        "rootJobId": "ee838492-401e-6cdb-fff6-ce45ef3dbf35",
+        "input": {
+          "model": "abra_i2v_8s",
+          "prompt": "Use the supplied first frame as the exact visual starting point. Preserve the scene, objects, lighting and art style. One continuous 8-second shot. 0-3s: Start from the supplied wide view of the tea house. Slowly pan the camera to the LEFT toward the open rainy courtyard, keeping the table objects fixed. 3-6s: Continue the smooth leftward pan, revealing more of the wet stone path and falling rain as the table moves toward the right edge of the frame. 6-8s: Settle on the rainy doorway and courtyard, with only part of the blue umbrella visible at the lower right. No people. Silent, no speech, no music, no added text.",
+          "ratio": "16:9",
+          "duration": 8,
+          "resolution": "720p",
+          "source_image_sha256": "d31a7625850265ac7627eb365386b2d01ad14743ad41e333c2a16c300b7e68ee"
+        },
+        "inputHash": "4fb463511f268bede1ef6f5f0a662ccd31377be51304bc679466b056c93cd256",
+        "route": {
+          "provider": "flow",
+          "model": "abra_i2v_8s",
+          "mode": "singleImage",
+          "duration_s": 8,
+          "resolution": "720p",
+          "orientation": "HORIZONTAL"
+        },
+        "projectId": "bd5dc9b5-5825-420d-81c0-b6302e144ef5",
+        "videoId": "c311b3f5-3cd1-4bea-96bd-8b99db61bf1a",
+        "sourceImageMediaId": "89015662-0c95-4c65-8e86-fb93ac881f60",
+        "phase": "complete",
+        "updatedAt": "2026-10-15T19:59:26.722054+00:00",
+        "sceneId": "78adf373-61f8-4212-a493-069cfe94844d",
+        "requestId": "dbb4035e-e900-477b-9497-4c4ad3135320",
+        "submitReceipt": {
+          "requestId": "dbb4035e-e900-477b-9497-4c4ad3135320",
+          "operationId": "d6160f73-612b-4315-a8d3-fd0ea0d77158",
+          "model": "abra_i2v_8s",
+          "duration_s": 8,
+          "resolution": "720p"
+        },
+        "mediaId": "fbb7c1ba-859f-4a01-b851-ed25764d8c84",
+        "sha256": "686d07c4089ceab2889839612297f2a7323226afcab198530b1ed9aee5d2e65e",
+        "bytes": 3975952,
+        "mimeType": "video/mp4",
+        "duration": 8.0,
+        "width": 1280,
+        "height": 720,
+        "flowRequestId": "d6160f73-612b-4315-a8d3-fd0ea0d77158"
+      },
+      "nodeId": "b722c4ed-2755-4e7d-9237-114b3baa6e04",
+      "asset": "assets/b722c4ed-2755-4e7d-9237-114b3baa6e04/videoa9887f21-b61e-4123-9d88-55d830f164ae.mp4",
+      "duplicateRequests": 1
+    }
+  ],
+  "qualityReview": {
+    "method": "manual visual sampling at 1s/4s/7s; second shot end frame inspected",
+    "rejectedJob": "e2f221e8-fac6-ba23-1826-79833c7578b9",
+    "reason": "umbrella unfolded",
+    "sameModelQualityRetries": 1,
+    "accepted": "umbrella closed in checked revision frames; second shot pans toward rainy courtyard"
+  },
+  "noTextModelCalls": true,
+  "sekoOpenTabs": 0,
+  "checks": {
+    "pythonTests": 28,
+    "serverTypecheck": "pass",
+    "webTypecheck": "pass",
+    "serverBuild": "pass",
+    "webBuild": "pass",
+    "serviceRestartAndDuplicateRead": "pass"
+  },
+  "notAccepted": [
+    "automatic quality scoring",
+    "dialogue/voice/lipsync",
+    "script-to-film",
+    "final assembly"
+  ]
+}

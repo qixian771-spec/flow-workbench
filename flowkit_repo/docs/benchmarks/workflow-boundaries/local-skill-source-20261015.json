@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-15T15:53:54.107302+00:00",
+  "source_repo": "https://github.com/sekoplatform/seko-video-creation",
+  "commit": "f20eeb886c10cdd04e6f3bfef40a563bc9bd8628",
+  "source_status": "public_workflow_available_with_remote_execution_dependencies",
+  "same_as_site_skills_14_29": false,
+  "site_candidates": [
+    {
+      "id": "14",
+      "full_body_observed": false,
+      "canvas_template": null,
+      "resource_type": "video"
+    },
+    {
+      "id": "29",
+      "full_body_observed": false,
+      "canvas_template": null,
+      "resource_type": "video"
+    }
+  ],
+  "public_files": [
+    {
+      "name": "public-SKILL.md",
+      "sha256": "7047cf3a5b31e4ddb99396e0494ba947cf710feb1baca3400924fc7fa202cfe8"
+    },
+    {
+      "name": "public-LICENSE",
+      "sha256": "4d0fd048bbbcb098d6e1d25e87aa33ba3ac9cc619a035c1291e137264217e3d4"
+    },
+    {
+      "name": "public-gen_proposal.py",
+      "sha256": "8d07c88b41ff0241b7fd6b2f4bc76fc4decb453d0bd6b60a434ea5d7e0a3c4c2"
+    },
+    {
+      "name": "public-get_proposal.py",
+      "sha256": "1d004e7f021e6de16ef294a32ee517ec3c968e9f6e66dd2eeb34f17d3a8b5118"
+    }
+  ],
+  "rea_evidence_id": "ev_e374b7768f02b218ae29b7123ec8a026e4973127a2c8042577b288a8c43bb9ba",
+  "rea_limitations": [
+    "App-D9Qn_7j1.js: Resource constraint during analyze_javascript_application: Semantic graph for App-D9Qn_7j1.js exceeds the parent's remaining result budget; static and module facts were retained",
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "local_run_executed": false,
+  "accepted_cards": 0,
+  "installations": 0
+}

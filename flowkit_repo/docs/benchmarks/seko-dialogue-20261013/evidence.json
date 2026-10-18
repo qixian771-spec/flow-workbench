@@ -1,0 +1,233 @@
+{
+  "storyId": "2110205322326720513",
+  "canvasId": "2110204684884787202",
+  "renderId": "2110212067111641090",
+  "renderCompleted": true,
+  "reload": {
+    "phase": "ready",
+    "manualRunnerPresent": false,
+    "completedJobs": 4,
+    "newTabOpened": true,
+    "serviceRestarted": true
+  },
+  "flowJobs": [
+    {
+      "jobId": "93d84ef6-d77e-43ac-997f-7d315cf8494c",
+      "phase": "complete",
+      "mediaId": "24efdcc2-dfd8-48c2-940d-c17bc03845d3",
+      "sha256": "24bdd21d7ec697a9adc56d965cbb196b97b4a9cc7fc26322035597e8a3d80fd5",
+      "size": 1763347,
+      "receipt": {
+        "nodeGenId": "2110210937979682818",
+        "nodeGenIds": null,
+        "nodeId": "2110210937975488513"
+      },
+      "history": [
+        "submitting",
+        "submitted",
+        "download-only-recovery-verified",
+        "ready",
+        "uploading",
+        "uploaded",
+        "creating-node",
+        "complete"
+      ]
+    },
+    {
+      "jobId": "b70cc613-a2a4-44b6-88da-ed806135c193",
+      "phase": "complete",
+      "mediaId": "949a08dc-34fe-4a1e-aa54-baec49c7bddb",
+      "sha256": "cc017b50fa8d487e860a65857c3a81932bfa9431d04f8d024a41388f0af7051d",
+      "size": 1713839,
+      "receipt": {
+        "nodeGenId": "2110205992056406018",
+        "nodeGenIds": null,
+        "nodeId": "2110205992052211714"
+      },
+      "history": [
+        "submitting",
+        "submitted",
+        "ready",
+        "uploading",
+        "uploaded",
+        "creating-node",
+        "complete"
+      ]
+    },
+    {
+      "jobId": "74dd8ace-9fec-441d-b18a-95bac091a383",
+      "phase": "complete",
+      "mediaId": "293852ba-003c-4740-b13f-da5266189461",
+      "sha256": "f20e6f81bceac279bf37c9313655ac42848fcc92b6d284c211592a03e97f946a",
+      "size": 2840210,
+      "receipt": {
+        "nodeGenId": "2110206102521790466",
+        "nodeGenIds": null,
+        "nodeId": "2110206102513401857"
+      },
+      "history": [
+        "submitting",
+        "submitted",
+        "ready",
+        "uploading",
+        "uploaded",
+        "creating-node",
+        "complete"
+      ]
+    },
+    {
+      "jobId": "15b553dc-c26b-474d-8933-817a71f8c823",
+      "phase": "complete",
+      "mediaId": "aa1ca429-629d-488a-abb4-49fdd6b69ca8",
+      "sha256": "ddb4cb8b2489282d87d60196b0c43f8f1c0f99099072bbfeb317bba18523ec6b",
+      "size": 1531341,
+      "receipt": {
+        "nodeGenId": "2110206052972888065",
+        "nodeGenIds": null,
+        "nodeId": "2110206052964499458"
+      },
+      "history": [
+        "submitting",
+        "submitted",
+        "ready",
+        "uploading",
+        "uploaded",
+        "creating-node",
+        "complete"
+      ]
+    }
+  ],
+  "dialogueShots": [
+    {
+      "id": "2110205322351886338",
+      "seq": 1,
+      "duration": 5,
+      "videoGenType": "LIP_SYNC_MULTI",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "GENERATING_COMPLETED",
+      "videoGenId": null,
+      "videoModel": "sensetime"
+    },
+    {
+      "id": "2110211049978593282",
+      "seq": 2,
+      "duration": 5,
+      "videoGenType": "LIP_SYNC_MULTI",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "GENERATING_COMPLETED",
+      "videoGenId": null,
+      "videoModel": "sensetime"
+    },
+    {
+      "id": "2110211050003759106",
+      "seq": 3,
+      "duration": 5,
+      "videoGenType": "LIP_SYNC_MULTI",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "GENERATING_COMPLETED",
+      "videoGenId": null,
+      "videoModel": "sensetime"
+    },
+    {
+      "id": "2110211050028924929",
+      "seq": 4,
+      "duration": 5,
+      "videoGenType": "LIP_SYNC_MULTI",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "GENERATING_COMPLETED",
+      "videoGenId": null,
+      "videoModel": "sensetime"
+    }
+  ],
+  "final": {
+    "duration": "20.077333",
+    "bytes": "3139623",
+    "sha256": "81a6266f2caf86d1a7c8b7c3010bee7b400d590dc2fa93647c2da3b6a03457d4",
+    "width": 1280,
+    "height": 720,
+    "fps": 24
+  },
+  "limitations": [
+    "Image-driven SekoTalk reanimation replaces Flow motion.",
+    "One original Flow request timed out; one explicit regeneration and one download-only recovery.",
+    "Exact TTS text and audio retention verified; human word-by-word listening and phoneme-level lip accuracy not certified.",
+    "Configured canvases and mapped references only; eight-second 720p horizontal first-frame generation.",
+    "Generation tasks persist; browser must remain open or reopen for upload/backfill; uncertain writes stop for inspection."
+  ],
+  "lipCredits": {
+    "before": 110,
+    "after": 70,
+    "spent": 40
+  },
+  "history": [
+    {
+      "at": "2026-10-14T03:28:14.339Z",
+      "phase": "assembling-flow"
+    },
+    {
+      "at": "2026-10-14T03:28:14.822Z",
+      "phase": "flow-ready"
+    },
+    {
+      "at": "2026-10-14T03:28:45.706Z",
+      "phase": "setting-frames"
+    },
+    {
+      "at": "2026-10-14T03:28:47.956Z",
+      "phase": "frames-ready"
+    },
+    {
+      "at": "2026-10-14T03:28:48.008Z",
+      "phase": "detecting-faces"
+    },
+    {
+      "at": "2026-10-14T03:28:48.077Z",
+      "phase": "faces-pending"
+    },
+    {
+      "at": "2026-10-14T03:28:58.292Z",
+      "phase": "faces-ready"
+    },
+    {
+      "at": "2026-10-14T03:28:58.340Z",
+      "phase": "preparing-masks"
+    },
+    {
+      "at": "2026-10-14T03:30:22.814Z",
+      "phase": "mask-function-corrected-before-any-upload-or-generation"
+    },
+    {
+      "at": "2026-10-14T03:30:22.967Z",
+      "phase": "preparing-masks"
+    },
+    {
+      "at": "2026-10-14T03:30:24.411Z",
+      "phase": "masks-ready"
+    },
+    {
+      "at": "2026-10-14T03:30:24.469Z",
+      "phase": "submitting-lips"
+    },
+    {
+      "at": "2026-10-14T03:30:24.796Z",
+      "phase": "lips-pending"
+    },
+    {
+      "at": "2026-10-14T03:32:16.814Z",
+      "phase": "dialogue-ready"
+    },
+    {
+      "at": "2026-10-14T03:32:16.867Z",
+      "phase": "rendering"
+    },
+    {
+      "at": "2026-10-14T03:32:16.985Z",
+      "phase": "render-submitted"
+    }
+  ],
+  "tests": {
+    "pythonTests": 20,
+    "nodeRunnerTests": 23,
+    "result": "passed"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-15T14:00:51.001175Z",
+  "purpose": "protocol_only",
+  "candidate_id": "official-14",
+  "run_id": "236484960534499330",
+  "session_id": "236483481325113345",
+  "model_id": "gmlm-3-flash",
+  "request_trace": [
+    {
+      "request_id": "37716.443",
+      "method": "POST",
+      "path": "/seko-api/seko-agent-canvas/v1/agent/run",
+      "utc": "2026-10-15T13:46:47.776564Z",
+      "status": 200,
+      "request_sequence": 1125,
+      "response_sequence": 1138
+    },
+    {
+      "request_id": "37716.502",
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas-node",
+      "utc": "2026-10-15T13:53:07.165084Z",
+      "status": 200,
+      "request_sequence": 1471,
+      "response_sequence": 1474
+    },
+    {
+      "request_id": "37716.545",
+      "method": "POST",
+      "path": "/seko-api/seko-agent-canvas/v1/agent/run/236484960534499330/continue",
+      "utc": "2026-10-15T13:53:58.182842Z",
+      "status": 200,
+      "request_sequence": 1722,
+      "response_sequence": 1729
+    }
+  ],
+  "waiting": {
+    "event": "RunPaused",
+    "tool_call_id": "call_1412962",
+    "tool_name": "ask_user_question",
+    "requirement_id": "996d7e11-8005-4b33-b9cf-aa1b000616aa",
+    "requires_user_input": true,
+    "answered": false
+  },
+  "external_artifact": {
+    "node_id": "2110730693985902593",
+    "generation_id": "2110730693994291202",
+    "flow_media_id": "949a08dc-34fe-4a1e-aa54-baec49c7bddb",
+    "historical_flow_job_id": "b70cc613-a2a4-44b6-88da-ed806135c193",
+    "local_file": "output/seko-dialogue-20261013/flow-shot-2.mp4",
+    "sha256": "cc017b50fa8d487e860a65857c3a81932bfa9431d04f8d024a41388f0af7051d",
+    "fresh_generation": false,
+    "provenance": "docs/benchmarks/seko-dialogue-20261013/evidence.json",
+    "seko_type": "VIDEO_UPLOAD",
+    "seko_source": "USER_UPLOAD",
+    "seko_status": "GENERATING_COMPLETED",
+    "seko_gen_trans_id": 0,
+    "seko_deduct_points": 0
+  },
+  "acceptance": {
+    "kind": "reference_only",
+    "tool_name": "get_canvas_node_details",
+    "tool_call_id": "call_1131902",
+    "results": [
+      {
+        "id": "2110205257511460865",
+        "type": "IMAGE",
+        "status": "GENERATING_COMPLETED",
+        "genId": "2110205257519849473",
+        "size": "1376x768",
+        "duration": null
+      },
+      {
+        "id": "2110730693985902593",
+        "type": "VIDEO",
+        "status": "GENERATING_COMPLETED",
+        "genId": "2110730693994291202",
+        "size": "1280x720",
+        "duration": 8.0
+      }
+    ]
+  },
+  "next_gate": {
+    "event": "RunPaused",
+    "run_id": "236484960534499330",
+    "tool_name": "ask_user_question",
+    "tool_call_id": "call_293191",
+    "requirement_id": "65ff59aa-0e91-4902-9fdd-9e279f27d467",
+    "answered": false
+  },
+  "visible_after_reload": true,
+  "window_capture": [
+    {
+      "name": "start",
+      "cursor": 1197,
+      "truncated": false,
+      "hasMore": false
+    },
+    {
+      "name": "upload",
+      "cursor": 1578,
+      "truncated": false,
+      "hasMore": false
+    },
+    {
+      "name": "continue-before",
+      "cursor": 1717,
+      "truncated": false,
+      "hasMore": false
+    },
+    {
+      "name": "continue",
+      "cursor": 1741,
+      "truncated": false,
+      "hasMore": false
+    },
+    {
+      "name": "end",
+      "cursor": 1802,
+      "truncated": false,
+      "hasMore": false
+    }
+  ],
+  "source_records": [
+    {
+      "file": "output/seko-rea-gap-20261015/official-skill-paused.sse",
+      "sha256": "9d42454593f7b67f0da71ea181ac316a83ed49477ccae6ede38bc0af3b6bfeb3",
+      "bytes": 4195
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/official-skill-resumed.sse",
+      "sha256": "028f88d0d3da343138219e5c6e7758a6107777e7286eaed8c02632e1ae52e924",
+      "bytes": 11289
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/official-skill-request.json",
+      "sha256": "34359e33c69d019bf450348cc5fbbbf855fe2431eaf691184f3f5d3e8b525654",
+      "bytes": 608
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/official-skill-resume-request.json",
+      "sha256": "0dbca67e3c9d9197d9fcdfda29e55542b6f6ad164e6487e94ddb0b560f622ade",
+      "bytes": 454
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/upload-detail-decoded.json",
+      "sha256": "a0fdfb618c7506f5dedfa437675f9b2e39ebbb3d8713ac24f6875779ecca2969",
+      "bytes": 1474
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/official-network-redacted.json",
+      "sha256": "4ef3933f979e41b1646c047a5a520976e98c153aa717ced413837e076fcd5151",
+      "bytes": 77879
+    },
+    {
+      "file": "output/seko-rea-gap-20261015/official-flow-resume-after-refresh.png",
+      "sha256": "57e2e19e85ae1744f89b24b044a6b971b43c6208c79c3e6bf5e0a181ad1a2f7a",
+      "bytes": 119300
+    }
+  ],
+  "observed_tools": [
+    {
+      "event": "tool",
+      "phase": "completed",
+      "tool_name": "ask_user_question",
+      "tool_call_id": "call_1412962"
+    },
+    {
+      "event": "tool",
+      "phase": "started",
+      "tool_name": "get_canvas_node_details",
+      "tool_call_id": "call_1131902"
+    },
+    {
+      "event": "tool",
+      "phase": "completed",
+      "tool_name": "get_canvas_node_details",
+      "tool_call_id": "call_1131902"
+    }
+  ],
+  "limitations": [
+    "The paused tools are questionnaires, not pending image/video generation tools.",
+    "Server accepted uploaded material as a reference, not as completion of a pending generation tool.",
+    "No vendor media generation tool appears in these captured SSE responses; this is not a global server task ledger or dispatch lock.",
+    "The existing Flow clip is protocol_only; it is not a newly generated same-script test output.",
+    "Refresh persistence applies to native questionnaire/upload state; production Flow bridge still fails its stale module import.",
+    "Prompt adherence in this diagnostic run cannot guarantee all official or creator Skill generation paths."
+  ],
+  "acceptance_status": "partial_reference_roundtrip_only",
+  "task_card_accepted": false
+}

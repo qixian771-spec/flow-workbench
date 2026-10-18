@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-10-15T15:46:41.001628+00:00",
+  "scope": "text_connectivity_only_not_story_quality_or_tool_execution",
+  "selected_route": {
+    "provider": "codex-cli",
+    "model": "gpt-6.1-sol",
+    "source": "user_choice",
+    "executor_connected": false
+  },
+  "automatic_model_switching": false,
+  "probes": [
+    {
+      "provider": "codex-cli",
+      "requested_model": "gpt-6-astra",
+      "effort": "low",
+      "exit_code": 0,
+      "duration_s": 13.91,
+      "result": "{\"probe\":\"seko-local\",\"ok\":true}",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ]
+    },
+    {
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "effort": "low",
+      "exit_code": 0,
+      "duration_s": 12.07,
+      "result": "{\"probe\":\"seko-local\",\"ok\":true}",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ]
+    },
+    {
+      "provider": "claude-cli",
+      "requested_model": "sonnet",
+      "exit_code": 1,
+      "duration_s": 4.45,
+      "is_error": true,
+      "result": "You've hit your weekly limit · resets Oct 16 at 4pm (America/Los_Angeles)",
+      "actual_model_keys": [],
+      "raw_saved": true
+    }
+  ],
+  "not_found_in_inspected_scope": [
+    "standalone text HTTP API configuration",
+    "gemini CLI on PATH",
+    "ollama CLI on PATH"
+  ],
+  "inspection_scope": [
+    "project .env names and providers config",
+    "Codex model config/cache and login status",
+    "Claude settings and auth status",
+    "known CLI PATH lookup"
+  ],
+  "credentials_exported": false,
+  "installations": 0
+}

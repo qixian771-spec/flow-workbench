@@ -1,0 +1,424 @@
+{
+  "canvas": {
+    "canvasId": "2110113293747896321",
+    "canvasNodeCtx": {
+      "canvasVersion": 4,
+      "changeEvents": [
+        {
+          "actor": {
+            "type": "user"
+          },
+          "canvasVersion": 1,
+          "entityId": "entity-e2dbea71-d747-4e3d-b78d-de4d3cb6a6f0",
+          "eventId": "canvas-event-3fc97227-27c3-4df7-9836-d1ffb14d2317",
+          "nodeId": "f6bbbc2c-4756-4b95-b585-5801f921cedf",
+          "timestamp": 1791925306561,
+          "type": "node.created"
+        },
+        {
+          "actor": {
+            "type": "user"
+          },
+          "canvasVersion": 2,
+          "changes": {
+            "selectedVideoDuration": {
+              "after": 8
+            },
+            "sourceGenIds": {
+              "after": null
+            }
+          },
+          "entityId": "entity-e2dbea71-d747-4e3d-b78d-de4d3cb6a6f0",
+          "eventId": "canvas-event-e89caf3d-6ce1-49de-b544-6e861f7db023",
+          "nodeId": "2110113836054626305",
+          "timestamp": 1791925317094,
+          "type": "node.updated"
+        },
+        {
+          "action": "derive_node",
+          "actor": {
+            "type": "user"
+          },
+          "canvasVersion": 3,
+          "entityId": "entity-7a2f7405-b373-413e-849c-08c411932284",
+          "eventId": "canvas-event-8dbcf5f6-3543-40ac-9fc0-d9d8a7462990",
+          "nodeId": "2110113929367912449",
+          "timestamp": 1791925339203,
+          "type": "node.created"
+        },
+        {
+          "action": "derive_node",
+          "actor": {
+            "type": "user"
+          },
+          "canvasVersion": 4,
+          "entityId": "entity-34534ad5-47e2-4a04-b708-42af426d8fe7",
+          "eventId": "canvas-event-0d10eca6-84eb-4b63-9942-968166415efd",
+          "nodeId": "2110113929367912450",
+          "timestamp": 1791925339203,
+          "type": "node.created"
+        }
+      ],
+      "deletedNodeIds": [
+        "f6bbbc2c-4756-4b95-b585-5801f921cedf"
+      ],
+      "disableAutoParentEdges": false,
+      "edges": [
+        {
+          "animated": false,
+          "data": {
+            "relationType": "generate"
+          },
+          "id": "e-2110113836054626305-2110113929367912449",
+          "source": "2110113836054626305",
+          "sourceHandle": "source",
+          "target": "2110113929367912449",
+          "targetHandle": "target",
+          "type": "default"
+        },
+        {
+          "animated": false,
+          "data": {
+            "relationType": "generate"
+          },
+          "id": "e-2110113836054626305-2110113929367912450",
+          "source": "2110113836054626305",
+          "sourceHandle": "source",
+          "target": "2110113929367912450",
+          "targetHandle": "target",
+          "type": "default"
+        }
+      ],
+      "nodeAliases": {
+        "2110113836054626305": "entity-e2dbea71-d747-4e3d-b78d-de4d3cb6a6f0",
+        "2110113929367912449": "entity-7a2f7405-b373-413e-849c-08c411932284",
+        "2110113929367912450": "entity-34534ad5-47e2-4a04-b708-42af426d8fe7",
+        "f6bbbc2c-4756-4b95-b585-5801f921cedf": "entity-e2dbea71-d747-4e3d-b78d-de4d3cb6a6f0"
+      },
+      "nodeLayouts": {
+        "2110113836054626305": {
+          "currentIndex": 0,
+          "displayHeight": 360,
+          "displayWidth": 640,
+          "entityId": "entity-e2dbea71-d747-4e3d-b78d-de4d3cb6a6f0",
+          "entityOrigin": {
+            "createdAt": 1791925306561,
+            "type": "user"
+          },
+          "entityVersion": 2,
+          "genFileSource": "USER_UPLOAD",
+          "genType": "VIDEO_UPLOAD",
+          "generation": {
+            "nodeKey": "2110113836054626305"
+          },
+          "height": 360,
+          "label": "omni-1-1-flash.mp4",
+          "lastModifiedBy": {
+            "type": "user"
+          },
+          "materials": [
+            {
+              "createdAt": 1791925317094,
+              "cropEndTime": 8,
+              "cropStartTime": 0,
+              "duration": 8,
+              "height": 720,
+              "id": "2110113836063014913",
+              "type": "video",
+              "width": 1280
+            }
+          ],
+          "position": {
+            "x": 680,
+            "y": 520
+          },
+          "prompt": "",
+          "selectedVideoDuration": 8,
+          "sourceGenIds": null,
+          "status": "GENERATING_COMPLETED",
+          "type": "video",
+          "width": 640
+        },
+        "2110113929367912449": {
+          "currentIndex": 0,
+          "displayHeight": 360,
+          "displayWidth": 640,
+          "entityId": "entity-7a2f7405-b373-413e-849c-08c411932284",
+          "entityOrigin": {
+            "createdAt": 1791925339202,
+            "type": "user"
+          },
+          "entityVersion": 1,
+          "genFileSource": "AUDIO_SEPARATION",
+          "genType": "AUDIO_SEPARATION",
+          "generation": {
+            "nodeKey": "2110113929367912449"
+          },
+          "height": 360,
+          "label": "音频分离",
+          "lastModifiedBy": {
+            "type": "user"
+          },
+          "materials": [
+            {
+              "createdAt": 1791925342830,
+              "duration": 8.045714,
+              "height": 360,
+              "id": "2110113929384689666",
+              "type": "audio",
+              "width": 640
+            }
+          ],
+          "position": {
+            "x": 1520,
+            "y": 520
+          },
+          "prompt": "",
+          "selectedVideoDuration": 8.045714,
+          "sourceGenIds": [
+            "2110113836054626305"
+          ],
+          "status": "GENERATING_COMPLETED",
+          "type": "audio",
+          "width": 640
+        },
+        "2110113929367912450": {
+          "currentIndex": 0,
+          "displayHeight": 360,
+          "displayWidth": 640,
+          "entityId": "entity-34534ad5-47e2-4a04-b708-42af426d8fe7",
+          "entityOrigin": {
+            "createdAt": 1791925339203,
+            "type": "user"
+          },
+          "entityVersion": 1,
+          "genFileSource": "AUDIO_SEPARATION",
+          "genType": "AUDIO_SEPARATION_VIDEO",
+          "generation": {
+            "nodeKey": "2110113929367912450"
+          },
+          "height": 360,
+          "label": "omni-1-1-flash.mp4-无声",
+          "lastModifiedBy": {
+            "type": "user"
+          },
+          "materials": [
+            {
+              "createdAt": 1791925342829,
+              "cropEndTime": 8,
+              "cropStartTime": 0,
+              "duration": 8,
+              "height": 360,
+              "id": "2110113929384689667",
+              "type": "video",
+              "width": 640
+            }
+          ],
+          "position": {
+            "x": 1520,
+            "y": 920
+          },
+          "prompt": "",
+          "selectedVideoDuration": 8,
+          "sourceGenIds": [
+            "2110113836054626305"
+          ],
+          "status": "GENERATING_COMPLETED",
+          "type": "video",
+          "width": 640
+        }
+      },
+      "nodeRelations": {
+        "2110113836054626305": {
+          "children": [
+            "2110113929367912449",
+            "2110113929367912450"
+          ],
+          "parents": []
+        },
+        "2110113929367912449": {
+          "children": [],
+          "parents": [
+            "2110113836054626305"
+          ]
+        },
+        "2110113929367912450": {
+          "children": [],
+          "parents": [
+            "2110113836054626305"
+          ]
+        }
+      },
+      "nodeTombstones": {}
+    },
+    "canvasStatus": "EDITING",
+    "canvasTitle": "Flow接入实测-雨停之前-20261013",
+    "canvasType": "NATIVE",
+    "consistencyFlag": 0,
+    "storyContent": null,
+    "storyId": "2110113965150097410"
+  },
+  "node": {
+    "generations": [
+      {
+        "additionGenData": null,
+        "calculatedVideoDuration": 0,
+        "content": null,
+        "deductPoints": 0,
+        "deductPointsTraceId": 0,
+        "duration": 8,
+        "endTime": 8,
+        "externalAssetCtx": null,
+        "faceMaskDetectStatus": "INITIALIZATION",
+        "faceMaskDetectTransId": 0,
+        "faceMaskPosition": null,
+        "firstFrameImagePath": "",
+        "genAudioFileUrl": "",
+        "genFileSource": "USER_UPLOAD",
+        "genFileSourceCtx": null,
+        "genFileUrl": "media://sha256/5c3835939e8d2ed3493f7815870d82680aeeafe6c80e7787e812281df8e71d25",
+        "genModel": "",
+        "genStatus": "GENERATING_COMPLETED",
+        "genTransId": 0,
+        "genType": "VIDEO_UPLOAD",
+        "genWatermarkFilePath": "",
+        "genWatermarkFileStatus": -1,
+        "id": "2110114927437692930",
+        "lastFrameImagePath": "",
+        "lipSyncMultiData": null,
+        "livePlatform": null,
+        "modifyPrompt": "",
+        "modifyRefImages": null,
+        "multiGridImageData": null,
+        "multiRefVideoReferenceData": null,
+        "nodeId": "2110113836054626305",
+        "prompt": null,
+        "referenceData": null,
+        "resolutionType": null,
+        "selectedModel": "",
+        "selectedVideoDuration": 0,
+        "shotSubtitleSpeakers": null,
+        "sourceGenIds": null,
+        "startTime": 0,
+        "useQuota": false,
+        "videoPrompt": null,
+        "videoRetakeData": null,
+        "visibilityStatus": 1,
+        "visionRatioId": null
+      }
+    ],
+    "node": {
+      "childIds": [
+        "2110113929367912450"
+      ],
+      "completedGenCount": 1,
+      "content": null,
+      "duration": 8,
+      "endTime": 8,
+      "genAudioFileUrl": "",
+      "genExtraParams": null,
+      "genFileSource": "USER_UPLOAD",
+      "genFileUrl": "media://sha256/5c3835939e8d2ed3493f7815870d82680aeeafe6c80e7787e812281df8e71d25",
+      "genFileUrlThumbnail": "media://sha256/788a1a460107708a76ce999e85db67d9be1b19463c7c5951909169b7551e01df",
+      "genId": "2110114927437692930",
+      "genPrompt": null,
+      "genStatus": "GENERATING_COMPLETED",
+      "genTransId": 0,
+      "genType": "VIDEO_UPLOAD",
+      "id": "2110113836054626305",
+      "nodeKey": "2110113836054626305",
+      "nodeName": null,
+      "nodeType": "VIDEO",
+      "parentIds": [],
+      "queueStatus": null,
+      "refUpdated": false,
+      "remainEstimatedDuration": null,
+      "rootFlag": true,
+      "selectedVideoDuration": 0,
+      "shotId": null,
+      "shotSubtitleSpeakers": null,
+      "sourceGenIds": null,
+      "startTime": 0,
+      "storyId": null,
+      "toneAudioFileUrl": null
+    }
+  },
+  "shots": [
+    {
+      "bindAudioSync": true,
+      "characters": [],
+      "dubbingMode": "NARRATION",
+      "duration": 8,
+      "firstFrameImagePath": null,
+      "firstFrameImageUrl": null,
+      "genImageStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "INITIALIZATION",
+      "genTtsSubtitleStatus": "INITIALIZATION",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "id": "2110113965192040450",
+      "imageModel": "",
+      "initDuration": 0,
+      "lastFrameImagePath": null,
+      "lastFrameImageUrl": null,
+      "lines": null,
+      "linesAudioEnabledFlag": true,
+      "lipSyncMultiData": null,
+      "lipSyncs": null,
+      "referenceData": [],
+      "resolutionType": 1,
+      "scenes": [],
+      "seq": 0,
+      "seqValue": 1,
+      "shotImagePath": "storage://sha256/e5d20c76cc2cbda983f2f96ecf4bbaf422ecc4c3c70f47bc81409d5aeac63007",
+      "shotImageSource": "EXTRACTED_FROM_VIDEO",
+      "shotImageUrl": "media://sha256/957ac67b3a2f559d0981355e1aea0dcdcd60a75b2af2f360cc9e7a6afa2ddda9",
+      "shotType": "EMPTY_TEMPLATE",
+      "shotVideoAudioUrl": null,
+      "shotVideoEndTime": 8,
+      "shotVideoStartTime": 0,
+      "shotVideoType": "NORMAL",
+      "shotVideoUrl": "media://sha256/5c3835939e8d2ed3493f7815870d82680aeeafe6c80e7787e812281df8e71d25",
+      "videoGenType": "FIRST_FRAME",
+      "videoModel": "",
+      "videoPrompt": null
+    },
+    {
+      "bindAudioSync": true,
+      "characters": [],
+      "dubbingMode": "NARRATION",
+      "duration": 8,
+      "firstFrameImagePath": null,
+      "firstFrameImageUrl": null,
+      "genImageStatus": "GENERATING_COMPLETED",
+      "genLipSyncStatus": "INITIALIZATION",
+      "genTtsSubtitleStatus": "INITIALIZATION",
+      "genVideoStatus": "GENERATING_COMPLETED",
+      "id": "2110114181198118913",
+      "imageModel": "",
+      "initDuration": 0,
+      "lastFrameImagePath": null,
+      "lastFrameImageUrl": null,
+      "lines": null,
+      "linesAudioEnabledFlag": true,
+      "lipSyncMultiData": null,
+      "lipSyncs": null,
+      "referenceData": [],
+      "resolutionType": 1,
+      "scenes": [],
+      "seq": 1,
+      "seqValue": 2,
+      "shotImagePath": null,
+      "shotImageSource": "EXTRACTED_FROM_VIDEO",
+      "shotImageUrl": "media://sha256/788a1a460107708a76ce999e85db67d9be1b19463c7c5951909169b7551e01df",
+      "shotType": "EMPTY_TEMPLATE",
+      "shotVideoAudioUrl": null,
+      "shotVideoEndTime": 8,
+      "shotVideoStartTime": 0,
+      "shotVideoType": "NORMAL",
+      "shotVideoUrl": "media://sha256/5c3835939e8d2ed3493f7815870d82680aeeafe6c80e7787e812281df8e71d25",
+      "videoGenType": "FIRST_FRAME",
+      "videoModel": "",
+      "videoPrompt": null
+    }
+  ]
+}

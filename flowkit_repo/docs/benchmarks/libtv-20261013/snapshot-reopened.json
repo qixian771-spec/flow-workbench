@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "nodeKey": "63c0c869-437f-4359-b18f-099c23588829",
+      "data": {
+        "type": "video",
+        "name": "Flow-指定镜头-回填测试",
+        "url": [
+          "media://sha256/3cf565f662eda25dbd6f6dd0acbbaef48f8abe2c94bbd3f7a9957f9f646adff4"
+        ],
+        "poster": "",
+        "action": "video_generate",
+        "generatorType": "default",
+        "params": {
+          "prompt": "0-3s: The camera slowly pans to the right over the flowing stream. 3-6s: A small red paper boat drifts under the stone bridge. 6-8s: The camera follows the red paper boat downstream. Natural water sounds only, no speech, no music, no text.",
+          "model": "Seedance 2.5",
+          "modeType": "singleImage2video",
+          "count": 1,
+          "imageList": [
+            {
+              "nodeId": "4636d94b-8afc-438a-8234-39ec789391e3",
+              "url": "media://sha256/06b02cb629542ac0d1336fad500384338ca5dc7d1b51464750b2e0eba8f1002c"
+            }
+          ],
+          "videoList": [],
+          "audioList": [],
+          "settings": {
+            "ratio": "16:9",
+            "resolution": "720p",
+            "duration": 8,
+            "enableSound": "on"
+          },
+          "advancedSettings": {
+            "search_enabled": 1,
+            "autoCompliance": 1
+          },
+          "imageListOrder": [
+            "4636d94b-8afc-438a-8234-39ec789391e3"
+          ],
+          "mixedListOrder": [
+            "4636d94b-8afc-438a-8234-39ec789391e3"
+          ],
+          "textList": []
+        },
+        "resourceMeta": {
+          "items": [
+            {
+              "kind": "video",
+              "mimeType": "video/mp4",
+              "byteSize": 8983139,
+              "extension": "mp4",
+              "hashSha1": "30f8b5804024fa97c3746931e2e1823bd8af428d",
+              "width": 1280,
+              "height": 720,
+              "durationSec": 8
+            }
+          ]
+        }
+      },
+      "nodeType": "video",
+      "name": "Flow-指定镜头-回填测试"
+    }
+  ],
+  "timeline": {
+    "nodeKey": "59ed869b-4401-4695-ad1c-18f9a648bd40",
+    "data": {
+      "type": "video-clip",
+      "name": "Flow回填-16秒合成验收",
+      "url": [],
+      "action": "video_clip_resource",
+      "params": {
+        "textList": [],
+        "imageList": [],
+        "videoList": [
+          {
+            "nodeId": "63c0c869-437f-4359-b18f-099c23588829",
+            "url": "media://sha256/3cf565f662eda25dbd6f6dd0acbbaef48f8abe2c94bbd3f7a9957f9f646adff4",
+            "label": "Flow-指定镜头-回填测试"
+          }
+        ],
+        "audioList": [],
+        "videoListOrder": [
+          "63c0c869-437f-4359-b18f-099c23588829"
+        ],
+        "mixedListOrder": [
+          "63c0c869-437f-4359-b18f-099c23588829"
+        ]
+      },
+      "clipTimelineData": {
+        "clips": [
+          {
+            "id": "libtv-flow-clip-1",
+            "sourceNodeId": "63c0c869-437f-4359-b18f-099c23588829",
+            "type": "video",
+            "startTime": 0,
+            "duration": 8,
+            "sourceOffset": 0,
+            "sourceDuration": 8,
+            "decibel": 0,
+            "width": 1280,
+            "height": 720,
+            "zIndex": 0
+          },
+          {
+            "id": "libtv-flow-clip-2",
+            "sourceNodeId": "63c0c869-437f-4359-b18f-099c23588829",
+            "type": "video",
+            "startTime": 8,
+            "duration": 8,
+            "sourceOffset": 0,
+            "sourceDuration": 8,
+            "decibel": 0,
+            "width": 1280,
+            "height": 720,
+            "zIndex": 0
+          }
+        ],
+        "videoAudioMuted": false,
+        "videoAudioVolume": 1,
+        "audioTrackMuted": false,
+        "audioTrackVolume": 1,
+        "videoSourceNodeIds": [
+          "63c0c869-437f-4359-b18f-099c23588829"
+        ],
+        "audioSourceNodeIds": [],
+        "videoTrackCount": 1,
+        "totalDuration": 16
+      },
+      "cropRange": [
+        0,
+        16
+      ],
+      "taskInfo": {
+        "taskId": "20261014044903766521634",
+        "loading": false,
+        "status": 2,
+        "progressPercent": 100
+      },
+      "_updatedAtMs": 1791924556000,
+      "_lastAppliedFullyAtMs": 1791924556000,
+      "embedContentHeight": 197
+    },
+    "nodeType": "video-clip",
+    "name": "Flow回填-16秒合成验收"
+  }
+}

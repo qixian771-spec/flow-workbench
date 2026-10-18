@@ -1,0 +1,65 @@
+{
+  "generation_count": 3,
+  "credit_cost": null,
+  "comparison_controls_match": [
+    "start_image_media_id",
+    "project_id",
+    "duration_s",
+    "resolution",
+    "aspect_ratio",
+    "model_family",
+    "end_image_media_id"
+  ],
+  "default_profile": "seko-omni-first-frame-silent-v1",
+  "experimental_profile": "seko-omni-first-frame-silent-v2",
+  "source_sha256": "97963408a1f41a0759dbe9f27c79464b06347db692276a5b341833e530e4df11",
+  "resident_job_id": "ef81c323-a80d-44cb-bdef-abbe45d313e2",
+  "resident_history": [
+    "submitting",
+    "submitted",
+    "ready",
+    "uploading",
+    "uploaded",
+    "creating-node",
+    "complete"
+  ],
+  "seko_receipt": {
+    "nodeId": "2110224776686592002",
+    "nodeGenId": "2110224776694980609",
+    "nodeGenIds": null
+  },
+  "flow_request_id": "03a42a44-aac3-47ea-8a3e-71d1288257c8",
+  "flow_scene_id": "b6b39bfb-6367-4e38-aee4-82d0d2488c38",
+  "flow_video_id": "a9c8520a-5474-433a-98d6-788f860867fe",
+  "flow_media_id": "100f23cc-37c5-4298-90cd-45bc414d7090",
+  "media_sha256": "20d08d993f6ba67e953d13df760ad4c40d6e32eda2ed589700e6c0ed3c513aa5",
+  "prepared_payload": {
+    "start_image_media_id": "85966991-65ac-490e-a653-cf16b9a312cf",
+    "prompt": "One continuous 8-second shot with no cuts. Use the supplied image as the first frame. Maintain its framing with a locked camera throughout. Keep the lips gently closed during every segment while performing the requested actions. Do not articulate words or add speaking mouth movements.\n0-3s: Hold the front-facing close-up; the man lowers his eyes, lips closed. 3-6s: He lifts his gaze toward his companion just beside the camera, with a reluctant small nod. 6-8s: Hold a thoughtful expression. Locked camera, natural blinking, no talking, no music, no subtitles.\nDo not add background music.\nUse only natural ambient sound; no speech, narration or voiceover.",
+    "project_id": "f10dbc3a-b621-4271-b671-5ea2b4cd22dd",
+    "scene_id": "b6b39bfb-6367-4e38-aee4-82d0d2488c38",
+    "duration_s": 8,
+    "resolution": "720p",
+    "aspect_ratio": "VIDEO_ASPECT_RATIO_LANDSCAPE",
+    "user_paygate_tier": "PAYGATE_TIER_TWO",
+    "end_image_media_id": null,
+    "model_family": "omni_flash"
+  },
+  "profile_reproduces_exact_submitted_text": true,
+  "observations": {
+    "sampling": "All three videos inspected at 2 fps (16 frames each); does not prove every-frame continuity or audio compliance.",
+    "original": "No conspicuous open-mouth action in sampled frames; gaze lowering and raising visible.",
+    "adapted_v1": "Open-mouth action visible near 5-5.5s.",
+    "adapted_v2": "Open-mouth action persists around 2.5-4.5s despite strengthened constraint.",
+    "shared": "Same character/cafe appearance across sampled frames; no obvious cut; small nod is not independently quantified.",
+    "verdict": "Conversion integration passed. Quality superiority unproven; v2 was not promoted to default. No automated best-prompt claim."
+  },
+  "known_limits": [
+    "One output per prompt; random sampling uncontrolled",
+    "No independent audio transcription, voice or lip-sync test",
+    "Resident supports only the documented narrow silent first-frame profile",
+    "Original source is agent-authored Seko input, not an official/community Skill output",
+    "No new software or dependencies installed"
+  ],
+  "generation_submissions": 3
+}

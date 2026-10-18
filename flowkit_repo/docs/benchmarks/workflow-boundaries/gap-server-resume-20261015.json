@@ -1,0 +1,174 @@
+{
+  "audit_id": "seko-server-resume-20261015",
+  "recorded_at": "2026-10-15T15:04:18.150419Z",
+  "card": "01-04-01",
+  "conclusion": "technical-blocked",
+  "accepted": false,
+  "accepted_cards": 0,
+  "server_version": {
+    "commit_hash": "439a587c",
+    "version": "1.9.0"
+  },
+  "identity": {
+    "run_id": "236494255546613761",
+    "session_id": "236494259887718401",
+    "requirement_id": "c102ce4c-d52b-4728-a14d-371effb35480",
+    "tool_call_id": "call_1339172",
+    "tool_name": "generate_image",
+    "flow_media_id": "fd0757b6-7303-43a7-ac6a-96fe6d4a62fd",
+    "uploaded_node_id": "2110739812897325058"
+  },
+  "observations": {
+    "declared_continue_request": {
+      "properties": {
+        "canvas_id": {
+          "type": "string",
+          "pattern": "^\\d+$",
+          "title": "Canvas Id"
+        },
+        "session_id": {
+          "type": "string",
+          "pattern": "^\\d+$",
+          "title": "Session Id"
+        },
+        "user_inputs": {
+          "additionalProperties": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "type": "object",
+          "minProperties": 1,
+          "title": "User Inputs"
+        }
+      },
+      "type": "object",
+      "required": [
+        "canvas_id",
+        "session_id",
+        "user_inputs"
+      ],
+      "title": "RunContinueRequest"
+    },
+    "declared_agent_paths": [
+      "/v1/agent/run",
+      "/v1/agent/run/{run_id}",
+      "/v1/agent/run/{run_id}/feedback",
+      "/v1/agent/run/{run_id}/stream",
+      "/v1/agent/sessions",
+      "/v1/agent/sessions/{session_id}",
+      "/v1/agent/run/{run_id}/continue",
+      "/v1/agent/run/{run_id}/cancel",
+      "/v1/agent/models"
+    ],
+    "run_status": 30,
+    "stream_reconnect": {
+      "http_status": 200,
+      "content_type": "text/event-stream; charset=utf-8",
+      "same_requirement_replayed": true,
+      "pending_image_tool_completed": false,
+      "completed_tools": [
+        {
+          "tool_call_id": "call_1337628",
+          "tool_name": "get_skill_instructions"
+        }
+      ]
+    },
+    "client_counterexample": {
+      "kind": "offline exact-source behavioral counterexample",
+      "server_posts": 0,
+      "events": [
+        {
+          "type": "external_tool.completed"
+        },
+        {
+          "type": "external_tool.failed",
+          "error": "SekoChatTransport does not support continue type \"external_tool_result\"."
+        }
+      ],
+      "live_server_completion": false
+    }
+  },
+  "rea": {
+    "version": "6.4.0",
+    "exact_source_extraction": true,
+    "semantic_traces": "found; partial coverage; continueRun unknowns 7, resumeRun unknowns 21",
+    "recovery": "Wakaru engine unavailable; no installation attempted"
+  },
+  "routing": {
+    "image": "Flow NANO_BANANA_2_1 -> BELUGA",
+    "video": "Flow Omni abra_i2v_8s / frame_to_video / 8s / 720p / landscape",
+    "vendor_text_actual": "gmlm-3-flash",
+    "new_generations_this_audit": 0
+  },
+  "tests": {
+    "red_new_counterexamples_failed": 9,
+    "green_python_tests": 77,
+    "green_node_tests": 3,
+    "gate": {
+      "tracer_complete": false,
+      "control_gate_complete": false,
+      "channel_ready": false
+    }
+  },
+  "limitations": [
+    "Declared OpenAPI lacks external completion; this does not prove undocumented server support is absent.",
+    "user_inputs inner objects allow arbitrary keys; no guessed external-result fields were sent because this could dispatch native generation.",
+    "Generic upstream Agno external execution is not a Seko endpoint contract.",
+    "Client completion event precedes transport rejection in an offline exact-source reproduction, not a successful live result handoff.",
+    "Raw server replay contains an earlier skill-reading ToolCallCompleted, not completion of call_1339172.",
+    "Existing upload and hash match do not establish generation-result acceptance.",
+    "No operator endpoints were called; no credentials or operator access sought.",
+    "No installation, fallback, subsequent cards or commits."
+  ],
+  "required_next_evidence": "An observed supported server completion entrypoint that accepts output for this pending tool, followed by persisted same-run same-tool completion and a different next gate.",
+  "local_artifacts": [
+    {
+      "path": "output/seko-server-resume-20261015/service-openapi.json",
+      "sha256": "32a599dac3c1f2d3877c53491b63595007536d23b9a8c8db1ff40e248c2e0ded"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/server-version.json",
+      "sha256": "3b2e2c164e9d8790ba4691545c71fa73ec36ff414b50fd995ee01f4bc9ce3119"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/same-run-detail-private.json",
+      "sha256": "d29a00f9fe9e6cbb9bb5d9dacb813ae204467fcea6264b98f3386eb274ac5065"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/same-run-stream-reconnect.json",
+      "sha256": "697bcfc8aac04c5a269e501bca10e83442dee7a122797c6e3b1c4ad519645e44"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/transport-provenance.json",
+      "sha256": "1c5564bee0d54ba59fa75686fd98261aeaad7b760a0152f84f10fd3d143b1025"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/rea-transport.json",
+      "sha256": "a5cba6ca3cda5c288b9fef9f20eb0936aea78f0c60c47589d3f96668cfd30a0a"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/continueRun-trace.json",
+      "sha256": "9c62777cceaf9b32c25aed401b97c5ff1dc5a9c25216151e11dc0694e1315804"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/resumeRun-trace.json",
+      "sha256": "f8c896e0bb2bf86b2120372d3056ad066881626bb95cb97138e4fae6189e10e6"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/external-host-method-provenance.json",
+      "sha256": "8f240bbcf948e6cbd671f4bbdcd549d10fe93d57913d03d62641ae4a4d45ff02"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/external-host-premature-completion.json",
+      "sha256": "24e3613294eb3f99f3d2e539cf1f4ae9394b1151a8bad0fa0fd70be448f8a799"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/rea-recovery-unavailable.json",
+      "sha256": "efaf8b4106faa1a05ef443f4ffb3f311e1532e42fa516e1a09ac3dc19c2bc6b2"
+    },
+    {
+      "path": "output/seko-server-resume-20261015/gate-verification.json",
+      "sha256": "9d94240026839b5580985459780bba87a8e9ec8c01202e533bfd5ac5fb8a3c09"
+    }
+  ]
+}

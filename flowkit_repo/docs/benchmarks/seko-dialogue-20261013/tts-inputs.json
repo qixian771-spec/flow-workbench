@@ -1,0 +1,46 @@
+[
+  {
+    "taskId": "a7d5149c-4b7f-436f-a60f-3d632b78989a",
+    "speeches": [
+      {
+        "speechId": "line-1",
+        "content": "你真的要走吗？",
+        "toneId": 42,
+        "speedRatio": 1
+      }
+    ]
+  },
+  {
+    "taskId": "78e7307f-389d-42d0-bdd6-7d557a1f6b7d",
+    "speeches": [
+      {
+        "speechId": "line-2",
+        "content": "明天一早的车。",
+        "toneId": 30,
+        "speedRatio": 1
+      }
+    ]
+  },
+  {
+    "taskId": "e2056117-d8a4-4ec3-a5f9-e2ffcf0ea364",
+    "speeches": [
+      {
+        "speechId": "line-3",
+        "content": "那就再陪我等一场雨吧。",
+        "toneId": 42,
+        "speedRatio": 1
+      }
+    ]
+  },
+  {
+    "taskId": "78b99bdb-8d05-4b56-ae83-775b2b80d228",
+    "speeches": [
+      {
+        "speechId": "line-4",
+        "content": "好，这次我不先走。",
+        "toneId": 30,
+        "speedRatio": 1
+      }
+    ]
+  }
+]

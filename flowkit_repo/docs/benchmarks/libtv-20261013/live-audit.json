@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "same_asset_id_new_uri",
+      "passed": true,
+      "asset_id": "63c0c869-437f-4359-b18f-099c23588829",
+      "old_uri": "media://sha256/f054fb4930752820820cc2a3536ebbee8217f5eb5b37c2c50237a89147e40a43",
+      "new_uri": "media://sha256/3cf565f662eda25dbd6f6dd0acbbaef48f8abe2c94bbd3f7a9957f9f646adff4"
+    },
+    {
+      "check": "same_timeline",
+      "passed": true
+    },
+    {
+      "check": "same_clip_ids",
+      "passed": true
+    },
+    {
+      "check": "timing_and_audio_preserved",
+      "passed": true
+    },
+    {
+      "check": "duration_and_aspect_preserved",
+      "passed": true
+    },
+    {
+      "check": "affected_clips_updated",
+      "passed": true,
+      "affected_clip_ids": [
+        "libtv-flow-clip-1",
+        "libtv-flow-clip-2"
+      ]
+    },
+    {
+      "check": "unaffected_clips_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_stale_clip_uri",
+      "passed": true
+    },
+    {
+      "check": "no_stale_source_reference",
+      "passed": true
+    },
+    {
+      "check": "export_duration",
+      "passed": true,
+      "seconds": 16.0
+    },
+    {
+      "check": "export_size",
+      "passed": true
+    },
+    {
+      "check": "export_has_audio",
+      "passed": true
+    },
+    {
+      "check": "export_full_decode",
+      "passed": true
+    }
+  ],
+  "export_sha256": "25504d9b659c29579785992265af57c59472e04eb6c0e8b5fe8d3083f3b5d607"
+}

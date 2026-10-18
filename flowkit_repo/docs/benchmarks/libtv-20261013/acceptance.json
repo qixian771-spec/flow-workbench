@@ -1,0 +1,40 @@
+{
+  "phase": "complete",
+  "project": "fea725c426d54f24acc147c1c3e62839",
+  "node": "63c0c869-437f-4359-b18f-099c23588829",
+  "flow_project": "a5ff6d71-9e97-4d95-bc2e-5f88702da727",
+  "reference_scene": "914c2960-a3bb-46e4-b149-4f728987783a",
+  "reference_media_id": "9c1033ca-ad97-400b-9fe4-da5f2e6441ba",
+  "prompt": "0-3s: The camera slowly pans to the right over the flowing stream. 3-6s: A small red paper boat drifts under the stone bridge. 6-8s: The camera follows the red paper boat downstream. Natural water sounds only, no speech, no music, no text.",
+  "video_id": "c498445d-dcf4-48a1-adec-0356f7f0c638",
+  "scene_id": "18f979e8-0758-4695-9411-31ff21791605",
+  "request_id": "06052ce7-77bf-462e-a052-7337f1764800",
+  "flow_media_id": "40ca038b-1adc-4096-bcaa-3d48f2429f81",
+  "media_sha256": "8e86f4fffb2a7eacfdc7fef3f9bf67de3381665edb94d5d5e83bfd70fa595fb5",
+  "generation_route": "explicit external bridge; website generate button not intercepted",
+  "flow_family": "omni_flash",
+  "native_model_flow_probe": "rejected: model name not found",
+  "baseline_roundtrip_sha256": "20cd968c0f01db6a59c05994a6a47d9331dcbab26e92ee3b20b35a0c1e3f4a7f",
+  "replacement_checks_passed": 15,
+  "live_checks_passed": 13,
+  "reopen_semantics_unchanged": true,
+  "no_installations": true,
+  "script_only_saved_not_rendered": true,
+  "render_tasks": {
+    "a": {
+      "nodeKey": "b6bf78ef-c235-4a9e-b7ef-19996d0de4e6",
+      "taskId": "20261014044403122791634",
+      "status": 2
+    },
+    "b": {
+      "nodeKey": "82ef9574-752b-4dc1-bb3f-04d40d40f277",
+      "taskId": "20261014044503734981634",
+      "status": 2
+    },
+    "live": {
+      "nodeKey": "676df400-ebac-4b40-a4c3-69ef986702e4",
+      "taskId": "20261014044903766521634",
+      "status": 2
+    }
+  }
+}

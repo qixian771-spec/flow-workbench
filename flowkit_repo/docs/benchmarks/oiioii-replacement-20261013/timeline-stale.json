@@ -1,0 +1,63 @@
+{
+  "code": "SUCCESS",
+  "data": {
+    "document": {
+      "timelineType": "standalone",
+      "timelineAspectRatio": "16:9",
+      "timelineDuration": 16000,
+      "timelineName": "Flow-Omni-verified-8s视频剪辑",
+      "timelineClips": [
+        {
+          "targetEnd": 8000,
+          "targetStart": 0,
+          "clipType": "media",
+          "renderIndex": 0,
+          "resourceUri": "hogi://video/mv74gy32_843cbb1a46472537.mp4",
+          "trimEnd": 8000,
+          "trimStart": 0,
+          "volume": 1,
+          "clipId": "3d6b202d-b3c7-48a8-a633-d80a963cc50b"
+        },
+        {
+          "clipName": "Flow-Omni-verified-8s-第二遍",
+          "targetEnd": 16000,
+          "targetStart": 8000,
+          "clipType": "media",
+          "renderIndex": 0,
+          "resourceUri": "hogi://video/mv74gy32_843cbb1a46472537.mp4",
+          "trimEnd": 8000,
+          "trimStart": 0,
+          "volume": 1,
+          "clipId": "f592e48c-00f0-4878-95d8-0d7ff7f815b6"
+        }
+      ],
+      "documentId": "491161cf-f885-4cfe-8f62-5a583c68b857",
+      "schemaVersion": 1
+    },
+    "media": [
+      {
+        "durationMs": 8000,
+        "height": 720,
+        "mediaType": "video",
+        "resourceUri": "hogi://video/mv74gy32_843cbb1a46472537.mp4",
+        "width": 1280
+      }
+    ],
+    "canvas": {
+      "sourceAsset": {
+        "assetId": "71fd09da-bdb1-45d1-a8b6-245093051112",
+        "shapeId": "node-71fd09da-bdb1-45d1-a8b6-245093051112"
+      },
+      "sourceReferences": [
+        {
+          "uri": "hogi://video/mv74gy32_843cbb1a46472537.mp4",
+          "assetId": "71fd09da-bdb1-45d1-a8b6-245093051112",
+          "clipIds": [
+            "3d6b202d-b3c7-48a8-a633-d80a963cc50b"
+          ],
+          "shapeId": "node-71fd09da-bdb1-45d1-a8b6-245093051112"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "card": "LW-01",
+  "at": "2026-10-15T19:39:40.641710+00:00",
+  "upstream": "d2e94aca7b59659ff6b4ca15f03cf134ec7f0e1d",
+  "verdict": "pass_local_startup_and_persistence",
+  "url": "http://127.0.0.1:3000",
+  "listen": "127.0.0.1:3000",
+  "workspace": "/Users/niuniu/Desktop/flow cli/toonflow/data/workspaces/flowAcceptance",
+  "canvas_sha256": "c531ec3cbe1b1774a87663084500c567a7c8c8c718774e9288693870d0e3ce1e",
+  "ui_created_and_refreshed": true,
+  "seko_open_tabs": 0,
+  "text_model_configured": false,
+  "actual_generation_calls": 0,
+  "dependencies_install_authorized": true,
+  "lockfile_changed": false,
+  "lifecycle_scripts_run": false,
+  "checks": {
+    "web_typecheck": "pass",
+    "server_typecheck": "pass",
+    "web_build": "pass",
+    "server_build": "pass",
+    "tools_nodes_extensions_build": "pass"
+  },
+  "limits": [
+    "Flow integration not yet implemented",
+    "No generated media or exported film in this card"
+  ]
+}

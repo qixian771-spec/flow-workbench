@@ -1,0 +1,77 @@
+# Environment & Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node / Bun
+node_modules/
+.bun/
+dist/
+/build/
+
+# Git bundles & backups
+*.bundle
+*.bak
+.git_backup*
+
+# macOS & OS files
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+# Sensitive & Secret Files (CRITICAL for Public Repos)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.keychain
+*.keychain-db
+*.crx
+settings.json
+geminiProbe.json
+
+# Local SQLite databases & session caches
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+flow_agent.db
+flow_session_project.json
+agent/active_project.json
+
+# Toonflow Local Runtime Data & Workspaces
+toonflow/data/
+toonflow/work/
+toonflow/backup/
+toonflow/node_modules/
+toonflow/dist/
+toonflow/build/
+toonflow/.hutch/
+toonflow/.cottontail-tmp/
+
+# FlowKit Test Outputs & Large Media
+flowkit_repo/output/
+flowkit_repo/scratch/
+flowkit_repo/youtube/channels/
+flowkit_repo/.omc/
+flowkit_repo/.agent/
+flowkit_repo/extension/_metadata/
+*.mp4
+*.mp3
+
+# Logs & coverage
+*.log
+coverage/
+*.tsbuildinfo
+.tmp/
+playwright-report/
+test-results/

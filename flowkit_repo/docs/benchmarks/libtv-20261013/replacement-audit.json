@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "same_asset_id_new_uri",
+      "passed": true,
+      "asset_id": "63c0c869-437f-4359-b18f-099c23588829",
+      "old_uri": "media://sha256/4460b792a2d6920ff3760d9d43e725e88e133aa10ac43afde6385fdbc6baeec1",
+      "new_uri": "media://sha256/f054fb4930752820820cc2a3536ebbee8217f5eb5b37c2c50237a89147e40a43"
+    },
+    {
+      "check": "same_timeline",
+      "passed": true
+    },
+    {
+      "check": "same_clip_ids",
+      "passed": true
+    },
+    {
+      "check": "timing_and_audio_preserved",
+      "passed": true
+    },
+    {
+      "check": "duration_and_aspect_preserved",
+      "passed": true
+    },
+    {
+      "check": "affected_clips_updated",
+      "passed": true,
+      "affected_clip_ids": [
+        "libtv-flow-clip-1",
+        "libtv-flow-clip-2"
+      ]
+    },
+    {
+      "check": "unaffected_clips_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_stale_clip_uri",
+      "passed": true
+    },
+    {
+      "check": "no_stale_source_reference",
+      "passed": true
+    },
+    {
+      "check": "export_duration",
+      "passed": true,
+      "seconds": 16.0
+    },
+    {
+      "check": "export_size",
+      "passed": true
+    },
+    {
+      "check": "export_has_audio",
+      "passed": true
+    },
+    {
+      "check": "export_full_decode",
+      "passed": true
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 4.0,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    },
+    {
+      "check": "blue_marker",
+      "passed": true,
+      "sample_seconds": 12.0,
+      "blue_pixels": 64,
+      "total_pixels": 64
+    }
+  ],
+  "export_sha256": "3e1a1d88c12772e683d3db437feb830971251475d1fda3754bd074523a8e4193"
+}

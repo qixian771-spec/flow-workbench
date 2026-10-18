@@ -1,0 +1,79 @@
+{
+  "audit": [
+    {
+      "at": "2026-10-14T02:32:08.449Z",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "kind": "captured-native-request",
+      "route": "seko-canvas/v1/canvas-node/gen-video",
+      "upstreamSubmitted": false
+    },
+    {
+      "at": "2026-10-14T02:33:50.219Z",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "kind": "flow-submitted",
+      "requestId": "7da7f0a9-67cc-4524-bec2-315d628ae330"
+    },
+    {
+      "at": "2026-10-14T02:35:25.851Z",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "kind": "completed-real-node",
+      "nodeGenId": "2110197761219756033",
+      "nodeId": "2110197761211367425"
+    },
+    {
+      "at": "2026-10-14T02:36:26.279Z",
+      "jobId": "fc1a47e4-58b1-4e25-9949-2f66844eac9d",
+      "kind": "captured-native-request",
+      "route": "seko-canvas/v1/canvas-node/gen-video",
+      "upstreamSubmitted": false
+    }
+  ],
+  "canvasId": "2110113293747896321",
+  "jobs": [
+    {
+      "actualModelFamily": "omni_flash",
+      "actualProvider": "flow",
+      "canvasId": "2110113293747896321",
+      "flowRequestId": "7da7f0a9-67cc-4524-bec2-315d628ae330",
+      "jobId": "e2ef74e7-0d01-49ae-8669-ef8d790a2d5d",
+      "nativeRequest": {
+        "canvasId": "2110113293747896321",
+        "firstFrameNodeId": "2110195605558804482",
+        "lastFrameNodeId": "",
+        "processedPrompt": "0-3s: The camera slowly pushes forward along the stream toward the stone bridge. 3-6s: A bright yellow paper boat floats from the lower left toward the bridge and turns gently with the current. 6-8s: The boat passes beneath the arch as the camera holds steady. Natural stream sounds. No speech, no music.",
+        "resolutionType": 1,
+        "selectedVideoDuration": 8,
+        "videoModel": "doubao-seedance-1-0-pro-fast-251015",
+        "videoPrompt": "0-3s: The camera slowly pushes forward along the stream toward the stone bridge. 3-6s: A bright yellow paper boat floats from the lower left toward the bridge and turns gently with the current. 6-8s: The boat passes beneath the arch as the camera holds steady. Natural stream sounds. No speech, no music.",
+        "visionRatioId": 1
+      },
+      "nativeRoute": "seko-canvas/v1/canvas-node/gen-video",
+      "receipt": {
+        "nodeGenId": "2110197761219756033",
+        "nodeGenIds": null,
+        "nodeId": "2110197761211367425"
+      },
+      "state": "complete"
+    },
+    {
+      "actualModelFamily": "omni_flash",
+      "actualProvider": "flow",
+      "canvasId": "2110113293747896321",
+      "jobId": "fc1a47e4-58b1-4e25-9949-2f66844eac9d",
+      "nativeRequest": {
+        "canvasId": "2110113293747896321",
+        "firstFrameNodeId": "2110195605558804482",
+        "lastFrameNodeId": "",
+        "processedPrompt": "0-3s: The camera remains still, facing the stone bridge as the stream flows gently. 3-6s: A white egret walks slowly onto the top of the bridge from the right, takes two careful steps, and pauses at the center. 6-8s: The bird unfolds its wings once and settles quietly. Natural stream and soft bird sounds. No speech, no music.",
+        "resolutionType": 1,
+        "selectedVideoDuration": 8,
+        "videoModel": "doubao-seedance-1-0-pro-fast-251015",
+        "videoPrompt": "0-3s: The camera remains still, facing the stone bridge as the stream flows gently. 3-6s: A white egret walks slowly onto the top of the bridge from the right, takes two careful steps, and pauses at the center. 6-8s: The bird unfolds its wings once and settles quietly. Natural stream and soft bird sounds. No speech, no music.",
+        "visionRatioId": 1
+      },
+      "nativeRoute": "seko-canvas/v1/canvas-node/gen-video",
+      "state": "captured"
+    }
+  ],
+  "referenceNodeId": "2110195605558804482"
+}

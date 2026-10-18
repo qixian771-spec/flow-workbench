@@ -1,0 +1,43 @@
+{
+  "contract": "1.0.0",
+  "flavor": "core",
+  "milestone": null,
+  "phases": [
+    {
+      "number": "1",
+      "name": "成熟工作流与接管边界",
+      "status": "in_progress"
+    },
+    {
+      "number": "2",
+      "name": "Flow 图视频与模型适配",
+      "status": "pending"
+    },
+    {
+      "number": "3",
+      "name": "Skill 串联与原站自动出片",
+      "status": "pending"
+    },
+    {
+      "number": "4",
+      "name": "常驻运行与中断恢复",
+      "status": "pending"
+    },
+    {
+      "number": "5",
+      "name": "对白、固定音色与口型",
+      "status": "pending"
+    },
+    {
+      "number": "6",
+      "name": "整集自动化与整体验收",
+      "status": "pending"
+    }
+  ],
+  "next": {
+    "command": "plan LW-07 dialogue and cross-shot consistency",
+    "label": "LW-06 local Gemini script-to-film integration accepted",
+    "reason": "Native configurable model, two fresh Flow images/videos and automatic16s export passed. Fixed voices/lipsync, cross-shot identity and full-episode quality remain unaccepted. No new dependencies."
+  },
+  "updated_at": "2026-10-15T20:38:54.530782+00:00"
+}

@@ -1,0 +1,115 @@
+{
+  "audit_id": "seko-receipt-config-20261015",
+  "recorded_at": "2026-10-15T15:25:58.289099Z",
+  "card": "01-04-01",
+  "conclusion": "technical-blocked",
+  "accepted": false,
+  "accepted_cards": 0,
+  "decision": "Continue only within currently available webpage/account and local artifacts. No backend access or undocumented write protocol assumed from user delegation.",
+  "new_observations": {
+    "account_surfaces_checked": [
+      "skill-community",
+      "my-space",
+      "own personal center"
+    ],
+    "custom_provider_ui_observed": false,
+    "scope_limit": "Absence on these observed screens is not proof of absence in every account tier or hidden route.",
+    "settings_module": "UI localization dictionary, not a generation-provider configuration implementation.",
+    "skill_detail_module": "Community skill detail, like/use UI; not a custom tool registration implementation.",
+    "declared_skill_tool_types": [
+      "create_text_node",
+      "ask_user_question",
+      "set_choice_cards",
+      "set_followup_suggestions",
+      "generate_image",
+      "generate_image_to_video",
+      "generate_omni_video",
+      "generate_music"
+    ],
+    "schema_source": "Prior captured Agent MVP 1.9.0 service-openapi.json; not a fresh server schema fetch.",
+    "public_exact_source_search": "No results for exact seko-agent-canvas/generate_image or node_gen_ids/generate_image; search absence is not proof of private source absence."
+  },
+  "rea": {
+    "evidence_id": "ev_c111ae3d063ae0bf46ef18d3317227946871776b2cb6e1919cdd513d3d1211cb",
+    "statistics": {
+      "relevant_files": 2,
+      "nested_asar_containers": 0,
+      "text_bytes_read": 13853,
+      "invalid_utf8_files": 0,
+      "parsed_javascript_files": 2,
+      "visited_ast_nodes": 1555,
+      "findings": 181,
+      "modules": 0,
+      "parse_failures": 0
+    },
+    "limitations": [
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ]
+  },
+  "binding": {
+    "status": "verified_output_identity_only_not_submitted",
+    "target": {
+      "run_id": "236494255546613761",
+      "requirement_id": "c102ce4c-d52b-4728-a14d-371effb35480",
+      "tool_call_id": "call_1339172"
+    },
+    "output_identity": {
+      "node_id": "2110739812897325058",
+      "node_gen_id": "2110739812905713666",
+      "node_status": "GENERATING_COMPLETED",
+      "source_sha256": "889397b365ad9c2bb5643b10681de7500f25e9194e4818c2a9259ab3ac8acd34",
+      "provider": "Flow",
+      "model": "NANO_BANANA_2_1 -> BELUGA"
+    },
+    "server_write_contract": null,
+    "server_acceptance_receipt": null,
+    "flow_result_accepted": false,
+    "note": "Verified mapping from the real upload receipt to native tool-result identity names. This is not a Seko request body, is not injected into SSE, and has not completed the tool."
+  },
+  "validation": {
+    "fresh_node_receipt_id_match": true,
+    "same_tool_still_paused": true,
+    "same_tool_server_completion_absent": true,
+    "new_generation_calls": 0,
+    "configuration_mutations": 0,
+    "installations": 0,
+    "fallbacks": 0,
+    "commits": 0,
+    "subsequent_cards_started": false
+  },
+  "remaining_dependency": "An available server-side implementation, supported custom provider/tool extension, or observed result-completion contract that can bind this Flow output to the pending call before native dispatch. REA analysis of shipped client files cannot itself supply remote server code or control.",
+  "local_artifacts": [
+    {
+      "path": "output/seko-receipt-config-20261015/source-receipts.json",
+      "sha256": "ce68006e4162462fb44c1ac0fb5990ad7f8af71f7405efb11af9ebab62a9ad36"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/sources/settings-Cevxld0K.js",
+      "sha256": "29aa19947fef10e53be132c19708c3a14f7b2d6e87e4954fc6d9649233891e86"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/sources/skill-VDpW-CDD.js",
+      "sha256": "577e2fac6543607b2a599db8c1f58bd26b9dca5aef166ce2a0d5bdbd5b24ccb2"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/rea-config.json",
+      "sha256": "2a9212febf707559c888104f46b09444cb9b4aaf6afd9b6c4b28bebf52229038"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/fresh-binding-private.json",
+      "sha256": "1c913cf312396385765d9cc866d5be482de1c4034f5f1601523d892a6260c6de"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/verified-flow-receipt-binding.json",
+      "sha256": "89eaa739808443684ac7b6f4b47795a247a3e88889fcea2f587c90aedec904e9"
+    },
+    {
+      "path": "output/seko-receipt-config-20261015/skill-config-contract-extract.json",
+      "sha256": "8c8cde839249f1effa4ea52268cdcdbf994719bdf9ec678637949175b6187ded"
+    }
+  ]
+}

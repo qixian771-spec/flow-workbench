@@ -1,0 +1,294 @@
+{
+  "audit_id": "seko-native-completion-chain-20261015",
+  "recorded_at": "2026-10-15T15:17:27.405426Z",
+  "card": "01-04-01",
+  "conclusion": "technical-blocked",
+  "accepted": false,
+  "accepted_cards": 0,
+  "native_control": {
+    "kind": "existing historical native generation, read back now; no new generation",
+    "run_id": "236491385000267776",
+    "session_id": "236491389219737602",
+    "run_status": 10,
+    "tool_call_id": "call_888730",
+    "tool_name": "generate_image",
+    "tool_completed_utc": "2026-10-15T14:15:36+00:00",
+    "reported_execution_seconds": 0.4038,
+    "result": {
+      "node_gen_id": "2110736351711526914",
+      "node_gen_ids": null,
+      "node_id": "2110736351703138305",
+      "node_label": "雨天茶肆蓝色雨伞",
+      "ok": true,
+      "type": "image_generation"
+    },
+    "subsequent_events": [
+      "delta",
+      "done"
+    ],
+    "subsequent_next_gate": null,
+    "current_node_status": "GENERATING_COMPLETED",
+    "current_gen_id": "2110736351711526914",
+    "current_gen_transaction_id": "2110736351827226626",
+    "historical_model": "z-image",
+    "historical_points": 1,
+    "media_head": {
+      "contentLength": "1164288",
+      "contentType": "image/png",
+      "date": null,
+      "lastModified": "Thu, 15 Oct 2026 14:15:42 GMT",
+      "status": 200
+    },
+    "media_timestamp_caveat": "Last-Modified is an object-storage timestamp, not a model inference timing measurement."
+  },
+  "browser_terminal_path": {
+    "action": "Called the vendor exported polling entrypoint on an already completed own native node; no generation submission",
+    "network_truncated": false,
+    "network_has_more": false,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/seko-api/seko-canvas/v1/canvas-node/2110736351703138305/detail"
+      }
+    ],
+    "actual_async_stack": [
+      {
+        "function": "Jb",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 13701
+      },
+      {
+        "function": "",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 22504
+      },
+      {
+        "function": "v1",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 22420
+      },
+      {
+        "function": "Rm",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 30811
+      },
+      {
+        "function": "s",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 26003
+      },
+      {
+        "function": "kc",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 29510
+      },
+      {
+        "function": "create",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 27039
+      },
+      {
+        "function": "Pc.e.<computed>",
+        "source": "LoginContext-Dre9Pek8.js",
+        "line_zero_based": 43,
+        "column_zero_based": 31256
+      },
+      {
+        "function": "Be",
+        "source": "canvas-BLeYbv0U.js",
+        "line_zero_based": 0,
+        "column_zero_based": 14593
+      },
+      {
+        "function": "BL",
+        "source": "PreviewNineGridNode-BxiW9DW9.js",
+        "line_zero_based": 7,
+        "column_zero_based": 184382
+      },
+      {
+        "function": "",
+        "source": "PreviewNineGridNode-BxiW9DW9.js",
+        "line_zero_based": 7,
+        "column_zero_based": 186032
+      },
+      {
+        "function": "Tb",
+        "source": "PreviewNineGridNode-BxiW9DW9.js",
+        "line_zero_based": 7,
+        "column_zero_based": 186020
+      },
+      {
+        "function": "Rb",
+        "source": "PreviewNineGridNode-BxiW9DW9.js",
+        "line_zero_based": 7,
+        "column_zero_based": 186170
+      },
+      {
+        "function": "zL",
+        "source": "PreviewNineGridNode-BxiW9DW9.js",
+        "line_zero_based": 7,
+        "column_zero_based": 186818
+      }
+    ],
+    "static_terminal_chain": [
+      "BL fetches node details via SI (canvas export b / Be)",
+      "BL detects a terminal genStatus and calls HL; removes polling entry using Yn",
+      "HL batches into VL; VL hydrates canvas store",
+      "Changed terminal data calls Eb -> SyncManager AL -> EI (canvas export E / q)",
+      "EI sends PUT /v1/canvas/{id} with canvasNodeCtx; this sync was not observed during unchanged terminal refresh"
+    ],
+    "agent_completion_write_observed": false,
+    "limitation": "Current runtime capture is a refresh of a completed node, not a fresh native-generation transition; no claim of globally complete server traffic visibility."
+  },
+  "exact_source_replay": {
+    "kind": "offline exact-source replay using actual historical native receipt",
+    "live_server_mutation": false,
+    "run_id": "236491385000267776",
+    "tool_call_id": "call_888730",
+    "server_result": {
+      "ok": true,
+      "type": "image_generation",
+      "node_id": "2110736351703138305",
+      "node_gen_id": "2110736351711526914",
+      "node_gen_ids": null,
+      "node_label": "雨天茶肆蓝色雨伞"
+    },
+    "projected_node_id": "2110736351703138305",
+    "projected_status": "ALGO_GENERATION",
+    "projected_materials_count": 0,
+    "node_gen_id": "2110736351711526914",
+    "conclusion": "Tool completion projects a generation-in-progress node with no material; it is not evidence that media finished."
+  },
+  "rea": {
+    "application_evidence_id": "ev_08cdfcc544ec440c99674d5ffd1cdbe99b48b9e6d33191a09a59c2807953511f",
+    "statistics": {
+      "relevant_files": 1,
+      "nested_asar_containers": 0,
+      "text_bytes_read": 409653,
+      "invalid_utf8_files": 0,
+      "parsed_javascript_files": 1,
+      "visited_ast_nodes": 137569,
+      "findings": 282,
+      "modules": 0,
+      "parse_failures": 0
+    },
+    "traces": {
+      "BL": {
+        "evidence_id": "ev_5c8340cd62be1cf2c33cbcf72ea608f5923696cbd3f6914a18a53e0463c6a9f0",
+        "summary": {
+          "total_seed_matches": 1,
+          "traversed_nodes": 1,
+          "traversed_relations": 0,
+          "traversed_functions": 1,
+          "traversed_modules": 1,
+          "relevant_unknowns": 12372
+        },
+        "coverage": {
+          "status": "partial"
+        }
+      },
+      "AL": {
+        "evidence_id": "ev_783dce0b86149c23ad7775645d9247ff63d40cd70bfc2ab36b9b92c87cc7c125",
+        "summary": {
+          "total_seed_matches": 1,
+          "traversed_nodes": 1,
+          "traversed_relations": 0,
+          "traversed_functions": 1,
+          "traversed_modules": 1,
+          "relevant_unknowns": 12364
+        },
+        "coverage": {
+          "status": "partial"
+        }
+      }
+    }
+  },
+  "same_pending_flow_target": {
+    "run_id": "236494255546613761",
+    "run_status": 30,
+    "requirement_id": "c102ce4c-d52b-4728-a14d-371effb35480",
+    "tool_call_id": "call_1339172",
+    "native_continue_guard_present": true,
+    "flow_result_accepted": false
+  },
+  "routing": {
+    "image": "Flow NANO_BANANA_2_1 -> BELUGA",
+    "video": "Flow Omni abra_i2v_8s / frame_to_video / 8s / 720p / landscape",
+    "vendor_text_actual": "gmlm-3-flash",
+    "new_generations": 0,
+    "fallbacks": 0
+  },
+  "findings": {
+    "observed": "Server native generate_image ToolCallCompleted contains node/gen IDs; client projects ALGO_GENERATION and empty materials; separate native polling GET observed with async call stack.",
+    "inference": "In this native example, agent control progresses after task/node creation; browser terminal media refresh is not an agent external-result receiver.",
+    "unknown": "Server internal implementation and service-to-service target used by generate_image; no observed callable result-acceptance mutation for the existing pending tool.",
+    "required_for_acceptance": "A real server-supported way to bind the new Flow node/gen to call_1339172 before vendor dispatch and continue that same run to its next controlled gate."
+  },
+  "validation": {
+    "live_native_readback": true,
+    "media_head_status": 200,
+    "exact_source_projection_assertions_passed": true,
+    "production_code_changed": false,
+    "new_unit_tests_run": false,
+    "installations": 0,
+    "commits": 0,
+    "later_cards_started": false
+  },
+  "artifacts": [
+    {
+      "path": "output/seko-native-chain-20261015/native-run-and-node-private.json",
+      "sha256": "ee535d5a4607858355d358e723d92a1b830a2f0f6cfc884bb713cfba1a64c7d6"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-media-head.json",
+      "sha256": "574e530b4bf0518b7d42d8e170e71d4515c663ceb85ca290c67cb848163a0738"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-terminal-refresh-network-private.json",
+      "sha256": "c3641d1fcf4d101416aa21049fd69343af7f495420f83f1be926006e68d09bf5"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-terminal-refresh-async-stack.json",
+      "sha256": "c6e2f7a85cd1a74eaa657589f2120a4dfc33678f0ed92459a83bf7342a41f237"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/sources/PreviewNineGridNode-BxiW9DW9.js",
+      "sha256": "4e8a43caea07e9cf008e39a0ade3a2c1b0946b5528df99865ee92565bc5b3afb"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/rea-native-polling.json",
+      "sha256": "4ddd822bd91cbb5cf2ac8600edeb00ed986a53c345883d95755981d6a3d33d88"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/BL-trace.json",
+      "sha256": "8a9c0b1ef13700518b1221629eaf2e5702a027f31e23a31e1f682c1a46f09d5e"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/AL-trace.json",
+      "sha256": "84b3003531c9bb7108036c61786d5144be132845c22db797a98680f0ef506b6d"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-receipt-projection.js",
+      "sha256": "6959877b22a3d3a9b98f58d40b2ca9918652e16fb335652f499a1b8bca483ccf"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-receipt-projection-provenance.json",
+      "sha256": "e5442141ad31f27ebfca78390af5eca484bc910e92128d35ff8f5bb22a406212"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/native-receipt-projection-result.json",
+      "sha256": "2e8192ea713dfab4bd8418025237662e34659390a37dfb6900802826169ae8ac"
+    },
+    {
+      "path": "output/seko-native-chain-20261015/same-pending-tool-final.json",
+      "sha256": "2869c6d8be514f2bc8b346bcc4c7ba129ba0c84f9b76eae244841ce011e20329"
+    }
+  ]
+}

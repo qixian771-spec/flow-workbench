@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "accepted_at": "2026-10-15T16:44:37.848795+00:00",
+  "verdict": "pass_local_video_tracer",
+  "card": "01-04-02",
+  "job_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+  "scene_id": "0c2889d9-12bd-4dc9-9e37-5e42df13a047",
+  "flow_request_id": "7368d4bb-596a-461e-b9fd-a4cc5fc63b2c",
+  "flow_media_id": "f74d2a35-cac2-42f7-b1fe-c7473a140f78",
+  "submit_receipt": {
+    "requestId": "7368d4bb-596a-461e-b9fd-a4cc5fc63b2c",
+    "operationId": "b1f3e4ca-0b7c-43f5-8e80-db5529367e0d",
+    "model": "abra_i2v_8s",
+    "duration_s": 8,
+    "resolution": "720p",
+    "at": "2026-10-15T16:41:15.179833+00:00"
+  },
+  "seko_node_id": "2110773269367160833",
+  "seko_node_gen_id": "2110773269375549441",
+  "sha256": "5199cbdc78c0e98444f7d9cf627a2c0860b98f9ac8711df949b3b1de102c1188",
+  "bytes": 3962187,
+  "route": {
+    "provider": "flow",
+    "model": "abra_i2v_8s",
+    "mode": "frame_to_video",
+    "duration_s": 8,
+    "resolution": "720p",
+    "orientation": "HORIZONTAL"
+  },
+  "text_model": "gpt-6.1-sol",
+  "text_calls": {
+    "video-plan": {
+      "input_tokens": 16517,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 325,
+      "reasoning_output_tokens": 0
+    },
+    "video-continue": {
+      "input_tokens": 16407,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 268,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "history": [
+    {
+      "phase": "planning",
+      "at": "2026-10-15T16:40:45.769050+00:00"
+    },
+    {
+      "phase": "binding",
+      "at": "2026-10-15T16:41:06.958987+00:00"
+    },
+    {
+      "phase": "submitting",
+      "at": "2026-10-15T16:41:06.963787+00:00"
+    },
+    {
+      "phase": "submitted",
+      "at": "2026-10-15T16:41:06.969642+00:00"
+    },
+    {
+      "phase": "ready",
+      "at": "2026-10-15T16:42:06.599298+00:00"
+    },
+    {
+      "phase": "uploading",
+      "at": "2026-10-15T16:42:07.560685+00:00"
+    },
+    {
+      "phase": "uploaded",
+      "at": "2026-10-15T16:42:10.778738+00:00"
+    },
+    {
+      "phase": "creating-node",
+      "at": "2026-10-15T16:42:17.841371+00:00"
+    },
+    {
+      "phase": "backfilled",
+      "at": "2026-10-15T16:42:18.349684+00:00"
+    },
+    {
+      "phase": "continuing",
+      "at": "2026-10-15T16:42:18.353827+00:00"
+    },
+    {
+      "phase": "complete",
+      "at": "2026-10-15T16:42:37.159178+00:00"
+    }
+  ],
+  "source_image_media_id": "b587a425-a9dc-4759-921b-6c3eadba7e55",
+  "source_image_node_id": "2110766758585061377",
+  "source_prompt_hash": "b5a4538e1aa060fcf9e1df33c3634b8275cc9c9c08c013b2b11ee632ca5aebb8",
+  "prompt_hash": "4f831316e6ca4617a7462d801d407fbd64170f912811d4937f119a88c6364dbd",
+  "prompt": "0-3s: Begin with the exact first frame composition in a horizontal 16:9, continuous 8-second establishing shot of an empty teahouse. The camera pushes extremely slowly toward the wooden table beside the rainy window. A closed blue umbrella rests on the left, with a white teacup to its right. Faint steam rises gently from the cup as fine rain falls onto the wet gray stone path outside. Photorealistic dramatic atmosphere, soft overcast natural light, cool gray-blue surroundings and warm wood tones, natural depth of field. 3-6s: Continue the gentle push-in along the same axis. Steam curls and gradually disperses while tiny rain ripples evolve in puddles outside. The umbrella, cup, and tabletop retain consistent placement, proportions, and shape, with perspective changing naturally as the camera advances. 6-8s: Gradually ease the push-in to a stop, keeping the umbrella, white cup, and receding stone path fully within the final composition. Steam and fine rain continue their subtle motion. The teahouse remains empty, with clear glass reflections and unmarked surfaces throughout. One uninterrupted shot. Silent, no speech, no music.",
+  "same_local_run_continued": true,
+  "next_step": {
+    "run_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+    "consumed_video_media_id": "f74d2a35-cac2-42f7-b1fe-c7473a140f78",
+    "consumed_video_node_id": "2110773269367160833",
+    "source_image_media_id": "b587a425-a9dc-4759-921b-6c3eadba7e55",
+    "next_step": "assembly_ready_gate",
+    "edit_plan": "Use the exact supplied video as one uninterrupted 8s, 16:9 clip, with the supplied image as the first-frame composition reference. Timeline: 0–3s extremely slow push toward the rainy-window table → 3–6s continuous same-axis advance → 6–8s ease to a stop. Preserve the blue umbrella on the left, white cup on its right, subtle steam, fine rain, reflections, and visible stone path. Retain cool gray-blue surroundings and warm wood tones. No cuts, transitions, titles, speech, music, or added audio. At assembly review, check duration, framing, object consistency, and camera continuity against the prompt. Stop at assembly_ready_gate; no film exported."
+  },
+  "edit_manifest": {
+    "run_id": "eedacf2c-49c2-4b6f-9f02-652d60834930",
+    "gate": "assembly_ready_gate",
+    "exported": false,
+    "clips": [
+      {
+        "media_id": "f74d2a35-cac2-42f7-b1fe-c7473a140f78",
+        "seko_node_id": "2110773269367160833",
+        "sha256": "5199cbdc78c0e98444f7d9cf627a2c0860b98f9ac8711df949b3b1de102c1188",
+        "in_s": 0,
+        "out_s": 8,
+        "source_image_media_id": "b587a425-a9dc-4759-921b-6c3eadba7e55"
+      }
+    ]
+  },
+  "reopen_idempotent": true,
+  "flow_requests_for_scene": 2,
+  "video_requests": 1,
+  "vendor_generation_writes": 0,
+  "seko_writes": [
+    {
+      "window": "network.json",
+      "method": "POST",
+      "path": "/guodong-api/animo-support/content-detection/v1/video-moderation"
+    },
+    {
+      "window": "network.json",
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas-node"
+    },
+    {
+      "window": "replay-network.json",
+      "method": "POST",
+      "path": "/seko-api/seko-canvas/v1/canvas/2110204684884787202"
+    }
+  ],
+  "uploads": [
+    {
+      "window": "network.json",
+      "path": "/STS/ruoyi-resource/animo-prod/user_2110102086887161857/2026-10-16/409d1bed0aa74fa7b7853b9b69363a3c/eedacf2c-49c2-4b6f-9f02-652d60834930.mp4"
+    }
+  ],
+  "quality": {
+    "accepted": true,
+    "scope": "video transport, image continuity and visible motion only; silence not accepted",
+    "sha256": "5199cbdc78c0e98444f7d9cf627a2c0860b98f9ac8711df949b3b1de102c1188",
+    "visual_observation": "Frames at 0/2/4/6s show a continuous push toward the window, changing steam, blue umbrella left and white cup right; no visible people/text or scene cut. Steam stronger than faint intent.",
+    "full_decode": true,
+    "browser_playback": [
+      {
+        "currentTime": 8,
+        "duration": 8,
+        "ended": true,
+        "height": 720,
+        "paused": true,
+        "readyState": 4,
+        "width": 1280
+      }
+    ],
+    "audio": {
+      "codec": "aac",
+      "mean_volume_db": -49.7,
+      "max_volume_db": -23.1,
+      "silence_verified": false,
+      "action": "Original bytes preserved; no muting, replacement or silent pass. Audio quality remains unresolved."
+    },
+    "dialogue_lipsync_verified": false
+  },
+  "cloud_run_resumed": false,
+  "full_film_verified": false,
+  "persistent_page_worker_verified": false
+}

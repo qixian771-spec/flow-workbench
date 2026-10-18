@@ -1,0 +1,41 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "check": "same_node_new_media",
+      "passed": true
+    },
+    {
+      "check": "completed_node",
+      "passed": true
+    },
+    {
+      "check": "same_shot_ids",
+      "passed": true
+    },
+    {
+      "check": "shot_timing_and_audio_flags_preserved",
+      "passed": true
+    },
+    {
+      "check": "all_affected_shots_updated",
+      "passed": false
+    },
+    {
+      "check": "no_stale_shot_media",
+      "passed": false
+    },
+    {
+      "check": "unrelated_shots_preserved",
+      "passed": true
+    },
+    {
+      "check": "completed_shots",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "No independent source-reference cache exposed in these snapshots",
+    "Audio flags are not a volume, voice or lip-sync verification"
+  ]
+}
